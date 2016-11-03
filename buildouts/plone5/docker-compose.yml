@@ -1,0 +1,11 @@
+df-theme:
+  image: plone:5
+  ports:
+  - "8080:8080"
+  environment:
+    ADDONS: "df.theme"
+    DEVELOP: "src/df.theme"
+  volumes:
+  - ../../:/plone/instance/src/df.theme
+  command:
+  - fg
