@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'DeutscheFlagge';
+  src: url('deutscheflagge/deutscheflagge.eot?19885446');
+  src: url('deutscheflagge/deutscheflagge.eot?19885446#iefix') format('embedded-opentype'),
+       url('deutscheflagge/deutscheflagge.woff2?19885446') format('woff2'),
+       url('deutscheflagge/deutscheflagge.woff?19885446') format('woff'),
+       url('deutscheflagge/deutscheflagge.ttf?19885446') format('truetype'),
+       url('deutscheflagge/deutscheflagge.svg?19885446#deutscheflagge') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Body */
+.outer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#portal-footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.plone-container {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+#portal-header {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  margin: 0;
+  #portal-logo {
+    padding-top: 20px;
+  }
+}
+
+/* Global Navbar */
+.plone-navbar {
+  li {
+    a {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+
+  a::before {
+    content: "›";
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+/* Portlets */
+.portlet {
+  border: none;
+}
+
+/* Navigation portlet */
+
+.portletNavigationTree {
+  .portletHeader {
+    a {
+      color: @deutsche-flagge-dark;
+      font-size: 14px;
+      font-weight: normal;
+      &:before {
+        content: "\f0c9";
+        font-family: "DeutscheFlagge";
+        padding-right: 5px;
+        color: @deutsche-flagge-public;
+      }
+    }
+  }
+
+  .portletContent {
+    .navTreeItem {
+        a {
+          font-size: 12px;
+          color: @deutsche-flagge-dark;
+          background: @deutsche-flagge-light;
+          padding-top: 5px;
+          &:before {
+            font-size: 120% !important;
+            width: inherit !important;
+            content: "›" !important;
+          }
+          &:hover {
+            background: @plone-portlet-footer-bg;
+            color: white;
+            text-decoration: none;
+          }
+          &:hover:after {
+            content: "";
+          }
+          img {
+            display: none;
+          }
+        }
+      }
+
+    .navTreeCurrentNode > a {
+      background: @plone-portlet-footer-bg;
+      color: white;
+      &:after {
+        content: "";
+      }
+    }
+  }
+}
+
+/* Content */
+
+/* Title */
+.documentFirstHeading {
+  border: none;
+  background: transparent url(img/welle.png) repeat-x bottom;
+  padding-bottom: 1em;
+}

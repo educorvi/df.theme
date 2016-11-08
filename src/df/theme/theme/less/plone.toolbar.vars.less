@@ -1,5 +1,4 @@
 @plone-gray-light:                          lighten(#000, 46.5%);
-@plone-link-color:                          #007bb3;  //plone blue
 @plone-gray-lighter:                        lighten(#000, 80%);  // #ccc //disableds like
 
 //*// TOOLBAR
@@ -16,8 +15,7 @@
 @plone-toolbar-draft-color:                 #fab82a;  // lime-yellow //draft is visible
 @plone-toolbar-pending-color:               #e2e721;  // orange
 @plone-toolbar-private-color:               #c4183c;  // red
-@plone-toolbar-internal-color:              #fab82a;  // is draft
-@plone-toolbar-internally-published-color:  #883dfa;  // is intranet
+@plone-toolbar-internally-published-color:  #883dfa;
 
 @plone-screen-xs-max:                       (@plone-screen-sm-min + 1);
 @plone-screen-xs-min:                       480px;
@@ -34,3 +32,23 @@
 @plone-container-sm:                        750px;
 @plone-container-md:                        970px;
 @plone-container-lg:                        1170px;
+
+//*// Deutsche Flagge Colors
+@deutsche-flagge-public:                       #15528c;
+@deutsche-flagge-private:                      #bd0044;
+@deutsche-flagge-pending:                      #ffc819;
+@deutsche-flagge-visible:                      #90b5cb;
+@deutsche-flagge-light:                        #efefef;
+@deutsche-flagge-dark:                         #3f3933;
+
+//*// Custom Plone
+@plone-link-color:                          @deutsche-flagge-public;
+@plone-sitenav-link-hover-bg:               @deutsche-flagge-public;
+@plone-toolbar-internal-color:              @deutsche-flagge-pending;
+@plone-footer-bg:                           @deutsche-flagge-public;
+@plone-portlet-footer-bg:                   @deutsche-flagge-public;
+@plone-portlet-header-color:                @deutsche-flagge-light;
+@plone-portlet-border:                      1px solid white;
+@plone-body-bg:                             white;
+@plone-portlet-header-bg:                   white;
+@plone-sitenav-height:                      45px;
