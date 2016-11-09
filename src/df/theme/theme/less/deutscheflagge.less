@@ -10,6 +10,33 @@
   font-style: normal;
 }
 
+/* General */
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  border: none;
+  color: @deutsche-flagge-public;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: @deutsche-flagge-public;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: @deutsche-flagge-public;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: @deutsche-flagge-public;
+}
+
 /* Body */
 .outer-wrapper {
   max-width: 1200px;
@@ -115,7 +142,27 @@
 
 /* Title */
 .documentFirstHeading {
+  padding-bottom: 30px;
+  margin-bottom: 45px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  background: transparent url("img/welle.png") repeat-x bottom;
   border: none;
-  background: transparent url(img/welle.png) repeat-x bottom;
-  padding-bottom: 1em;
+}
+
+/* Description */
+.documentDescription {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Edit */
+form .autotoc-nav {
+  a {
+    color: white;
+    &:hover {
+      color: #696969;
+    }
+  }
 }
