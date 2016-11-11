@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<portlets>
+ <!-- Remove default footer portlets -->
+ <assignment name="footer" category="context" key="/" manager="plone.footerportlets" remove="True" />
+ <assignment name="actions" category="context" key="/"  manager="plone.footerportlets" remove="True" />
+ <assignment name="colophon" category="context" key="/" manager="plone.footerportlets" remove="True" />
+
+  <!--Navigation-->
+ <assignment name="navigation" category="context" key="/"
+    manager="plone.leftcolumn" type="portlets.Navigation" visible="True">
+  <property name="topLevel">0</property>
+  <property name="currentFolderOnly">False</property>
+  <property name="name">MENU</property>
+  <property name="bottomLevel">0</property>
+  <property name="includeTop">False</property>
+ </assignment>
+
+ <!-- Custom footer portlets -->
+ <assignment name="deutsche-flagge" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Deutsche  Flagge</property>
+  <property name="text">
+    Pluspunkte Deutsche Flagge
+    Einflaggung
+    Ausflaggung
+    Flaggenstaatverwaltung (administrarea de pavilion)
+    Schiffsarten
+    Schiffsregister
+    Deutche Handelsflotte
+  </property>
+ </assignment>
+
+ <assignment name="besatzung" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Besatzung</property>
+  <property name="text">
+    Schiffsbesetzung
+    Arbeiten und Leben an Bord
+    Heuerverträge
+    Arbeits - und Ruhezeiten
+    Seeleute – Beschwerden
+    Dienstbescheinigung
+    Seeleute – Ausweis und Visum
+  </property>
+ </assignment>
+
+ <assignment name="ausbildung-und-befahigung" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Ausbildung Und Befähigung</property>
+  <property name="text">
+    Ausbildung Seeleute
+    Bescheinigungen für Seeleute
+    Verifikation deutscher Dokumente
+    Zugelassene Lehrgänge
+  </property>
+ </assignment>
+
+ <assignment name="sozialversicherung" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Sozialversicherung</property>
+  <property name="text">
+    Kranken – und Pflegeversicherung
+    Rentenversicherung
+    Seemannskasse
+    Arbeitslosenversicherung
+    Unfallversicherung
+    Beiträge und Meldungen
+  </property>
+ </assignment>
+
+ <assignment name="sicherheit-auf-see" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Sicherheit Auf See</property>
+  <property name="text">
+    Gefahrenabwehr (ISPS)
+    Piraterieprävention
+    Sicherer Schiffsbetrieb (ISM)
+    Fahrgastregistreirung
+    Arbeitssicherheit
+    Ladung
+  </property>
+ </assignment>
+
+ <assignment name="bau-und-ausrustung" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+ <property name="header">Bau und Ausrüstung</property>
+ <property name="text">
+    Neu – und Umbau
+    Schiffsvermessung
+    Schiffbesichtigungen
+    Schiffsausrüstung
+    Rettungsmittel
+    Seefunk
+ </property>
+ </assignment>
+
+ <assignment name="maritime-medizin" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Maritime Medizin</property>
+  <property name="text">
+    Seediensttauglichkeit
+    Medizinische Ausstattung und Räumlichkeiten
+    Medizinische Wiederholungslehrgänge
+    Funkärztliche Beratung
+    Hygiene und Infektionsschutz
+    Ausgewählte Gesundheitsthemen
+  </property>
+ </assignment>
+
+ <assignment name="umweltschutz" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Umweltschutz</property>
+   <property name="text">
+    Verhütung Meeresverschmutzung
+    Unterwasseranstriche
+    Ballastwasser
+    Abwracken
+  </property>
+ </assignment>
+
+  <assignment name="haftung" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Haftung</property>
+  <property name="text">
+    Ölhaftung
+    Personenhaftung
+    Seeforderungen
+    Wrackbeseitigungshaftung
+    Gefährliche Stoffe (HNS)
+  </property>
+ </assignment>
+
+  <assignment name="finanzen" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Finanzen</property>
+  <property name="text">
+    Lohnnebenkostenförderung
+    Ausbildungsplatzförderung
+    Stiftung „Schifffahrtsstandort Deutschland”
+    Arbeitgeber
+    Besteuerung von Seeleuten
+    Tonnagesteuer
+    Gebühren
+  </property>
+ </assignment>
+
+</portlets>

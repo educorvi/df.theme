@@ -31,6 +31,11 @@
   <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
   <copy attributes="*" css:content="body" css:theme="body" />
 
+  <!--Remove the value of the searchButton-->
+  <xsl:template match="//div[@id='portal-searchbox']//input[@class='searchButton']/@value">
+    <xsl:attribute name="value"></xsl:attribute>
+  </xsl:template>
+
   <!-- move global nav -->
   <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
 
@@ -94,6 +99,15 @@
 
   <!-- Footer -->
   <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
+
+  <!-- Add class on footer portlets -->
+  <xsl:template match="//*[@id='portal-footer-wrapper']//div[contains(@class,'portletWrapper')]">
+    <xsl:copy>
+      <xsl:attribute name="class">col-xs-12 col-sm-6 col-md-3 portletWrapper</xsl:attribute>
+      <!--<xsl:copy-of select="@*" />-->
+      <xsl:apply-templates />
+    </xsl:copy>
+  </xsl:template>
 
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />

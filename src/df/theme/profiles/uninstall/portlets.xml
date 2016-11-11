@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<portlets>
+
+ <!-- Remove custom portlets -->
+
+ <!--<assignment name="deutsche-flagge" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+ <!--<assignment name="besatzung" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+ <!--<assignment name="ausbildung-und-befahigung" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+ <!--<assignment name="sozialversicherung" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+ <!--<assignment name="sicherheit-auf-see" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+ <!--<assignment name="bau-und-ausrustung" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+ <!--<assignment name="maritime-medizin" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+ <!--<assignment name="umweltschutz" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+ <!--<assignment name="haftung" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+ <!--<assignment name="finanzen" category="context" key="/"-->
+    <!--manager="plone.footerportlets" type="plone.portlet.static.Static"-->
+    <!--remove="True" />-->
+
+</portlets>

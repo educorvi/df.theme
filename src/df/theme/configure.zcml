@@ -19,7 +19,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Plone Theme: Deutsche Flagge Theme"
+      title="Plone Theme: Deutsche Flagge"
       directory="profiles/default"
       description="Installs the Plone theme package df.theme."
       provides="Products.GenericSetup.interfaces.EXTENSION"

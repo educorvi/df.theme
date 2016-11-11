@@ -44,48 +44,49 @@ p {
 }
 
 #portal-footer-wrapper {
+  position: relative;
   max-width: 1200px;
   margin: auto;
   text-align: left;
-  background: @deutsche-flagge-public url("img/footer-bg.png") no-repeat top left;
-
-  .portletWrapper {
-    max-width: 200px;
-    min-height: 200px;
-    float: left;
-    margin: 10px;
-
-    &:first-child {
-      border: none;
-    }
-  }
+  padding: 0;
+  margin-top: 100px;
 
   #portal-footer {
     position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 
-    //&:before {
-    //  content: "";
-    //  display: block;
-    //  position: absolute;
-    //  border-radius: 10% 100% 0 0;
-    //  width: 60%;
-    //  height: 70px;
-    //  background-color: #15528c;
-    //  left: -15px;
-    //  top: -54px;
-    //}
-    //
-    //&:after {
-    //  content: "";
-    //  display: block;
-    //  position: absolute;
-    //  border-radius: 0 0 0 100%;
-    //  width: 64%;
-    //  height: 70px;
-    //  background-color: white;
-    //  right: -15px;
-    //  top: -67px;
-    //}
+    > .row {
+      padding-left: 60px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      top: -100px;
+      background-color: transparent;
+      background-image: url("img/footer-bg.png");
+      background-position: center top;
+      background-repeat: repeat-x;
+      background-size: initial;
+    }
+
+    .portletWrapper {
+      min-height: 180px;
+      padding: 0;
+      margin: 0;
+
+      &:first-child {
+        border: none;
+      }
+
+      > section {
+        padding: 0.5em;
+      }
+    }
 
     .portletHeader {
       background: transparent;
@@ -97,10 +98,21 @@ p {
       text-transform: uppercase;
     }
 
-    p {
+    p, .portletContent {
       color: white;
       font-size: 12px;
       border: none;
+    }
+
+    i {
+      display: none;
+    }
+
+    a {
+      color: white;;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
@@ -275,11 +287,13 @@ p {
 }
 
 /* Edit */
-form .autotoc-nav {
-  a {
-    color: white;
-    &:hover {
-      color: #696969;
+form, .linkModal {
+  .autotoc-nav {
+    a {
+      color: white;
+      &:hover {
+        color: #696969;
+      }
     }
   }
 }
