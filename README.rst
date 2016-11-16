@@ -1,44 +1,19 @@
-.. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
-   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
-   This text does not appear on pypi or github. It is a comment.
-
-==============================================================================
+========
 df.theme
-==============================================================================
+========
 
-Tell me what your product does
+Deutsche Flagge Theme
 
 Features
---------
+========
 
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+- Deutsche Flagge Diazo Theme
 
 
 Installation
-------------
+============
 
-Install df.theme by adding it to your buildout::
+* Install **df.theme** by adding it to your buildout and then running ``bin/buildout``::
 
     [buildout]
 
@@ -48,25 +23,57 @@ Install df.theme by adding it to your buildout::
         df.theme
 
 
-and then running ``bin/buildout``
+* Restart Plone::
+
+    bin/instance restart
+
+* Within Site **Setup > Add-ons** install **Plone Theme: Deutsche Flagge**
+
+* See also the demo `Plone5 buildout <https://github.com/educorvi/df.theme/tree/master/buildouts/plone5>`_ within **buildouts** folder::
+
+    $ git clone https://github.com/educorvi/df.theme.git
+    $ cd df.theme/buildouts/plone5
+    $ ./install.sh
+
+
+Develop
+=======
+
+* Install **npm**::
+
+    $ sudo apt-get install npm
+
+* Install **grunt**::
+
+    $ sudo npm install -g grunt-cli
+
+* Locally install required **development tools** within **df.theme** root::
+
+    $ git clone https://github.com/educorvi/df.theme.git
+    $ cd df.theme
+    $ npm install
+
+* Locally install **theme dependencies**  within **Diazo Theme** folder::
+
+    $ cd df.theme/src/df/theme/theme
+    $ npm install
+
+* Auto-compile theme on changes::
+
+    $ grunt watch
+
+* Start Plone in foreground::
+
+    $ bin/instance fg
+
+* Now you can start developing on this theme::
+
+    $ cd df.theme/src/df/theme/theme
+    $ vim less/deutscheflagge.less
 
 
 Contribute
-----------
+==========
 
-- Issue Tracker: https://github.com/collective/df.theme/issues
-- Source Code: https://github.com/collective/df.theme
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
-
-
-License
--------
-
-The project is licensed under the GPLv2.
+- Issue Tracker: https://github.com/educorvi/df.theme/issues
+- Source Code: https://github.com/educorvi/df.theme

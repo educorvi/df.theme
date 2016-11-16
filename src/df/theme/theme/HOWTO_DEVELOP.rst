@@ -2,11 +2,13 @@ In order to develop the theme you need to install grunt-cli global::
 
     $ sudo npm install -g grunt-cli
 
-You can use the helper script `npm-install`::
+Run npm install in the package root and in the theme folder::
 
-    $ ./bin/npm-install
+    $ cd df.theme
+    $ npm install
 
-It will run npm install in package root and in the theme folder.
+    $ cd dt.theme/src/df/theme/theme
+    $ npm install
 
 After executing these commands you can run grunt on the package root folder to watch for any less changes::
 
