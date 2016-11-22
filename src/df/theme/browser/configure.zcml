@@ -18,4 +18,20 @@
       directory="static"
       />
 
+  <browser:viewlet
+    name="df.theme.banner"
+    layer="df.theme.interfaces.IDfThemeLayer"
+    manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+    class=".app.viewlet.Banner"
+    permission="zope2.View"
+    />
+
+  <browser:viewlet
+    name="plone.path_bar"
+    layer="df.theme.interfaces.IDfThemeLayer"
+    manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+    class="plone.app.layout.viewlets.common.PathBarViewlet"
+    permission="zope2.View"
+    />
+
 </configure>

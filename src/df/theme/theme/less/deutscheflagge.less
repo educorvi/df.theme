@@ -46,7 +46,15 @@ p {
 .outer-wrapper {
   max-width: 1200px;
   margin: auto;
+
+  .plone-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
+
+/* Footer */
 
 #portal-footer-wrapper {
   position: relative;
@@ -122,11 +130,6 @@ p {
   }
 }
 
-.plone-container {
-  padding: 0;
-  margin: 0;
-}
-
 /* Header */
 #portal-header {
   padding-top: 25px;
@@ -160,6 +163,7 @@ p {
 
 /* Global Navbar */
 .plone-navbar {
+  margin-bottom: 5px;
   li {
     a {
       text-transform: uppercase;
@@ -177,6 +181,13 @@ p {
 
 .plone-breadcrumb {
   background: white;
+  margin: 0;
+  margin-left: 5px;
+
+  .container {
+    width: 100%;
+  }
+
   ol {
     > li {
       padding: 0;
@@ -208,6 +219,7 @@ p {
 
 .portletNavigationTree {
   .portletHeader {
+    padding: 7px 15px;
     a {
       color: @deutsche-flagge-dark;
       font-size: 14px;
@@ -272,13 +284,42 @@ p {
   }
 }
 
+/* Top Banner */
+.df-theme-banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+
+  .banner-text {
+    position: absolute;
+    background: transparent url("img/banner-bg.png") no-repeat bottom right;
+    top: 40px;
+    left: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 300;
+    min-width: 333px;
+    max-width: 75%;
+    max-height: 195px;
+    padding: 0 50px 20px 10px;
+    overflow: hidden;
+  }
+
+}
+
+
 /* Content */
+
+#content-core {
+  margin-left: 20px;
+}
 
 /* Title */
 .documentFirstHeading {
+  margin: 25px 0 45px 20px;
   padding-bottom: 30px;
-  margin-bottom: 45px;
-  margin-top: 25px;
   text-transform: uppercase;
   background: transparent url("img/welle.png") repeat-x bottom;
   border: none;
@@ -289,6 +330,7 @@ p {
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
+  margin-left: 20px;
 }
 
 /* Edit */

@@ -1,0 +1,8 @@
+<div class="df-theme-banner">
+  <img class="banner-image" tal:attributes="src string:${context/portal_url}/++plone++df.theme/banner.jpg" />
+  <div class="banner-text">
+      Qualität + <br />
+      An Erster <br />
+      Stelle <br />
+  </div>
+</div>
