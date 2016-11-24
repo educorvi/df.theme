@@ -103,7 +103,7 @@
   <!-- Add class on footer portlets -->
   <xsl:template match="//*[@id='portal-footer-wrapper']//div[contains(@class,'portletWrapper')]">
     <xsl:copy>
-      <xsl:attribute name="class">col-xs-12 col-sm-6 col-md-3 portletWrapper</xsl:attribute>
+      <xsl:attribute name="class">col-xs-12 col-sm-6 col-md-3 col-lg-2 portletWrapper</xsl:attribute>
       <!--<xsl:copy-of select="@*" />-->
       <xsl:apply-templates />
     </xsl:copy>

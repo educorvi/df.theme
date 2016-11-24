@@ -55,6 +55,40 @@ p {
 }
 
 /* Footer */
+.footer-logo {
+  margin-bottom: 5em;
+}
+
+.footer-newsletter {
+  margin-bottom: 5em;
+
+  label {
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .emailInput {
+    font-size: 14px;
+    padding: 5px;
+    color: @deutsche-flagge-public;
+    width: 300px;
+  }
+
+  .emailButton {
+      font-size: 0;
+      width: 34px;
+      height: 34px;
+      background: transparent url("img/email.png") no-repeat center;
+      position: absolute;
+    }
+}
+
+//.row {
+//  margin: 0;
+//}
 
 #portal-footer-wrapper {
   position: relative;
@@ -62,7 +96,8 @@ p {
   margin: auto;
   text-align: left;
   padding: 0;
-  margin-top: 100px;
+  margin-top: 60px;
+  padding-bottom: 60px;
 
   #portal-footer {
     position: relative;
@@ -78,8 +113,8 @@ p {
       content: "";
       position: absolute;
       width: 100%;
-      height: 100px;
-      top: -100px;
+      height: 60px;
+      top: -60px;
       background-color: transparent;
       background-image: url("img/footer-bg.png");
       background-position: center top;
@@ -104,7 +139,7 @@ p {
     .portletHeader {
       background: transparent;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: bold;
       margin: 0;
       padding: 0;
       min-height: 40px;
@@ -148,10 +183,8 @@ p {
   #portal-searchbox {
     .searchButton {
       font-size: 0;
-      min-width: 34px;
-      max-width: 34px;
-      min-height: 34px;
-      max-height: 34px;
+      width: 34px;
+      height: 34px;
       background: transparent url("img/lupe.png") no-repeat center;
     }
 
@@ -207,6 +240,11 @@ p {
       }
     }
   }
+}
+
+/* Sidebar */
+#sidebar {
+  padding-right: 0;
 }
 
 /* Portlets */

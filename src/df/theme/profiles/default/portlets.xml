@@ -154,4 +154,24 @@
   </property>
  </assignment>
 
+  <assignment name="verpflichtung" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Mitteilung von Änderungen</property>
+  <property name="text">
+    Der Beförder muss dem BSH unverzüglich mitteilen,
+    wenn sich Änderungen hinsichtlich der Sicherheit ergeben,
+    die in der Personenhaftungsbescheinigung aufgeführt ist.
+  </property>
+ </assignment>
+
+  <assignment name="kontakt" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property name="header">Kontakt</property>
+  <property name="text">
+    Bei Fragen wenden Sie sich bitte an unsere Mitarbeiter im BSH.
+  </property>
+ </assignment>
+
 </portlets>

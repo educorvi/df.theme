@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+ <object name="df_theme" meta_type="Filesystem Directory View" directory="df.theme:skins/df_theme" />
+ <skin-path name="*">
+  <layer name="df_theme" insert-after="custom" />
+ </skin-path>
+</object>

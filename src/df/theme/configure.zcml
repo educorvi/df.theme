@@ -8,6 +8,7 @@
   <i18n:registerTranslations directory="locales" />
 
   <includeDependencies package="." />
+  <include file="skins.zcml" />
 
   <include package=".browser" />
 

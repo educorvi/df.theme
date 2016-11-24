@@ -1,0 +1,12 @@
+<div class="df-theme-footer row">
+  <div class="footer-logo col-xs-12 col-sm-6 col-lg-4">
+    <img tal:attributes="src string:${context/portal_url}/++plone++df.theme/logo-white.png" />
+  </div>
+  <div class="footer-newsletter col-xs-12 col-sm-6 col-lg-8">
+      <form tal:attributes="action string:${context/portal_url}/newsletter" method="post">
+          <label for="footer-newsletter-email" i18n:translate="">Newsletter bestellen</label>
+          <input type="email" name="email" class="emailInput" id="footer-newsletter-email" placeholder="Ihre E-Mail-Adresse" />
+          <input type="submit" name="submit" class="emailButton" />
+      </form>
+  </div>
+</div>
