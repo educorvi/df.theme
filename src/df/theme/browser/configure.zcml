@@ -19,6 +19,14 @@
       />
 
   <browser:viewlet
+    name="df.theme.logo2"
+    layer="df.theme.interfaces.IDfThemeLayer"
+    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+    class=".app.viewlet.Logo2"
+    permission="zope2.View"
+    />
+
+  <browser:viewlet
     name="df.theme.banner"
     layer="df.theme.interfaces.IDfThemeLayer"
     manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"

@@ -13,3 +13,8 @@ class Footer(common.ViewletBase):
     """ Custom footer portlet
     """
     render = ViewPageTemplateFile('../templates/footer.pt')
+
+class Logo2(common.ViewletBase):
+    """ Custom footer portlet
+    """
+    render = ViewPageTemplateFile('../templates/logo2.pt')

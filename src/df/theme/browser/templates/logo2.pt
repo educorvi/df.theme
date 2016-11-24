@@ -1,0 +1,5 @@
+<div class="df-theme-logo2 col-xs-1">
+  <a href="http://www.bmvi.de">
+    <img class="banner-image" tal:attributes="src string:${context/portal_url}/logo2.png" />
+  </a>
+</div>
