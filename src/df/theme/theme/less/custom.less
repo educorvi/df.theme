@@ -6,20 +6,16 @@
     margin: 0 0 @grid-gutter-width 0;
     list-style: none;
     .make-row();
-
     > li {
         .make-xs-column(12);
         .make-sm-column(6);
         margin-top: @grid-gutter-width;
-
         img {
             max-width: 100%;
             max-height: 100%;
         }
     }
 }
-
-
 
 @media (max-width: @plone-screen-xs-min) {
     #portal-logo {
@@ -28,9 +24,7 @@
         img {
             width: 100%;
         }
-
     }
-
     #portal-header .df-theme-logo2 {
         padding: 0!important;
         width: 36%;
@@ -42,72 +36,139 @@
             width: 100%;
         }
     }
-
     .footer-newsletter {
         width: 50%!important;
         .emailInput {
-        width: 82%;
+            width: 82%;
+        }
     }
-}
-
     .footer-logo {
         width: 50%!important;
-        margin-top: 2rem;
         img {
             width: 100%;
         }
     }
-
-
-
     #portal-footer-wrapper #portal-footer > .row {
         padding-left: 0;
     }
-
     .pat-livesearch {
         min-width: auto!important;
     }
-
     #portal-header {
-            padding-bottom: 70px!important;
-     #portal-searchbox {
-        width: 40%!important;
-     }
+        padding-bottom: 70px!important;
+        #portal-searchbox {
+            width: 40%!important;
+                right: 42px;
+        }
 
-     #portal-searchbox .searchButton {
-        display: inline-block!important;
-        margin-bottom: 10px;
-     }
+        .searchField {
+                    text-indent: left;
+                    border: 1px solid transparent;
+                } 
+        #portal-searchbox .searchButton {
+            display: inline-block!important;
+            margin-bottom: 10px;
+                margin-left: -4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+        }
 
-     #portal-searchbox [type="text"] {
-        border-radius: 0;
-     }
-
-       
     }
-
-    #portal-footer-wrapper #portal-footer p, #portal-footer-wrapper #portal-footer .portletContent {
+    #portal-footer-wrapper #portal-footer p,
+    #portal-footer-wrapper #portal-footer .portletContent {
         display: none!important
     }
-
-    #portal-footer-wrapper .portletWrapper{
+    #portal-footer-wrapper .portletWrapper {
         min-height: auto!important;
     }
-
     #content {
         padding-left: 0!important;
     }
-
-
     #portal-footer-wrapper #portal-footer:before {
         background-size: cover!important;
+        top: -59px!important;
     }
-
-
-
-
+    .footer-newsletter {
+        padding: 0!important;
+        label:after {
+            content: "\f25a";
+            font-family: FontAwesome;
+            margin-left: 6px;
+        }
+        label {
+            cursor: pointer;
+            background-color: #15528c;
+            z-index: 102;
+            position: relative;
+            transition: opacity 200ms;
+            min-height: 34px;
+        }
+        input {
+            // display: none;
+            position: absolute;
+            top: 0;
+            z-index: 100;
+        }
+        .emailButton {
+            right: 3px;
+            z-index: 101!important;
+        }
+    }
+    .nl-hide {
+        opacity: 0;
+        z-index: 101!important;
+    }
     * {
         box-sizing: border-box;
     }
+    .plone-navbar {
 
+        .plone-nav > li > a:hover, .plone-nav > li > a:focus {
+            background: inherit!important;
+        }
+        background-color: transparent;
+        .plone-navbar-header {
+            background-color: #15528c;
+            padding-left: 15px;
+            padding-right: 15px;
+            overflow: auto;
+
+            button {
+                border: 1px solid transparent;
+                background: none;
+                box-shadow: none;
+                float: left;
+            &:before {
+                    content: "\f0c9";
+                    font-family: FontAwesome;
+                    margin-right: 5px;
+                    color: white;
+            }
+            }
+        }
+
+        #portal-globalnav-collapse {
+                        &:before {
+       content: "\f0d7";
+    color: #15528c;
+    position: absolute;
+    left: 30%;
+    top: 16px;
+    font-size: 3em;
+    z-index: 1;
+            }
+        }
+        .container {
+            padding: 0;
+        }
+        .selected a {
+            background: #efefef!important;
+        }
+        a {
+            color: #15528c!important;
+        }
+        :after, :before {
+            font-family: FontAwesome;
+        }
+    }
 }
