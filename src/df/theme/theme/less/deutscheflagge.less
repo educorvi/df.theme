@@ -93,23 +93,12 @@ p {
 
 #portal-footer-wrapper {
   position: relative;
-  max-width: 1200px;
-  margin: auto;
   text-align: left;
   padding: 0;
   margin-top: 60px;
   padding-bottom: 60px;
 
-  #portal-footer {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-
-    > .row {
-      padding-left: 60px;
-    }
-
+  .footer-container{
     &:before {
       content: "";
       position: absolute;
@@ -123,44 +112,55 @@ p {
       background-size: initial;
     }
 
-    .portletWrapper {
-      min-height: 180px;
+    #portal-footer {
+      position: relative;
+      margin: 0 auto;
       padding: 0;
-      margin: 0;
 
-      &:first-child {
+      > .row {
+        padding-left: 60px;
+      }
+
+
+      .portletWrapper {
+        min-height: 180px;
+        padding: 0;
+        margin: 0;
+
+        &:first-child {
+          border: none;
+        }
+
+        > section {
+          padding: 0.5em;
+        }
+      }
+
+      .portletHeader {
+        background: transparent;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        min-height: 40px;
+        text-transform: uppercase;
+      }
+
+      p, .portletContent {
+        color: white;
+        font-size: 12px;
         border: none;
       }
 
-      > section {
-        padding: 0.5em;
+      i {
+        display: none;
       }
-    }
 
-    .portletHeader {
-      background: transparent;
-      font-size: 14px;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-      min-height: 40px;
-      text-transform: uppercase;
-    }
-
-    p, .portletContent {
-      color: white;
-      font-size: 12px;
-      border: none;
-    }
-
-    i {
-      display: none;
-    }
-
-    a {
-      color: white;;
-      &:hover {
-        color: white;
+      a {
+        color: white;;
+        &:hover {
+          color: white;
+        }
       }
     }
   }

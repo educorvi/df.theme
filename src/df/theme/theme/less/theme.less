@@ -2,7 +2,7 @@
 
 // ### PLONE IMPORTS ###
 
-@barceloneta_path: "barceloneta/less";
+@barceloneta_path: "../barceloneta/less";
 
 //*// Core variables and mixins
 @import "@{barceloneta_path}/fonts.plone.less";
@@ -75,7 +75,7 @@
 // ### UTILS ###
 
 // import bootstrap files:
-@bootstrap_path: "node_modules/bootstrap/less";
+@bootstrap_path: "../node_modules/bootstrap/less";
 
 @import "@{bootstrap_path}/variables.less";
 @import "@{bootstrap_path}/mixins.less";
@@ -90,5 +90,6 @@
 // ### END OF UTILS ###
 
 // include our custom css/less
+@import "plone.toolbar.vars.less";
 @import "deutscheflagge.less";
 @import "custom.less";
