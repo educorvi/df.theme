@@ -167,14 +167,27 @@ p {
 }
 
 /* Header */
+#content-header .container{
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
 #portal-header {
   padding-top: 25px;
   padding-bottom: 45px;
   margin: 0;
+  .nav > li > a {
+    padding: 7px 7px !important;
+  }
   #portal-logo {
     padding-top: 20px;
-    padding-left: 20px;
     padding-right: 30px;
+    img {
+      width: 250px;
+      height: 58px;
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
   }
 
   .df-theme-logo2 {
@@ -182,11 +195,19 @@ p {
     padding-left: 30px;
     padding-right: 30px;
     float: left;
+    display: none;
   }
 
   #portal-languageselector {
+    padding: 0;
+    margin-top: 7px;
+    margin-left: 7px;
     .currentLanguage {
       display: none;
+    }
+    img {
+      width: 23px;
+      height: 15px;
     }
   }
 
@@ -200,6 +221,24 @@ p {
 
     .searchSection {
       display: none;
+    }
+  }
+  .bmviLinkMobile{
+    clear: right;
+    img {
+      width: 140px;
+    }
+  }
+  .mysiteactions{
+    float: right;
+    margin-bottom: 10px;
+    .navbar-right{
+      a {
+        color: #717171;
+      }
+      #trenner {
+        padding-left: 10px;
+      }
     }
   }
 }
