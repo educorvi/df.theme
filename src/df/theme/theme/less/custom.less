@@ -17,7 +17,13 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 768px) and (max-width: 1112px){
+  .plone-toolbar-left-expanded .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: @plone-screen-sm-min) {
   #portal-header{
     #portal-logo {
       width: 49%;
@@ -45,8 +51,38 @@
       img{
         width: 100%;
         margin-top: 35px;
-        margin-bottom: 45px;
       }
+    }
+    .mysiteactions,
+    #portal-languageselector{
+      margin-top: 30px;
+    }
+    .mysiteactions{
+      float: left;
+      .plone-navbar-collapse{
+        padding: 0 15px;
+      }
+      .plone-navbar-header button.plone-navbar-toggle{
+        float: none;
+        &:hover {
+          background-color: transparent;
+          border-color: transparent;
+          box-shadow: none;
+        }
+        &:before {
+          content: "\f0c9";
+          font-family: FontAwesome;
+          margin-right: 5px;
+          color: @deutsche-flagge-public;
+        }
+        .icon-bar:after{
+          color: #4d4d4d;
+        }
+      }
+    }
+    #portal-languageselector{
+      float: right;
+      margin-right: 0px;
     }
     #portal-searchbox{
       position: relative;

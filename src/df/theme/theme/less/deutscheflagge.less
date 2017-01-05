@@ -205,7 +205,6 @@ p {
       height: 15px;
     }
   }
-
   #portal-searchbox {
     .searchButton {
       font-size: 0;
@@ -227,7 +226,10 @@ p {
   .mysiteactions{
     float: right;
     margin-bottom: 10px;
-    .navbar-right{
+    .plone-navbar-collapse{
+      padding: 0;
+    }
+    .navbar-nav{
       a {
         color: #717171;
       }
@@ -239,7 +241,11 @@ p {
 }
 
 /* Global Navbar */
+#mainnavigation-wrapper{
+  background-color: #007bb3;
+}
 .plone-navbar {
+  box-shadow: none;
   margin-bottom: 5px;
   li {
     a {
