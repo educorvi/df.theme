@@ -22,16 +22,17 @@
   <viewlet name="plone.footer"/>
  </order>
  <order manager="plone.portalheader" skinname="Plone Default">
-  <viewlet name="plone.logo"/>
   <viewlet name="plone.app.multilingual.languageselector"/>
+  <viewlet name="plone.logo"/>
   <viewlet name="mysiteactions"/>
   <viewlet name="plone.searchbox"/>
-  <viewlet name="plone.anontools"/>
   <viewlet name="plone.app.i18n.locales.languageselector"/>
   <viewlet name="df.theme.logo2"/>
+  <viewlet name="nvasearchviewlet"/>
+  <viewlet name="plone.anontools"/>
  </order>
  <order manager="plone.portaltop" skinname="Plone Default">
-  <viewlet name="mysiteactions"/>
+  <viewlet name="nvasearchviewlet"/>
   <viewlet name="plone.header"/>
  </order>
  <order manager="plone.toolbar" skinname="Plone Default">
@@ -52,7 +53,8 @@
   <viewlet name="plone.footer"/>
  </hidden>
  <hidden manager="plone.portalheader" skinname="Plone Default">
-  <viewlet name="plone.app.i18n.locales.languageselector"/>
   <viewlet name="df.theme.logo2"/>
+  <viewlet name="plone.searchbox"/>
+  <viewlet name="plone.app.i18n.locales.languageselector"/>
  </hidden>
 </object>
