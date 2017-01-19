@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="329" height="244" viewBox="0 0 329 244">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #15528c;
+        stroke: #9d9d9d;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Rechteck_1" data-name="Rechteck 1" class="cls-1" d="M40,45H368L317,287s8.558,1-51,1c-23.409,0-104.63-13-152-13-57.265,0-74,10-74,10V45Z" transform="translate(-39.5 -44.5)"/>
+</svg>

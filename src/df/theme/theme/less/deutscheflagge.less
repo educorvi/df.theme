@@ -168,7 +168,7 @@ p {
 
 /* Header */
 #portal-header {
-  padding-top: 25px;
+  padding-top: 10px;
   margin: 0;
   .nav > li > a {
     padding: 7px 7px !important;
@@ -205,6 +205,17 @@ p {
     }
   }
   #portal-searchbox {
+    max-width: 100%;
+    width: auto;
+    .row{
+      float: left;
+      a.btn{
+        display: block;
+        float: left;
+        margin-right: 1em;
+        padding: 7px;
+      }
+    }
     .searchButton {
       font-size: 0;
       width: 34px;
@@ -237,11 +248,14 @@ p {
       }
     }
   }
+  #portal-anontools {
+    float: left;
+  }
 }
 
 /* Global Navbar */
 #mainnavigation-wrapper{
-  background-color: #007bb3;
+  background-color: #15528c;
 }
 .plone-navbar {
   box-shadow: none;
