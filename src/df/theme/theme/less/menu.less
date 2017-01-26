@@ -1,3 +1,32 @@
+/* Global Navbar */
+#mainnavigation-wrapper{
+  background-color: @deutsche-flagge-public;
+}
+.plone-navbar {
+  box-shadow: none;
+  margin-bottom: 5px;
+  min-height:auto;
+  li {
+    a {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+
+  a::before {
+    content: "›";
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .dropdown-menu a::before { display: none; }
+}
+
+.plone-navbar-toggle {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
 .top-mega-menu {
   .mega-dropdown {
     position:static !important;
@@ -66,18 +95,13 @@
 		min-height: 10rem;
 	}
 }
-#mega-dropdown-menu-lv1-a:after, #mega-dropdown-menu-lv1-a {
-  color:#15528c;
-}
-#mega-dropdown-menu-lv1-a:hover, #mega-dropdown-menu-lv1-a:hover:after, #mega-dropdown-menu-lv1-a:focus, #mega-dropdown-menu-lv1-a:focus:after {
-  color:#15528c;
-}
-nav.plone-navbar {
-  min-height:auto;
-}
-.plone-navbar-toggle {
-  margin-top:20px;
-  margin-bottom:20px;
+#mega-dropdown-menu-lv1-a{
+  color: @deutsche-flagge-public;
+  &:hover,
+  &:focus,
+  &::after{
+    color: @deutsche-flagge-public;
+  }
 }
 
 .open > .dropdown-menu {
@@ -119,8 +143,55 @@ ul.mega-dropdown-menu-lv2 {
     color:black;
   }
 }
-.plone-navbar .dropdown-menu a::before { display: none; }
 
 ul.mega-dropdown-menu-lv2 > li > a:hover::before, ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   color:#d40f14;
+}
+
+@media (max-width: @plone-screen-sm-min) {
+  .plone-navbar {
+    .plone-nav > li > a:hover, .plone-nav > li > a:focus {
+        background: inherit!important;
+    }
+    background-color: transparent;
+    .plone-navbar-header {
+      background-color: #15528c;
+      padding-left: 15px;
+      padding-right: 15px;
+      overflow: auto;
+      button {
+        border: 1px solid transparent;
+        background: none;
+        box-shadow: none;
+        float: left;
+        &:before {
+          content: "\f0c9";
+          font-family: FontAwesome;
+          margin-right: 5px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @plone-screen-xs-min) {
+  #mainnavigation{
+    .plone-navbar-header{
+      display: none;
+    }
+    .plone-navbar-collapse{
+      display: block !important;
+      .mega-dropdown{
+        float: left;
+        a:before,
+        ul{
+          display: none;
+        }
+      }
+    }
+  }
+  #sidebar{
+    width: 100%;
+  }
 }

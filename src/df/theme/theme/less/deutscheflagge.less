@@ -59,28 +59,7 @@ p {
   margin: 0;
 }
 
-/* Global Navbar */
-#mainnavigation-wrapper{
-  background-color: #15528c;
-}
-.plone-navbar {
-  box-shadow: none;
-  margin-bottom: 5px;
-  li {
-    a {
-      text-transform: uppercase;
-      font-size: 14px;
-    }
-  }
-
-  a::before {
-    content: "›";
-    margin-right: 5px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-}
-
+/* breadcrumbs */
 .plone-breadcrumb {
   background: white;
   margin: 0;
@@ -114,16 +93,11 @@ p {
 /* Sidebar */
 #sidebar {
   padding-right: 0;
+  background-color: #efefef;
+  height: auto;
 }
 
 /* Content */
-
-#content {
-  margin-right: -30px;
-  margin-left: -30px;
-  padding-left: 5px;
-}
-
 #main-container{
   header.col-xs-12.col-sm-9,
   header.col-xs-12.col-sm-9 .col-xs-12.col-sm-12,
@@ -133,32 +107,35 @@ p {
   header.col-xs-12.col-sm-9{
     padding-left: 5px;
   }
-}
-
-#content-core {
-  margin-left: 20px;
-}
-.portaltype-frontpage{
+  #content {
+    margin-right: -30px;
+    margin-left: -30px;
+    padding-left: 5px;
+  }
   #content-core {
-    margin-left: 0px;
+    margin-left: 20px;
+  }
+  /* Title */
+  .documentFirstHeading {
+    margin: 25px 0 45px 20px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    background: transparent url("img/welle.png") repeat-x bottom;
+    border: none;
+  }
+  /* Description */
+  .documentDescription {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 20px;
   }
 }
 
-/* Title */
-.documentFirstHeading {
-  margin: 25px 0 45px 20px;
-  padding-bottom: 30px;
-  text-transform: uppercase;
-  background: transparent url("img/welle.png") repeat-x bottom;
-  border: none;
-}
-
-/* Description */
-.documentDescription {
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: 20px;
+.portaltype-frontpage{
+  #main-container #content-core {
+    margin-left: 0px;
+  }
 }
 
 /* Edit */
@@ -170,5 +147,40 @@ form, .linkModal {
         color: #696969;
       }
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1112px){
+  .plone-toolbar-left-expanded .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: @plone-screen-sm-min) {
+  #content {
+    padding-left: 0!important;
+  }
+
+  .pat-livesearch {
+    min-width: auto!important;
+  }
+
+  .nl-hide {
+    opacity: 0;
+    z-index: 101!important;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+      padding: 0;
+  }
+
+  .selected a {
+      background: #efefef!important;
+  }
+  :after, :before {
+      font-family: FontAwesome;
   }
 }

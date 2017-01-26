@@ -17,90 +17,10 @@
     }
 }
 
-.notfall, .emergency {
-    margin-left: -160px;
-    background-color: #C10000;
-    width: 140px;
-    float: left;
-    text-align: center;
-    a {
-      color: #fff !important;
-      padding: 7px 0;
-      display: block;
-    }
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
-
-
-@media (min-width: 768px) and (max-width: 1112px){
-  .plone-toolbar-left-expanded .container {
-    width: 760px;
-  }
-}
-
-@media (max-width: @plone-screen-sm-min) {
-  #content {
-    padding-left: 0!important;
-  }
-
-  .pat-livesearch {
-    min-width: auto!important;
-  }
-
-  .nl-hide {
-    opacity: 0;
-    z-index: 101!important;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  .plone-navbar {
-    .plone-nav > li > a:hover, .plone-nav > li > a:focus {
-        background: inherit!important;
-    }
-    background-color: transparent;
-    .plone-navbar-header {
-      background-color: #15528c;
-      padding-left: 15px;
-      padding-right: 15px;
-      overflow: auto;
-      button {
-        border: 1px solid transparent;
-        background: none;
-        box-shadow: none;
-        float: left;
-        &:before {
-          content: "\f0c9";
-          font-family: FontAwesome;
-          margin-right: 5px;
-          color: white;
-        }
-      }
-    }
-  }
-
-  #portal-globalnav-collapse {
-    &:before {
-      content: "\f0d7";
-      color: #15528c;
-      position: absolute;
-      left: 30%;
-      top: 16px;
-      font-size: 3em;
-      z-index: 1;
-    }
-  }
-  .container {
-      padding: 0;
-  }
-  .selected a {
-      background: #efefef!important;
-  }
-  :after, :before {
-      font-family: FontAwesome;
-  }
-}
-
-#sidebar{
-  background-color: #efefef;
-}
+img[src$='welle.svg']{ display: none;}
