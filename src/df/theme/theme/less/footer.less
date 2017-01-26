@@ -1,0 +1,160 @@
+/* Footer */
+.footer-logo {
+  margin-bottom: 5em;
+}
+
+.footer-newsletter {
+  margin-bottom: 5em;
+
+  label {
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .emailInput {
+    font-size: 14px;
+    height: 34px;
+    color: @deutsche-flagge-public;
+    width: 280px;
+    padding-left: 5px;
+  }
+
+  .emailButton {
+      font-size: 0;
+      width: 34px;
+      height: 34px;
+      background: transparent url("img/email.png") no-repeat center;
+      position: absolute;
+    }
+}
+
+#portal-footer-wrapper {
+  position: relative;
+  text-align: left;
+  padding: 0;
+  margin-top: 150px;
+  padding-bottom: 60px;
+
+  .footer-container{
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 60px;
+      top: -60px;
+      background-color: transparent;
+      background-image: url("img/footer-bg.png");
+      background-position: center top;
+      background-repeat: repeat-x;
+      background-size: initial;
+    }
+
+    #portal-footer {
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+
+      > .row {
+        padding-left: 60px;
+      }
+
+
+      .portletWrapper {
+        min-height: 180px;
+        padding: 0;
+        margin: 0;
+
+        &:first-child {
+          border: none;
+        }
+
+        > section {
+          padding: 0.5em;
+        }
+      }
+
+      .portletHeader {
+        background: transparent;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        min-height: 40px;
+        text-transform: uppercase;
+      }
+
+      p, .portletContent {
+        color: white;
+        font-size: 12px;
+        border: none;
+      }
+
+      i {
+        display: none;
+      }
+
+      a {
+        color: white;;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @plone-screen-sm-min) {
+  #portal-footer-wrapper {
+    .footer-logo {
+      width: 50%!important;
+      img {
+        width: 100%;
+      }
+    }
+    #portal-footer{
+      &:before {
+        background-size: cover!important;
+        top: -59px!important;
+      }
+      > .row {
+        padding-left: 0;
+      }
+      .footer-newsletter {
+        padding: 0!important;
+        a{
+          color: #fff !important;
+        }
+        label:after {
+          content: "\f25a";
+          font-family: FontAwesome;
+          margin-left: 6px;
+        }
+        label {
+          cursor: pointer;
+          background-color: #15528c;
+          z-index: 102;
+          position: relative;
+          transition: opacity 200ms;
+          min-height: 34px;
+        }
+        input {
+          // display: none;
+          position: absolute;
+          top: 0;
+          z-index: 100;
+        }
+        .emailButton {
+          width: 82%;
+          right: 3px;
+          z-index: 101!important;
+        }
+      }
+    }
+    .portletWrapper{
+      min-height: auto!important;
+    }
+  }
+}

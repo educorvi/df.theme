@@ -43,7 +43,52 @@
   <!--<replace css:content="#viewlet-above-content" css:theme="#above-content" />-->
 
   <!-- Central column -->
-  <replace css:theme="#content-container" method="raw">
+  <rules css:if-content=".portaltype-frontpage">
+
+    <drop content="//div[@id='viewlet-above-content-title']/div[@class='row frontcontent']" />
+
+    <replace css:theme="#content-container" method="raw">
+
+      <xsl:variable name="central">
+        <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-6</xsl:if>
+        <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-9</xsl:if>
+        <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-9</xsl:if>
+        <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
+      </xsl:variable>
+
+      <header class="{$central}">
+        <!-- <p class="pull-right visible-xs">
+          <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+        </p> -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <xsl:apply-templates css:select="#content > header > *" />
+          </div>
+        </div>
+
+      </header>
+
+      <div class="col-xs-12 col-sm-12">
+        <xsl:copy-of select="//div[@id='viewlet-above-content-title']/div[@class='row frontcontent']" />
+        <xsl:apply-templates css:select="#content-core" />
+      </div>
+
+      <footer class="col-xs-12 col-sm-12">
+        <div>
+          <xsl:copy-of css:select="#viewlet-below-content" />
+        </div>
+      </footer>
+
+    </replace>
+
+  </rules>
+
+  <replace css:if-content=".portaltype-frontpage">
+    <append css:content="#content-core" css:theme="main" method="raw"/>
+    <drop css:content="#content #content-core" />
+  </replace>
+
+  <replace css:theme="#content-container" method="raw" css:if-not-content=".portaltype-frontpage">
 
     <xsl:variable name="central">
       <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-6</xsl:if>

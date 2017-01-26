@@ -1,0 +1,195 @@
+/* Header */
+#portal-header {
+  padding-top: 10px;
+  margin: 0;
+  .nav > li > a {
+    padding: 7px 7px !important;
+  }
+  #portal-logo {
+    padding-top: 20px;
+    padding-right: 30px;
+    img {
+      width: 250px;
+      height: 58px;
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+  }
+
+  .df-theme-logo2 {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: left;
+    display: none;
+  }
+
+  #portal-languageselector {
+    padding: 0;
+    margin-top: 7px;
+    margin-left: 7px;
+    .currentLanguage {
+      display: none;
+    }
+    img {
+      width: 23px;
+      height: 15px;
+    }
+  }
+  #portal-searchbox {
+    max-width: 100%;
+    width: auto;
+    .row{
+      float: left;
+      a.btn{
+        display: block;
+        float: left;
+        margin-right: 1em;
+        padding: 7px;
+      }
+    }
+    .searchButton {
+      font-size: 0;
+      width: 34px;
+      height: 34px;
+      background: transparent url("img/lupe.png") no-repeat center;
+    }
+
+    .searchSection {
+      display: none;
+    }
+  }
+  .bmviLinkMobile{
+    clear: right;
+    img {
+      width: 140px;
+    }
+  }
+  .mysiteactions{
+    float: right;
+    margin-bottom: 10px;
+    .plone-navbar-collapse{
+      padding: 0;
+    }
+    .navbar-nav{
+      a {
+        color: #717171;
+      }
+      #trenner {
+        padding-left: 10px;
+      }
+    }
+  }
+  #portal-anontools {
+    float: left;
+  }
+}
+
+
+/* Top Banner */
+.df-theme-banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+
+  .banner-text {
+    position: absolute;
+    background: transparent url("img/banner-bg.png") no-repeat bottom right;
+    top: 40px;
+    left: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 300;
+    min-width: 333px;
+    max-width: 75%;
+    max-height: 195px;
+    padding: 0 50px 20px 10px;
+    overflow: hidden;
+  }
+
+}
+
+@media (max-width: @plone-screen-sm-min) {
+  #portal-header{
+    #portal-logo {
+      width: 49%;
+      padding: 0!important;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .df-theme-logo2 {
+      padding: 0!important;
+      width: 36%;
+      margin-left: 16px;
+      a {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .bmviLinkMobile{
+      position: absolute;
+      right: 0px;
+      width: 50%;
+      img{
+        width: 100%;
+        margin-top: 35px;
+      }
+    }
+    .mysiteactions,
+    #portal-languageselector{
+      margin-top: 30px;
+    }
+    .mysiteactions{
+      float: left;
+      .plone-navbar-collapse{
+        padding: 0 15px;
+      }
+      .plone-navbar-header button.plone-navbar-toggle{
+        float: none;
+        &:hover {
+          background-color: transparent;
+          border-color: transparent;
+          box-shadow: none;
+        }
+        &:before {
+          content: "\f0c9";
+          font-family: FontAwesome;
+          margin-right: 5px;
+          color: @deutsche-flagge-public;
+        }
+        .icon-bar:after{
+          color: #4d4d4d;
+        }
+      }
+    }
+    #portal-languageselector{
+      float: right;
+      margin-right: 0px;
+    }
+    #portal-searchbox{
+      position: relative;
+      width: 90%;
+      margin-top: 0px;
+      .row{
+        width: 100%;
+      }
+      .searchField {
+        text-indent: left;
+        border: 1px solid transparent;
+      }
+      .searchButton {
+        display: inline-block!important;
+        margin-bottom: 10px;
+        margin-left: -4px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}

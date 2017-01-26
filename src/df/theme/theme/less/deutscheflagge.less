@@ -11,33 +11,34 @@
 }
 
 body {
+  color: @deutsche-flagge-dark;
   font-family: 'Open Sans', sans-serif;
-  color: @deutsche-flagge-public;
+  font-weight: 400;
 }
 
 /* General */
 
 h1 {
-  font-size: 30px;
+  font-size: 2.143em;
   font-weight: 300;
   border: none;
   color: @deutsche-flagge-public;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 400;
   color: @deutsche-flagge-public;
+  font-size: 1.429em;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 500;
-  color: @deutsche-flagge-public;
+  font-size: 1.429em;
+  font-style: italic;
+  font-weight: 300;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.286em;
   font-weight: 300;
   color: @deutsche-flagge-public;
 }
@@ -54,203 +55,8 @@ p {
   }
 }
 
-/* Footer */
-.footer-logo {
-  margin-bottom: 5em;
-}
-
-.footer-newsletter {
-  margin-bottom: 5em;
-
-  label {
-    display: block;
-    text-transform: uppercase;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-  .emailInput {
-    font-size: 14px;
-    height: 34px;
-    color: @deutsche-flagge-public;
-    width: 280px;
-    padding-left: 5px;
-  }
-
-  .emailButton {
-      font-size: 0;
-      width: 34px;
-      height: 34px;
-      background: transparent url("img/email.png") no-repeat center;
-      position: absolute;
-    }
-}
-
 .row {
   margin: 0;
-}
-
-#portal-footer-wrapper {
-  position: relative;
-  text-align: left;
-  padding: 0;
-  margin-top: 60px;
-  padding-bottom: 60px;
-
-  .footer-container{
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 60px;
-      top: -60px;
-      background-color: transparent;
-      background-image: url("img/footer-bg.png");
-      background-position: center top;
-      background-repeat: repeat-x;
-      background-size: initial;
-    }
-
-    #portal-footer {
-      position: relative;
-      margin: 0 auto;
-      padding: 0;
-
-      > .row {
-        padding-left: 60px;
-      }
-
-
-      .portletWrapper {
-        min-height: 180px;
-        padding: 0;
-        margin: 0;
-
-        &:first-child {
-          border: none;
-        }
-
-        > section {
-          padding: 0.5em;
-        }
-      }
-
-      .portletHeader {
-        background: transparent;
-        font-size: 14px;
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-        min-height: 40px;
-        text-transform: uppercase;
-      }
-
-      p, .portletContent {
-        color: white;
-        font-size: 12px;
-        border: none;
-      }
-
-      i {
-        display: none;
-      }
-
-      a {
-        color: white;;
-        &:hover {
-          color: white;
-        }
-      }
-    }
-  }
-}
-
-/* Header */
-#portal-header {
-  padding-top: 10px;
-  margin: 0;
-  .nav > li > a {
-    padding: 7px 7px !important;
-  }
-  #portal-logo {
-    padding-top: 20px;
-    padding-right: 30px;
-    img {
-      width: 250px;
-      height: 58px;
-      margin-top: 45px;
-      margin-bottom: 45px;
-    }
-  }
-
-  .df-theme-logo2 {
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    float: left;
-    display: none;
-  }
-
-  #portal-languageselector {
-    padding: 0;
-    margin-top: 7px;
-    margin-left: 7px;
-    .currentLanguage {
-      display: none;
-    }
-    img {
-      width: 23px;
-      height: 15px;
-    }
-  }
-  #portal-searchbox {
-    max-width: 100%;
-    width: auto;
-    .row{
-      float: left;
-      a.btn{
-        display: block;
-        float: left;
-        margin-right: 1em;
-        padding: 7px;
-      }
-    }
-    .searchButton {
-      font-size: 0;
-      width: 34px;
-      height: 34px;
-      background: transparent url("img/lupe.png") no-repeat center;
-    }
-
-    .searchSection {
-      display: none;
-    }
-  }
-  .bmviLinkMobile{
-    clear: right;
-    img {
-      width: 140px;
-    }
-  }
-  .mysiteactions{
-    float: right;
-    margin-bottom: 10px;
-    .plone-navbar-collapse{
-      padding: 0;
-    }
-    .navbar-nav{
-      a {
-        color: #717171;
-      }
-      #trenner {
-        padding-left: 10px;
-      }
-    }
-  }
-  #portal-anontools {
-    float: left;
-  }
 }
 
 /* Global Navbar */
@@ -310,107 +116,6 @@ p {
   padding-right: 0;
 }
 
-/* Portlets */
-.portlet {
-  border: none;
-  box-shadow: none;
-}
-
-/* Navigation portlet */
-
-.portletNavigationTree {
-  .portletHeader {
-    padding: 7px 15px;
-    a {
-      color: @deutsche-flagge-dark;
-      font-size: 14px;
-      font-weight: normal;
-      &:before {
-        content: "\f0c9";
-        font-family: "DeutscheFlagge";
-        padding-right: 5px;
-        color: @deutsche-flagge-public;
-      }
-    }
-  }
-
-  .portletContent {
-    .navTreeItem {
-      a {
-        font-size: 12px;
-        color: @deutsche-flagge-dark;
-        background: @deutsche-flagge-light;
-        padding-top: 5px;
-        &:before {
-          font-size: 120% !important;
-          width: inherit !important;
-          content: "›" !important;
-          display: block;
-          float: left;
-          top: -3px;
-        }
-        &:hover {
-          background: @deutsche-flagge-public;
-          color: white;
-          text-decoration: none;
-        }
-        &:hover:after {
-          content: "";
-        }
-        img {
-          display: none;
-        }
-
-        &.navTreeItemInPath {
-          color: @deutsche-flagge-light;
-          background: @deutsche-flagge-public;
-        }
-
-        &.navTreeCurrentNode {
-          background: @deutsche-flagge-public;
-          color: white;
-          &:after {
-            content: "";
-          }
-        }
-      }
-
-      ul a {
-        background: white;
-        &.navTreeCurrentNode {
-          background: @deutsche-flagge-current;
-        }
-      }
-    }
-  }
-}
-
-/* Top Banner */
-.df-theme-banner {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-
-  .banner-text {
-    position: absolute;
-    background: transparent url("img/banner-bg.png") no-repeat bottom right;
-    top: 40px;
-    left: 40px;
-    color: white;
-    text-transform: uppercase;
-    font-size: 42px;
-    font-weight: 300;
-    min-width: 333px;
-    max-width: 75%;
-    max-height: 195px;
-    padding: 0 50px 20px 10px;
-    overflow: hidden;
-  }
-
-}
-
-
 /* Content */
 
 #content {
@@ -419,8 +124,24 @@ p {
   padding-left: 5px;
 }
 
+#main-container{
+  header.col-xs-12.col-sm-9,
+  header.col-xs-12.col-sm-9 .col-xs-12.col-sm-12,
+  > .col-xs-12.col-sm-12{
+    padding: 0;
+  }
+  header.col-xs-12.col-sm-9{
+    padding-left: 5px;
+  }
+}
+
 #content-core {
   margin-left: 20px;
+}
+.portaltype-frontpage{
+  #content-core {
+    margin-left: 0px;
+  }
 }
 
 /* Title */
