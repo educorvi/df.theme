@@ -179,7 +179,6 @@
         color: @deutsche-flagge-public;
         content: "\f105\f105";
     }
-    border-bottom: 3px dotted @deutsche-flagge-public;
   }
 
   .news-item-logo {
@@ -205,7 +204,7 @@
   background-color: @deutsche-flagge-public;
   .shortcut-header{
     padding: 1em 0.5em;
-    text-align: right;
+    text-align: center;
     color: #fff;
     font-size: 1.286em;
     font-weight: 300;
@@ -218,12 +217,23 @@
     padding: 0;
     margin: 0;
     li{
-      text-align: center;
+      text-align: right;
       padding: 0;
       margin: 0 5.714em;
       a{
         color: #fff;
         display: block;
+        &:after {
+          font-family: 'FontAwesome';
+          color: #fff;
+          content: "\f105";
+          vertical-align: middle;
+          position: absolute;
+          display: inline-block;
+          top: 50%;
+          margin-top: -10px;
+          padding-left: 10px;
+        }
       }
     }
   }
@@ -251,6 +261,7 @@
 }
 #frontpage-teaser-block1 {
   margin-top: 3.571em;
+  padding: 0 2em;
   a::after {
     font-family: 'FontAwesome';
     color: @deutsche-flagge-public;
@@ -275,6 +286,9 @@
   .teaser-block1-image img {
     margin-bottom: 2.143em;
   }
+  .carousel-control{
+    top: 4.2em;
+  }
 }
 
 #frontpage-teaser-block2 {
@@ -298,6 +312,13 @@
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 50px;
+  }
+  .welle{
+    margin-bottom: 2em;
+    overflow: hidden;
+  }
+  .carousel-control{
+    top: 2.2em;
   }
 }
 
@@ -334,9 +355,30 @@
 .wellebox{
   background: transparent url("img/welle.png") center center;
   background-repeat: repeat-x;
-  height: 20px;
+  height: 1.429em;
 }
 .steuerbox{
   background: transparent url("img/steuer.png") no-repeat center center;
-  height: 65px;
+  height: 4.643em;
+}
+
+/* cards style */
+.cards-wrapper{
+  .cards{
+    .cards-link{
+      min-height: 3.286em;
+      .category-link{
+        font-size: 1.500em;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 2.143em;
+      }
+    }
+    .purecards-img{
+      border-top: 0.357em solid @deutsche-flagge-public;
+      img{
+        padding-bottom: 10px;
+      }
+    }
+  }
 }

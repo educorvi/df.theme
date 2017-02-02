@@ -1,0 +1,37 @@
+.carousel{
+  .carousel-control{
+    opacity: 1;
+    text-shadow: none;
+    &.left, &.right{
+      background-image: none;
+      background-color: rgba(255,255,255,.8);
+      border-radius: 55px;
+      width: 55px;
+      height: 55px;
+      color: #c9302c;
+      &:after{
+        content: "" !important;
+      }
+    }
+    @media screen and (min-width: 768px){
+      .glyphicon-chevron-left, .glyphicon-chevron-right, .icon-prev, .icon-next {
+        width: 36px;
+        height: 36px;
+        margin-top: -18px;
+        font-size: 18px;
+        border-radius: 36px;
+        background: #efefef;
+        &:before{
+          margin-top: 9px;
+          display: inline-block;
+        }
+      }
+      .glyphicon-chevron-left, .carousel-control .icon-prev {
+        margin-left: -18px;
+      }
+      .glyphicon-chevron-right, .carousel-control .icon-next {
+        margin-right: -22px;
+      }
+    }
+  }
+}
