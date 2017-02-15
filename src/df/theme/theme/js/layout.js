@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+function deutschflagge_init(){
+   
   if (window.matchMedia("(max-width: 480px)").matches) {
 
       $footer_nl_label = $('.footer-newsletter label');
@@ -27,36 +29,46 @@ $(document).ready(function() {
       });
   }
 
-  $('#sidebar, #main-container > header').matchHeight();
-
   // Instantiate the Bootstrap carousel
 
   $('.carousel').each(function(){
-    console.log($('.item', $(this)).length, $(this).data('items'))
-    if ($('.item', $(this)).length > $(this).data('items')){
-      console.log('im here');
-      $(this).carousel({
+    var data_items = window.matchMedia("(max-width: 770px)").matches ? 1 : $(this).data('items');
+    carousel = $(this); 
+    if ($('.item', $(this)).length > data_items){
+      carousel.carousel({
         interval: false
       });
-      $('.item', carousel).each(function(){
-        var next = $(this).next();
-        if (!next.length) {
-          next = $(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo($(this));
-
-        for (var i=0;i<1;i++) {
-          next=next.next();
+      if (! window.matchMedia("(max-width: 770px)").matches){
+        $('.item', carousel).each(function(){
+          var next = $(this).next();
           if (!next.length) {
             next = $(this).siblings(':first');
           }
-
           next.children(':first-child').clone().appendTo($(this));
-        }
-      });
+
+          for (var i=0;i<1;i++) {
+            next=next.next();
+            if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+
+            next.children(':first-child').clone().appendTo($(this));
+          }
+        }); 
+      }
     } else {
-      $('.item', $(this)).addClass('active');
-      //$('.carousel-control', $(this)).hide();
+        $('.item', $(this)).addClass('active');
+        //$('.carousel-control', $(this)).hide();
     }
   });
+  
+  $('#sidebar, #main-container > header').matchHeight();
+  $('.template-purecardsview .cards-link').matchHeight();
+  $('#sidebar, #content').matchHeight();
+}
+
+deutschflagge_init();
+
+$(window).resize(function(){ deutschflagge_init(); });
+
 });

@@ -30,39 +30,42 @@
 .top-mega-menu {
   .mega-dropdown {
     position:static !important;
-		&.open > a{
-			&:after {
-				content: "";
-				border-top: 15px solid #15528c;
-				border-right: 17px solid transparent;
-				border-left: 17px solid transparent;
-				position: absolute;
-				left: 50%;
-				bottom: -15px;
-				z-index: 1001;
-			}
-		}
+    &.open > a{
+      &:after {
+	content: "";
+	border-top: 15px solid #15528c;
+        border-right: 17px solid transparent;
+	border-left: 17px solid transparent;
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	z-index: 1001;
+      }
+    }
   }
   .mega-dropdown-menu {
     padding:20px 0px;
     width:100%;
+    box-shadow: rgb(200, 200, 200) 0px 5px 10px -5px;
+    -webkit-box-shadow:rgb(200, 200, 200) 0px 5px 10px -5px;
     > li > ul {
       padding:0;
       margin:0;
       > li {
         list-style:none;
         > a {
-          font-size:20px;
+          font-size:16px;
+	  text-transform:none;
           display:block;
-          color:#222222;
+          color: @deutsche-flagge-public;
           padding:3px 5px;
+          &:hover {color:#c9302c;}
         }
       }
     }
     > li ul > li {
       > a:hover, > a:focus {
         text-decoration:none;
-        color:#d40f14;
       }
     }
     .dropdown-header {
@@ -89,18 +92,10 @@
     right:30px;
     left:inherit;
   }
-	.col-menu {
-		width:20%;
-		float:left;
-		min-height: 10rem;
-	}
-}
-#mega-dropdown-menu-lv1-a{
-  color: @deutsche-flagge-public;
-  &:hover,
-  &:focus,
-  &::after{
-    color: @deutsche-flagge-public;
+  .col-menu {
+    width:20%;
+    float:left;
+    min-height: 10rem;
   }
 }
 
@@ -148,6 +143,27 @@ ul.mega-dropdown-menu-lv2 > li > a:hover::before, ul.mega-dropdown-menu-lv1 > li
   color:#d40f14;
 }
 
+.mobileNavigationPortlet{ 
+  display: none; 
+  .portletContent > ul > li.mobileBack a{
+    color: #3f3933;
+    font-size: 12px;
+    font-weight: 400;
+    &:before{
+      font-family: "Fontello";
+      padding: 0;
+      margin: 0;
+      position: relative;
+      left: inherit;
+      color: inherit;
+      margin-right: 6px;
+      content: "‹";
+      display: inline-block;
+      font-size: 15px;
+    }
+  }
+}
+
 @media (max-width: @plone-screen-sm-min) {
   .plone-navbar {
     .plone-nav > li > a:hover, .plone-nav > li > a:focus {
@@ -175,7 +191,14 @@ ul.mega-dropdown-menu-lv2 > li > a:hover::before, ul.mega-dropdown-menu-lv1 > li
   }
 }
 
-@media (max-width: @plone-screen-xs-min) {
+@media (max-width: 760px) {
+  .portletNavigationTree{ display:none; }
+  .portlet.mobileNavigationPortlet{ 
+    display: block; 
+    .portletHeader{
+      padding-left: 20px; padding-right: 0;
+    }
+  }
   #mainnavigation{
     .plone-navbar-header{
       display: none;

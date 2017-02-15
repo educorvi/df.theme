@@ -5,6 +5,8 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
+  <xi:include href="backend.xml" /> 
+
   <theme href="index.html" />
   <notheme css:if-not-content="#visual-portal-wrapper" />
 

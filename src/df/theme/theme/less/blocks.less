@@ -22,12 +22,13 @@
         color: @deutsche-flagge-public;
       }
     }
-  }
+ }
 
   .portletContent {
     .navTreeItem {
       a {
         font-size: 12px;
+        font-weight: 400;
         color: @deutsche-flagge-dark;
         background: @deutsche-flagge-light;
         padding-top: 5px;
@@ -37,10 +38,10 @@
           content: "›" !important;
           display: block;
           float: left;
-          top: -3px;
         }
         &:hover {
           background: @deutsche-flagge-public;
+	  border-top:1px solid white;
           color: white;
           text-decoration: none;
         }
@@ -65,6 +66,9 @@
         }
       }
 
+     .navTreeLevel1 li.navTreeFolderish {
+	   border-top:1px solid #efefef;
+      }
       ul a {
         background: white;
         &.navTreeCurrentNode {
@@ -206,13 +210,25 @@
   overflow: hidden;
   background-color: @deutsche-flagge-public;
   .shortcut-header{
-    padding: 1em 0.5em;
+    padding: 0.62em 0.5em;
     text-align: center;
     color: #fff;
     font-size: 1.286em;
     font-weight: 300;
+    font-weight:400;	
     border-right: 0.357em solid #fff;
     width: 25.5%;
+ 	span:after {
+          font-family: 'FontAwesome';
+           color: #fff; 
+           content: "\f105";
+           vertical-align: middle;
+           position: absolute;
+           display: inline-block;
+           top: 47%;
+           margin-top: -10px;
+          padding-left: 10px;
+         } 	
   }
   .shortcuts-navbar-nav{
     list-style-type: none;
@@ -220,12 +236,13 @@
     padding: 0;
     margin: 0;
     li{
-      text-align: center;
+      text-align: right;
       padding: 0;
       margin: 0 5.714em;
       a{
         color: #fff;
         display: block;
+        text-align: center;
         &:after {
           font-family: 'FontAwesome';
           color: #fff;
@@ -241,6 +258,7 @@
     }
   }
 }
+@media (max-width: @plone-screen-xs-min) { .shortcuts-navbar{ display: none;}} 
 #frontpage-portlet-schlagtext{
   #column-bgv-schlagtext-portlet-1{
     padding: 0;
@@ -374,7 +392,7 @@
         font-size: 1.500em;
         font-weight: normal;
         font-style: italic;
-        line-height: 2.143em;
+        line-height: 1.5em;
       }
     }
     .purecards-img{
@@ -383,5 +401,11 @@
         padding-bottom: 10px;
       }
     }
+  }
+}
+
+@media (max-width: @plone-screen-sm-min) {
+  #frontpage-teaser-block1 .carousel-control{
+     top: 11.2em;
   }
 }

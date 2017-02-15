@@ -108,14 +108,22 @@
     top: 40px;
     left: 40px;
     color: white;
-    text-transform: uppercase;
-    font-size: 42px;
-    font-weight: 300;
     min-width: 333px;
     max-width: 75%;
     max-height: 195px;
     padding: 0 50px 20px 10px;
     overflow: hidden;
+
+    h1 {
+        color: white;
+        font-size: 42px;
+        margin-top: 5px;
+    }
+
+    p {
+       color: white;
+       font-size: 14px;
+    }
   }
 
 }
@@ -135,10 +143,11 @@
     #portal-searchbox{
       position: relative;
       width: 100%;
-      margin: 5px 0 0;
       overflow: hidden;
       .row{
         width: 50%;
+        display: inline-block;
+        a.btn:last-child{ margin-right: 10px; }
       }
       .search-fields{
         display: inline-block;
@@ -157,16 +166,25 @@
       }
     }
   }
+  #portal-breadcrumbs,
+  #mainnavigation{ display: none; }
 }
 
-@media (max-width: @plone-screen-xs-min) {
+@media (max-width: 766px) {
   #portal-header{
     #portal-languageselector{
-      margin: 2em 0 0;
-      float: right;
+      position: absolute;
+      bottom: 4.7em;
+      float: none;
+      z-index: 10;
+      right: 4px;
+      clear: both;
+      display: block;
+      margin: 0;
     }
     .mysiteactions{
       float: left;
+      display: none;
     }
     .bmviLinkMobile{
       position: absolute;
@@ -174,15 +192,21 @@
       top: 55px;
     }
     #portal-searchbox{
+      margin-top: 85px;
       .row{
         width: 100%;
         text-align: center;
+        display: block;
+        &:last-child{ padding-bottom: 0; }
         a.btn{
           margin-bottom: 5px;
           &:last-child{
             margin-right: 0;
           }
         }
+        .searchGadget_form{
+	  margin: auto 2px;
+	}
       }
       .search-fields{
         display: inline-block;

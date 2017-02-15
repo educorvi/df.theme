@@ -92,6 +92,7 @@ p {
 
 /* Sidebar */
 #sidebar {
+  padding-left:0; 
   padding-right: 0;
   background-color: #efefef;
   height: auto;
@@ -139,6 +140,10 @@ p {
 }
 
 /* Edit */
+
+.template-topbar-manage-portlets #main-container #content{ margin: 0; }
+
+
 form, .linkModal {
   .autotoc-nav {
     a {
@@ -155,6 +160,8 @@ form, .linkModal {
     max-width: 100%;
     height: auto;
 }
+
+#design-credits{ margin-left: 20px; }
 
 @media (min-width: 768px) and (max-width: 1112px){
   .plone-toolbar-left-expanded .container {
@@ -187,6 +194,17 @@ form, .linkModal {
       background: #efefef!important;
   }
   :after, :before {
-      font-family: FontAwesome;
+      font-family: 'FontAwesome';
+  }
+  .glyphicon{ 
+    &:after, &:before {
+      font-family: 'Glyphicons Halflings'; 
+    }
   }
 }
+
+@media (max-width: @plone-screen-xs-min) {
+  #sidebar{ background-color: transparent; }
+}
+
+#portal-anontools{ display: none;}

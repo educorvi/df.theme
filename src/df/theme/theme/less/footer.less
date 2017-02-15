@@ -1,11 +1,9 @@
 /* Footer */
-.footer-logo {
+.df-theme-footer {
   margin-bottom: 5em;
 }
 
 .footer-newsletter {
-  margin-bottom: 5em;
-
   label {
     display: block;
     text-transform: uppercase;
@@ -107,6 +105,9 @@
 }
 
 @media (max-width: @plone-screen-sm-min) {
+  .df-theme-footer {
+    margin-bottom: 2em;
+  }
   #portal-footer-wrapper {
     .footer-logo {
       width: 50%!important;
@@ -129,7 +130,7 @@
         }
         label:after {
           content: "\f25a";
-          font-family: FontAwesome;
+          font-family: 'FontAwesome';
           margin-left: 6px;
         }
         label {
