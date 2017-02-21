@@ -173,6 +173,36 @@ p {
   }
 }
 
+#parent-fieldname-text {
+
+  p, a {
+    font-weight: @plone-font-weight-light;
+    font-size: @plone-font-size-large;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  ul {
+    margin-bottom: 2.3em;
+  }
+
+  li {
+    margin-bottom: 1.1em;
+    list-style: none;
+  }
+
+  li::before {
+    font-family: 'FontAwesome';
+    color:@deutsche-flagge-public;
+    font-size:@plone-font-size-large;
+    padding-right:10px;
+    content: "\f105";
+  }
+
+}
+
 /* Edit */
 
 .template-topbar-manage-portlets #main-container #content{ margin: 0; }

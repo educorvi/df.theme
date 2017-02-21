@@ -31,3 +31,121 @@ img[src$='welle.svg']{ display: none;}
   font-size: @plone-font-size-small;
 }
 
+// ############################ NOTFALL TABLE
+.kopfzeiletable {
+    background-color: @deutsche-flagge-light;
+    border: none;
+    margin-bottom: 35px;
+
+
+    th {
+        font-size: 18px;
+        color: @deutsche-flagge-public;
+        font-weight: 400;
+        border: none;
+        height: 35px;
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+
+    .head-massnahme {
+        width: 70%;
+        border-right: 10px solid @deutsche-flagge-white-base;
+    }
+
+    .head-kontakt {
+        width: 30%;
+    }
+}
+
+.notfalltable {
+  background-color: @deutsche-flagge-table-back;
+  margin-bottom: 5px !important;
+  margin-top: 5px;
+
+  a {
+    color: @deutsche-flagge-grey-dark;
+    border-bottom: none !important;
+    text-decoration: underline;
+  }
+
+  #notfall-titel {
+    padding-top: 15px;
+    text-align: center;
+    width: 20%;
+
+    span {
+      font-size: @plone-font-size-h5;
+      font-weight: @plone-font-weight-medium;
+    }
+
+    img {
+      margin-top: 20px;
+    }
+
+  }
+
+  #notfall-massnahme {
+    width: 50%;
+
+    li {
+      color: @deutsche-flagge-table-list;
+      list-style: square;
+      padding-bottom: 20px;
+
+      span {
+        color: @deutsche-flagge-grey-dark;
+      }
+    }
+  }
+
+  #notfall-kontakt {
+    width: 30%;
+  }
+
+}
+
+#notfall-zwischenzeile {
+    background-color: @deutsche-flagge-table-hr;
+    height: 45px;
+}
+
+// ############################ KONTAKTDATEN TABLE
+#form-widgets-beh_auswahl-from,
+#form-widgets-beh_auswahl-to,
+#form-widgets-pers_auswahl-from,
+#form-widgets-pers_auswahl-to {
+    font-size: @plone-font-size-10;
+    width: 750px;
+    height: 400px;
+
+}
+
+.portletKontaktPortlet {
+    border-top: 25px solid @deutsche-flagge-white-base;
+
+    h5 {
+        color: @deutsche-flagge-black-base;
+        padding-left: 20px;
+        font-size: @plone-font-size-base;
+    }
+}
+
+address {
+    font-size: @plone-font-size-small;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    #zwischenueberschrift {
+      color: @deutsche-flagge-public;
+    }
+
+    a {
+      color: @deutsche-flagge-public;
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 0;
+    }
+}
