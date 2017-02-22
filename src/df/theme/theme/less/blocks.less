@@ -126,7 +126,7 @@
     }
     .quarter-top-bild-rechts img {
       position: absolute;
-      right: 1em;
+      right: 1rem;
     }
   }
   .quarter-bottom{
@@ -162,10 +162,10 @@
 // ############################ PORTLET AKTUELLES UND NEWSLETTER
 #news-item-section{
   overflow: hidden;
-  padding: 1.429em 0 3.214em;
+  padding: 1.429rem 0 3.214rem;
   text-align: center;
   .news-item-block {
-    margin: 0 2.5em;
+    margin: 0 2rem;
     a{
       color: @deutsche-flagge-dark;
       text-decoration: none;
@@ -179,12 +179,12 @@
   }
   hr{ border-color: @deutsche-flagge-dark; }
   .news-item-header {
-    color: @deutsche-flagge-public;
-    font-weight: 300;
-    margin: 10px 5px 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 1.571em;
+color: @deutsche-flagge-public;
+       font-weight: 300;
+margin: 10px 5px 20px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-size: 1.571rem;
     &::after {
         font-family: 'FontAwesome';
         color: @deutsche-flagge-public;
@@ -242,10 +242,11 @@
     overflow: hidden;
     padding: 0;
     margin: 0;
+    width: 74%;
     li{
       text-align: right;
       padding: 0;
-      margin: 0 1.714em;
+      margin: 0 .5rem;
       a{
         color: #fff;
         display: block;
@@ -260,6 +261,7 @@
           top: 50%;
           margin-top: -10px;
           padding-left: 20px;
+          right: -10px;
         }
       }
     }
@@ -288,8 +290,8 @@
   }
 }
 #frontpage-teaser-block1 {
-  margin-top: 3.571em;
-  padding: 0 2em;
+  margin-top: 3.571rem;
+  padding: 0 2rem;
   a::after {
     font-family: 'FontAwesome';
     color: @deutsche-flagge-public;
@@ -298,24 +300,24 @@
     content: "\f105";
   }
   .teaser-block1-title {
-    font-size: 1.571em;
-    margin-bottom: 4.286em;
+    font-size: 1.571rem;
+    margin-bottom: 4.286rem;
   }
   .teaser-block1-descr {
-    font-size: 1.143em;
-    margin-bottom: 2.143em;
+    font-size: 1.143rem;
+    margin-bottom: 2.143rem;
     width: 300px;
   }
   .teaser-block1-link {
-    font-size: 1.143em;
+    font-size: 1.143rem;
     font-weight: 600;
-    margin-bottom: 2.143em;
+    margin-bottom: 2.143rem;
   }
   .teaser-block1-image img {
-    margin-bottom: 2.143em;
+    margin-bottom: 2.143rem;
   }
   .carousel-control{
-    top: 4.2em;
+    top: 4.2rem;
   }
 }
 
@@ -342,11 +344,11 @@
     margin-bottom: 50px;
   }
   .welle{
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     overflow: hidden;
   }
   .carousel-control{
-    top: 2.2em;
+    top: 2.2rem;
   }
 }
 
@@ -383,27 +385,27 @@
 .wellebox{
   background: transparent url("img/welle.png") center center;
   background-repeat: repeat-x;
-  height: 1.429em;
+  height: 1.429rem;
 }
 .steuerbox{
   background: transparent url("img/steuer.png") no-repeat center center;
-  height: 4.643em;
+  height: 4.643rem;
 }
 
 /* cards style */
 .cards-wrapper{
   .cards{
     .cards-link{
-      min-height: 3.286em;
+      min-height: 3.286rem;
       .category-link{
-        font-size: 1.500em;
+        font-size: 1.500rem;
         font-weight: normal;
         font-style: italic;
-        line-height: 1.5em;
+        line-height: 1.5rem;
       }
     }
     .purecards-img{
-      border-top: 0.357em solid @deutsche-flagge-public;
+      border-top: 0.357rem solid @deutsche-flagge-public;
       img{
         padding-bottom: 10px;
       }
@@ -413,6 +415,6 @@
 
 @media (max-width: @plone-screen-sm-min) {
   #frontpage-teaser-block1 .carousel-control{
-     top: 11.2em;
+     top: 11.2rem;
   }
 }

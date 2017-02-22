@@ -65,6 +65,7 @@ function deutschflagge_init(){
   $('#sidebar, #main-container > header').matchHeight();
   $('.template-purecardsview .cards-link').matchHeight();
   $('#sidebar, #content').matchHeight();
+  $('.shortcut-header, .shortcuts-navbar-nav').matchHeight();
 }
 
 deutschflagge_init();
