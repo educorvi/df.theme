@@ -4,5 +4,9 @@
   "version": "1.0.0",
   "dependencies": {
     "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-npm-install": "~0.3.1"
   }
 }

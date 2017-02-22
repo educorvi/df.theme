@@ -8162,8 +8162,10 @@ p {
 .portaltype-frontpage #main-container #content-core {
   margin-left: 0px;
 }
+#parent-fieldname-text li,
 #parent-fieldname-text p,
 #parent-fieldname-text a {
+  color: #15528c;
   font-weight: 300;
   font-size: 18px;
 }
@@ -8339,6 +8341,9 @@ form .autotoc-nav a:hover,
 #portal-header #portal-anontools ul {
   margin: 0;
   padding: 0px;
+}
+.section-startseite .df-theme-banner {
+  height: 380px;
 }
 /* Top Banner */
 .df-theme-banner {
@@ -9348,6 +9353,10 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 img[src$='welle.svg'] {
   display: none;
+}
+#formfield-form-widgets-IWebcodeDexterity-webcode,
+#form-widgets-IKontaktdaten-beh_auswahl {
+  background-color: red;
 }
 .webcode {
   color: #15528c;
