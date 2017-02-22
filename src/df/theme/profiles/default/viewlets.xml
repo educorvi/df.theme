@@ -1,8 +1,18 @@
+
 <?xml version="1.0"?>
 <object>
  <order manager="plone.abovecontent" skinname="Plone Default">
   <viewlet name="plone.path_bar"/>
   <viewlet name="webcode.viewlet"/>
+ </order>
+ <order manager="plone.abovecontenttitle" skinname="Plone Default">
+  <viewlet name="titelbildviewlet"/>
+  <viewlet name="df.theme.banner"/>
+  <viewlet name="plone.path_bar"/>
+  <viewlet name="plone.abovecontenttitle.socialtags"/>
+  <viewlet name="webcode.viewlet"/>
+  <viewlet name="myaktuellesnewsletter"/>
+  <viewlet name="myunderimageactions"/>
  </order>
  <order manager="plone.belowcontent" skinname="Plone Default">
   <viewlet name="plone.belowcontenttitle.keywords"/>
@@ -38,6 +48,9 @@
  <order manager="plone.toolbar" skinname="Plone Default">
   <viewlet name="plone.contentviews"/>
  </order>
+ <hidden manager="plone.abovecontenttitle" skinname="Plone Default">
+  <viewlet name="df.theme.banner"/>
+ </hidden>
  <hidden manager="plone.belowcontent" skinname="Plone Default">
   <viewlet name="plone.manage_portlets_fallback"/>
  </hidden>
@@ -58,3 +71,4 @@
   <viewlet name="plone.app.i18n.locales.languageselector"/>
  </hidden>
 </object>
+
