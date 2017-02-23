@@ -98,15 +98,19 @@
 .portletQuarterPortlet{
   .quarter-top {
     background-color: @deutsche-flagge-blue-port;
-    height: 360px;
     .quarter-top-header {
       color: @deutsche-flagge-public;
+      line-height: .9;
       font-size: 2.571rem;
       font-style: italic;
       font-weight: 300;
       height: 110px;
       margin-left: 60px;
       margin-top: 30px;
+    }
+    .quarter-top-links,
+    .quarter-top-rechts{
+      height: 360px;
     }
     .quarter-top-text-links,
     .quarter-top-text-rechts {
@@ -135,11 +139,11 @@
       transform: translateY(-50%);
     }
     .quarter-top-bild-rechts img {
-      position: absolute;
       right: 1rem;
     }
     img{
-      width: 100%;
+      position: relative;
+      top: 1rem;
     }
   }
   .quarter-bottom{
@@ -434,5 +438,14 @@ margin: 10px 5px 20px;
 @media (max-width: @plone-screen-sm-min) {
   #frontpage-teaser-block1 .carousel-control{
      top: 11.2rem;
+  }
+  .portletQuarterPortlet .quarter-top .quarter-top-links, .portletQuarterPortlet .quarter-top .quarter-top-rechts{
+      height: auto;
+  }
+}
+
+@media (max-width: 990px){
+  .quarter-top-rechts{
+      background-color: #fff;
   }
 }
