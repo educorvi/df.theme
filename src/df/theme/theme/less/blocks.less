@@ -46,6 +46,17 @@
           content: "›" !important;
           display: block;
           float: left;
+          font-family: "Fontello";
+          padding: 0;
+          margin: 0;
+          position: relative;
+          left: inherit;
+          display: inline-block;
+          color: #000;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          margin-right: 6px;
         }
         &:hover {
           background: @deutsche-flagge-public;
@@ -100,7 +111,7 @@
     background-color: @deutsche-flagge-blue-port;
     .quarter-top-header {
       color: @deutsche-flagge-public;
-      line-height: .9;
+      line-height: 1;
       font-size: 2.571rem;
       font-style: italic;
       font-weight: 300;
@@ -159,6 +170,7 @@
     }
     .quarter-bottom-header {
       color: #fff;
+      line-height: 1;
       font-size: 2.571rem;
       font-weight: 300;
       height: 110px;
@@ -446,3 +458,13 @@ margin: 10px 5px 20px;
       background-color: #fff;
   }
 }
+
+#sidebar {
+  .portletNavigationTree{ padding-bottom: 2em; }
+  .portletExtraNavigation{
+    padding-bottom: 0;
+    .plone-navbar-collapse { padding-left: 0px; padding-right: 0px; }
+    .portletContent > ul > li > a{ border-top: 1px solid white !important; }
+  }
+}
+

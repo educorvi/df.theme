@@ -28,30 +28,14 @@
       <link rel="stylesheet" href="/++theme++deutsche-flagge-theme/less/theme-editor.css" />
     </after>
 
-    <rules css:if-content="#portal-top">
-      <!-- Attributes -->
-      <copy attributes="*" css:theme="html" css:content="html" />
-      <!-- Base tag -->
-      <before css:theme="title" css:content="base" />
-      <!-- Title -->
-      <replace css:theme="title" css:content="title" />
-      <!-- Pull in Plone Meta -->
-      <after css:theme-children="head" css:content="head meta" />
-      <!-- Don't use Plone icons, use the theme's -->
-      <drop css:content="head link[rel='apple-touch-icon']" />
-      <drop css:content="head link[rel='shortcut icon']" />
-    </rules>
-
     <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
     <copy attributes="*" css:content="body" css:theme="body" />
 
     <!-- CSS -->
     <drop css:content="head link[data-bundle='diazo']" /> 
-    <after css:theme-children="head" css:content="head link" />
 
     <!-- Script -->
     <drop css:content="head script[data-bundle='diazo']" />
-    <after css:theme-children="head" css:content="head script" />
 
     <!-- We don't need global nav -->
     <drop css:theme="#mainnavigation-wrapper" />
