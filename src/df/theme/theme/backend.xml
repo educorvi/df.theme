@@ -25,6 +25,7 @@
     <!-- We can't control the bundle from here due to include. Just hard code -->
     <after css:theme-children="head">
       <link rel="stylesheet" href="/++theme++barceloneta/less/barceloneta-compiled.css" />
+      <link rel="stylesheet" href="/++theme++deutsche-flagge-theme/less/theme-editor.css" />
     </after>
 
     <rules css:if-content="#portal-top">

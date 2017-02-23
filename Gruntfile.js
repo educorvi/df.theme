@@ -22,6 +22,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'less/theme-compiled.css': 'less/theme.local.less',
+                    'less/theme-editor.css': 'less/theme.editor.less'
                 }
             }
         },
