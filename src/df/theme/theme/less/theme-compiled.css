@@ -8835,7 +8835,7 @@ media (max-width: 1200) .plone-navbar li a {
 }
 .portletQuarterPortlet .quarter-top .quarter-top-header {
   color: #15528c;
-  font-size: 3.5rem;
+  font-size: 2.571rem;
   font-style: italic;
   font-weight: 300;
   height: 110px;
@@ -8850,7 +8850,15 @@ media (max-width: 1200) .plone-navbar li a {
 }
 .portletQuarterPortlet .quarter-top .quarter-top-text-links ul li,
 .portletQuarterPortlet .quarter-top .quarter-top-text-rechts ul li {
+  font-size: 1.143rem;
   list-style: none;
+}
+.portletQuarterPortlet .quarter-top .quarter-top-text-links ul li:before,
+.portletQuarterPortlet .quarter-top .quarter-top-text-rechts ul li:before {
+  content: "›";
+  font-family: "DeutscheFlagge";
+  padding-right: 5px;
+  color: #15528c;
 }
 .portletQuarterPortlet .quarter-top .quarter-top-text-links ul,
 .portletQuarterPortlet .quarter-top .quarter-top-text-rechts ul {
@@ -8879,7 +8887,7 @@ media (max-width: 1200) .plone-navbar li a {
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-header {
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 2.571rem;
   font-weight: 300;
   height: 110px;
   margin-left: 60px;
@@ -8887,7 +8895,7 @@ media (max-width: 1200) .plone-navbar li a {
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-text {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.143rem;
   font-weight: 300;
   height: 190px;
   margin-left: 60px;
@@ -8976,8 +8984,9 @@ media (max-width: 1200) .plone-navbar li a {
 }
 .shortcuts-navbar .shortcuts-navbar-nav li {
   text-align: right;
-  padding: 0;
+  padding: 1px;
   margin: 0 .5rem;
+  margin-top: 2px;
 }
 .shortcuts-navbar .shortcuts-navbar-nav li a {
   color: #fff;
@@ -9016,7 +9025,7 @@ media (max-width: 1200) .plone-navbar li a {
 #frontpage-portlet-schlagtext #column-bgv-schlagtext-portlet-1 .portletContent p {
   color: #fff;
   font-style: italic;
-  font-size: 36px;
+  font-size: 2.571rem;
   text-align: center;
   height: 50px;
 }
@@ -9057,20 +9066,20 @@ media (max-width: 1200) .plone-navbar li a {
 #frontpage-teaser-block2 a::after {
   font-family: 'FontAwesome';
   color: #15528c;
-  font-size: 15px;
+  font-size: 1.071rem;
   padding-left: 4px;
   content: "\f105";
 }
 #frontpage-teaser-block2 .teaser-block2-title {
-  font-size: 22px;
+  font-size: 1.571rem;
   margin-bottom: 30px;
 }
 #frontpage-teaser-block2 .teaser-block2-descr {
-  font-size: 16px;
+  font-size: 1.143rem;
   margin-bottom: 30px;
 }
 #frontpage-teaser-block2 .teaser-block2-link {
-  font-size: 16px;
+  font-size: 1.143rem;
   font-weight: 600;
   margin-bottom: 50px;
 }
@@ -9096,16 +9105,16 @@ media (max-width: 1200) .plone-navbar li a {
   width: 100%;
 }
 #frontpage-teaser-block3 .teaser-block3 .teaser-block3-title {
-  font-size: 36px;
+  font-size: 2.571rem;
   font-weight: 300;
   margin-bottom: 30px;
 }
 #frontpage-teaser-block3 .teaser-block3 .teaser-block3-descr {
-  font-size: 16px;
+  font-size: 1.143rem;
   margin-bottom: 30px;
 }
 #frontpage-teaser-block3 .teaser-block3 .teaser-block3-link {
-  font-size: 16px;
+  font-size: 1.143rem;
   font-weight: 600;
   margin-bottom: 60px;
 }
