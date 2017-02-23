@@ -9128,6 +9128,9 @@ media (max-width: 1200) .plone-navbar li a {
   height: 4.643rem;
 }
 /* cards style */
+.cards-wrapper .cards {
+  padding-bottom: 2.857rem;
+}
 .cards-wrapper .cards .cards-link {
   min-height: 3.286rem;
 }
@@ -9391,6 +9394,38 @@ img[src$='welle.svg'] {
 #formfield-form-widgets-IWebcodeDexterity-webcode,
 #form-widgets-IKontaktdaten-beh_auswahl {
   background-color: red;
+}
+#content a[data-linktype="external"],
+#content .external-link {
+  background: url("img/symbol_ext.png") no-repeat;
+  background-position: right;
+  padding-right: 1.071rem;
+}
+#content a[data-linktype="internal"],
+#content a[data-linktype="anchor"] {
+  background: url("img/symbol_int.png") no-repeat;
+  background-position: right;
+  padding-right: 1.071rem;
+}
+#content .mail-link {
+  background: url("img/symbol_letter.png") no-repeat;
+  background-position: right !important;
+  padding-right: 1.429rem !important;
+}
+.pdf-link a {
+  background: url("img/symbol_pdf.png") no-repeat !important;
+  background-position: right !important;
+  padding-right: 1.429rem !important;
+}
+.word-link a {
+  background: url("img/symbol_doc.png") no-repeat !important;
+  background-position: right !important;
+  padding-right: 1.429rem !important;
+}
+.excel-link a {
+  background: url("img/symbol_xls.png") no-repeat !important;
+  background-position: right !important;
+  padding-right: 1.429rem !important;
 }
 .webcode {
   color: #15528c;
