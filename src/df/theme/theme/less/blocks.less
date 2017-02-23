@@ -100,8 +100,8 @@
     background-color: @deutsche-flagge-blue-port;
     .quarter-top-header {
       color: @deutsche-flagge-public;
-      font-size: 2.9rem;
       line-height: .9;
+      font-size: 2.571rem;
       font-style: italic;
       font-weight: 300;
       height: 110px;
@@ -118,8 +118,17 @@
       height: 190px;
       padding-right: 20px;
       ul li{
+          font-size: 1.143rem;
           list-style: none;
-      }
+
+          &:before {
+            content: "›";
+            font-family: "DeutscheFlagge";
+            padding-right: 5px;
+            color: @deutsche-flagge-public;
+            }
+
+          }
     }
     .quarter-top-text-links ul,
     .quarter-top-text-rechts ul {
@@ -150,7 +159,7 @@
     }
     .quarter-bottom-header {
       color: #fff;
-      font-size: 3.5rem;
+      font-size: 2.571rem;
       font-weight: 300;
       height: 110px;
       margin-left: 60px;
@@ -158,7 +167,7 @@
     }
     .quarter-bottom-text {
       color: #fff;
-      font-size: 2rem;
+      font-size: 1.143rem;
       font-weight: 300;
       height: 190px;
       margin-left: 60px;
@@ -205,12 +214,13 @@ margin: 10px 5px 20px;
   }
 
   .news-item-date {
-    font-size: 12px;
+    font-size: 0.8571rem;
     font-style: italic;
+    margin-top: 5px;
   }
 
   .news-item-text {
-    font-size: 18px;
+    font-size: 1.286rem;
   }
   .carousel-control{
     top: 50%;
@@ -253,8 +263,9 @@ margin: 10px 5px 20px;
     width: 74%;
     li{
       text-align: right;
-      padding: 0;
+      padding: 1px;
       margin: 0 .5rem;
+      margin-top: 2px;
       a{
         color: #fff;
         display: block;
@@ -290,7 +301,7 @@ margin: 10px 5px 20px;
       p {
         color: #fff;
         font-style: italic;
-        font-size: 36px;
+        font-size: 2.571rem;
         text-align: center;
         height: 50px;
       }
@@ -333,21 +344,21 @@ margin: 10px 5px 20px;
   a::after {
     font-family: 'FontAwesome';
     color: @deutsche-flagge-public;
-    font-size: 15px;
+    font-size: 1.071rem;
     padding-left: 4px;
     content: "\f105";
   }
   margin-top: 60px;
   .teaser-block2-title {
-    font-size: 22px;
+    font-size: 1.571rem;
     margin-bottom: 30px;
   }
   .teaser-block2-descr {
-    font-size: 16px;
+    font-size: 1.143rem;
     margin-bottom: 30px;
   }
   .teaser-block2-link {
-    font-size: 16px;
+    font-size: 1.143rem;
     font-weight: 600;
     margin-bottom: 50px;
   }
@@ -375,16 +386,16 @@ margin: 10px 5px 20px;
       width: 100%;
     }
     .teaser-block3-title {
-      font-size: 36px;
+      font-size: 2.571rem;
       font-weight: 300;
       margin-bottom: 30px;
     }
     .teaser-block3-descr {
-      font-size: 16px;
+      font-size: 1.143rem;
       margin-bottom: 30px;
     }
     .teaser-block3-link {
-      font-size: 16px;
+      font-size: 1.143rem;
       font-weight: 600;
       margin-bottom: 60px;
     }
