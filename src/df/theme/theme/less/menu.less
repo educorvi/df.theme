@@ -218,14 +218,35 @@ ul.mega-dropdown-menu-lv2 > li > a:hover::before, ul.mega-dropdown-menu-lv1 > li
     width: 100%;
   }
 }
-media (max-width: 1200){
-  .plone-navbar{ 
+
+@media (max-width: 1200px){
+  .plone-navbar{
      li{
         a{
-           font-size: 1.2rem;
-           padding: 10px 2rem;
+          font-size: .8rem;
+          padding: 10px .5rem;
         }
      }
   }
 }
 
+
+/* cover */
+div.cover {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+img.cover {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  overflow-x: hidden;
+}
