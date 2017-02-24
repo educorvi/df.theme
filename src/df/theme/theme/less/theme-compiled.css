@@ -9258,11 +9258,12 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   transform: translateY(-50%);
 }
 .portletQuarterPortlet .quarter-top .quarter-top-bild-rechts img {
-  right: 1rem;
+  right: 3rem;
 }
 .portletQuarterPortlet .quarter-top img {
   position: relative;
   top: 1rem;
+  width: 129%;
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-links,
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-rechts {
