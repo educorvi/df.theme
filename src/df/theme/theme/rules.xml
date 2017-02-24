@@ -52,9 +52,9 @@
     <replace css:theme="#content-container" method="raw">
 
       <xsl:variable name="central">
-        <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-6</xsl:if>
-        <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-9</xsl:if>
-        <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-9</xsl:if>
+        <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-md-6</xsl:if>
+        <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-md-9</xsl:if>
+        <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-md-9</xsl:if>
         <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
       </xsl:variable>
 
@@ -93,10 +93,10 @@
   <replace css:theme="#content-container" method="raw" css:if-not-content=".portaltype-frontpage">
 
     <xsl:variable name="central">
-      <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-6</xsl:if>
-      <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-9</xsl:if>
-      <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-9</xsl:if>
-      <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
+      <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-sm-12 col-md-6</xsl:if>
+      <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-sm-12 col-md-9</xsl:if>
+      <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-sm-12 col-md-9</xsl:if>
+      <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-sm-12</xsl:if>
     </xsl:variable>
 
     <div class="{$central}">
@@ -122,7 +122,7 @@
   <!-- Left column -->
   <rules css:if-content="#portal-column-one">
     <replace css:theme="#column1-container">
-        <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas">
+        <div id="sidebar" class="col-md-3 sidebar-offcanvas">
           <aside id="portal-column-one">
               <xsl:copy-of css:select="#portal-column-one > *" />
           </aside>
@@ -133,7 +133,7 @@
   <!-- Right column -->
   <rules css:if-content="#portal-column-two">
     <replace css:theme="#column2-container">
-        <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas" role="complementary">
+        <div id="sidebar" class="col-md-3 sidebar-offcanvas" role="complementary">
           <aside id="portal-column-two">
               <xsl:copy-of css:select="#portal-column-two > *" />
           </aside>
@@ -150,7 +150,7 @@
   <!-- Add class on footer portlets -->
   <xsl:template match="//*[@id='portal-footer-wrapper']//div[contains(@class,'portletWrapper')]">
     <xsl:copy>
-      <xsl:attribute name="class">col-xs-12 col-sm-6 col-md-3 col-lg-2 portletWrapper</xsl:attribute>
+      <xsl:attribute name="class">col-md-3 col-lg-2 portletWrapper</xsl:attribute>
       <!--<xsl:copy-of select="@*" />-->
       <xsl:apply-templates />
     </xsl:copy>

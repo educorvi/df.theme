@@ -78,7 +78,6 @@ p {
   clear: left;
   background-color: @plone-breadcrumb-bg;
   margin-top: 5px;
-  width: 970px;
   font-size: @plone-font-size-small;
   > * > span { //you are here
     display: inline-block;
@@ -280,10 +279,6 @@ form, .linkModal {
   }
 }
 
-@media (max-width: @plone-screen-xs-min) {
-  #sidebar{ background-color: transparent; }
-}
-
 #portal-anontools{ display: none;}
 
 .collapse {
@@ -300,6 +295,27 @@ form, .linkModal {
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  #main-container{
+     display: block;
+  }
+}
+
+@media (max-width: 990px) {
+  #sidebar{
+    width: 100%;
+    background-color: transparent;
+  }
+  .shortcuts-navbar{
+    .shortcut-header{ width: 20% !important; }
+    .shortcuts-navbar-nav{ width: 80%; }
+  }
+}
+
 .template-view.portaltype-frontpage #main-container{
   display: block;
+}
+
+.container {
+    width: 100% !important;
 }
