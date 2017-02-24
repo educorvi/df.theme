@@ -8519,25 +8519,32 @@ p {
 .portaltype-frontpage #main-container #content-core {
   margin-left: 0px;
 }
+.panel-body li,
 #parent-fieldname-text li,
+.panel-body p,
 #parent-fieldname-text p,
+.panel-body a,
 #parent-fieldname-text a {
   color: #15528c;
   font-weight: 300;
   font-size: 18px;
 }
+.panel-body a,
 #parent-fieldname-text a {
   text-decoration: underline;
 }
+.panel-body ul,
 #parent-fieldname-text ul {
   margin-bottom: 2.3em;
   text-indent: -1.143rem;
   margin-left: 1.143rem;
 }
+.panel-body li,
 #parent-fieldname-text li {
   margin-bottom: 1.1em;
   list-style: none;
 }
+.panel-body li::before,
 #parent-fieldname-text li::before {
   font-family: 'FontAwesome';
   color: #15528c;
@@ -9210,7 +9217,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 .portletQuarterPortlet .quarter-top .quarter-top-header {
   color: #15528c;
-  line-height: 1;
+  line-height: 1.5;
   font-size: 2.571rem;
   font-style: italic;
   font-weight: 300;
@@ -9242,6 +9249,8 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 .portletQuarterPortlet .quarter-top .quarter-top-text-links ul,
 .portletQuarterPortlet .quarter-top .quarter-top-text-rechts ul {
+  text-indent: -1.143rem;
+  margin-left: 1.143rem;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -9267,7 +9276,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-header {
   color: #fff;
-  line-height: 1;
+  line-height: 1.5;
   font-size: 2.571rem;
   font-weight: 300;
   height: 110px;
@@ -9925,6 +9934,17 @@ address a {
 }
 address hr {
   margin: 0;
+}
+.arztmap #intmap,
+.arztmap #map {
+  height: 570px;
+  width: 100%;
+}
+#accordion .panel-title:before {
+  content: "›";
+  font-family: "DeutscheFlagge";
+  padding-right: 5px;
+  color: #15528c;
 }
 #behtab {
   text-align: center;
