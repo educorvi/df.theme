@@ -128,7 +128,7 @@
 
     p {
        color: white;
-       font-size: 1rem;
+       font-size: 1.5rem;
     }
   }
 
@@ -176,7 +176,7 @@
   #mainnavigation{ display: none; }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 768px) {
 
   #content-header{ position: relative; }
   #portal-header{
@@ -185,19 +185,25 @@
       bottom: -2em;
       float: none;
       z-index: 10;
-      right: 4px;
+      right: 20px;
       clear: both;
       display: block;
       margin: 0;
+    }
+    #portal-logo{
+      width: 48%;
+      text-align: right;
+      padding-right: 0px;
     }
     .mysiteactions{
       float: left;
       display: none;
     }
     .bmviLinkMobile{
-      position: absolute;
-      right: 10px;
       top: 55px;
+      float: right;
+      width: 48%;
+      text-align: left;
     }
     #portal-searchbox{
       margin-top: 85px;
@@ -230,6 +236,20 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
       }
+    }
+  }
+  .section-startseite .df-theme-banner,
+  .df-theme-banner{
+    height: auto;
+    .banner-image{
+       width: 100%;
+    }
+    .banner-text{
+       position: relative;
+       top: 0;
+       left: 0;
+       width: 100%;
+       max-width: 100%;
     }
   }
 }

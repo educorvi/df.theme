@@ -1,4 +1,3 @@
-
 /* Portlets */
 .portlet {
   border: none;
@@ -39,7 +38,7 @@
         background: @deutsche-flagge-light;
         padding-top: 5px;
         &:before {
-          font-size: 120% !important;
+          font-size: 12px !important;
           width: inherit !important;
           content: "›" !important;
           display: block;
@@ -128,8 +127,14 @@
       color: @deutsche-flagge-public;
       height: 190px;
       padding-right: 20px;
-      ul li{
-          font-size: 1.143rem;
+      ul{
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        li{
+          font-size: 1.3em;
           list-style: none;
 
           &:before {
@@ -139,15 +144,8 @@
             color: @deutsche-flagge-public;
             }
 
-          }
-    }
-    .quarter-top-text-links ul,
-    .quarter-top-text-rechts ul {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+        }
+      }
     }
     .quarter-top-bild-rechts img {
       right: 1rem;
@@ -175,11 +173,11 @@
       font-weight: 300;
       height: 110px;
       margin-left: 60px;
-      margin-top: 30px;
+      padding-top: 30px;
     }
     .quarter-bottom-text {
       color: #fff;
-      font-size: 1.143rem;
+      font-size: 1.3em;
       font-weight: 300;
       height: 190px;
       margin-left: 60px;
@@ -208,16 +206,16 @@
   }
   hr{ border-color: @deutsche-flagge-dark; }
   .news-item-header {
-color: @deutsche-flagge-public;
-       font-weight: 300;
-margin: 10px 5px 20px;
-	padding-bottom: 10px;
-	text-align: left;
-	font-size: 1.571rem;
+    color: @deutsche-flagge-public;
+    font-weight: 300;
+    margin: 10px 5px 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 1.571rem;
     &::after {
-        font-family: 'FontAwesome';
-        color: @deutsche-flagge-public;
-        content: "\f105";
+      font-family: 'FontAwesome';
+      color: @deutsche-flagge-public;
+      content: "\f105";
     }
   }
 
@@ -331,16 +329,15 @@ margin: 10px 5px 20px;
     content: "\f105";
   }
   .teaser-block1-title {
-    font-size: 1.571rem;
+    font-size: 2rem;
     margin-bottom: 4.286rem;
   }
   .teaser-block1-descr {
-    font-size: 1.143rem;
+    font-size: 1.3em;
     margin-bottom: 2.143rem;
-    width: 300px;
   }
   .teaser-block1-link {
-    font-size: 1.143rem;
+    font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 2.143rem;
   }
@@ -366,11 +363,11 @@ margin: 10px 5px 20px;
     margin-bottom: 30px;
   }
   .teaser-block2-descr {
-    font-size: 1.143rem;
+    font-size: 1.3em;
     margin-bottom: 30px;
   }
   .teaser-block2-link {
-    font-size: 1.143rem;
+    font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 50px;
   }
@@ -403,11 +400,11 @@ margin: 10px 5px 20px;
       margin-bottom: 30px;
     }
     .teaser-block3-descr {
-      font-size: 1.143rem;
+      font-size: 1.3em;
       margin-bottom: 30px;
     }
     .teaser-block3-link {
-      font-size: 1.143rem;
+      font-size: 1.3em;
       font-weight: 600;
       margin-bottom: 60px;
     }
@@ -435,7 +432,7 @@ margin: 10px 5px 20px;
         font-size: 1.500rem;
         font-weight: normal;
         font-style: italic;
-        line-height: 1.5rem;
+        line-height: 1.3em;
       }
     }
     .purecards-img{
@@ -452,7 +449,7 @@ margin: 10px 5px 20px;
      top: 11.2rem;
   }
   .portletQuarterPortlet .quarter-top .quarter-top-links, .portletQuarterPortlet .quarter-top .quarter-top-rechts{
-      height: auto;
+      padding-bottom: 2em;
   }
 }
 
