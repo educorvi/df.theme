@@ -1,0 +1,496 @@
+/* Portlets */
+.portlet {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+/* Navigation portlet */
+
+.portletNavigationTree {
+  .portletHeader {
+    padding: 7px 15px;
+    a {
+      color: @deutsche-flagge-dark;
+      font-size: 14px;
+      font-weight: normal;
+      &:before {
+        content: "\f0c9";
+        font-family: "DeutscheFlagge";
+        padding-right: 5px;
+        color: @deutsche-flagge-public;
+      }
+    }
+  }
+
+  .portletContent {
+    .navTreeLevel2 .navTreeItem a {
+      padding-left: 80px;
+      background: @deutsche-flagge-white-base;
+    }
+
+    .navTreeItem {
+      a {
+        font-size: 12px;
+        font-weight: 400;
+        color: @deutsche-flagge-dark;
+        background: @deutsche-flagge-light;
+        padding-top: 5px;
+        &:before {
+          font-size: 12px !important;
+          width: inherit !important;
+          content: "›" !important;
+          display: block;
+          float: left;
+          font-family: "Fontello";
+          padding: 0;
+          margin: 0;
+          position: relative;
+          left: inherit;
+          display: inline-block;
+          color: #000;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          margin-right: 6px;
+        }
+        &:hover {
+          background: @deutsche-flagge-public;
+	        border-top:1px solid white;
+          color: white;
+          text-decoration: none;
+        }
+        &:hover:after {
+          content: "";
+        }
+        img {
+          display: none;
+        }
+
+        &.navTreeItemInPath {
+          color: @deutsche-flagge-light;
+          background: @deutsche-flagge-public;
+        }
+
+        &.navTreeCurrentNode {
+          background: @deutsche-flagge-public;
+          color: white;
+          &:after {
+            content: "";
+          }
+        }
+      }
+      .navTreeLevel1 li.navTreeFolderish {
+  	    border-top:1px solid #efefef;
+      }
+      ul a {
+        background: @deutsche-flagge-white-dark;
+        &.navTreeCurrentNode {
+          background: @deutsche-flagge-current;
+        }
+      }
+    }
+
+  }
+}
+
+#row-frontpage-teaser3 {
+  background-color: @deutsche-flagge-white-dark;
+}
+
+// plone-portlet-list-bullet
+#column-bgv-startquarter-portlet-1{
+  padding: 0;
+}
+.portletQuarterPortlet{
+  .quarter-top {
+    padding-bottom: 2em;
+    background-color: @deutsche-flagge-blue-port;
+    .quarter-top-header {
+      color: @deutsche-flagge-public;
+      line-height: 1.5;
+      font-size: 2.571rem;
+      font-style: italic;
+      font-weight: 300;
+      height: 110px;
+      margin-left: 60px;
+      margin-top: 30px;
+    }
+    .quarter-top-links,
+    .quarter-top-rechts{
+      height: 360px;
+      padding-bottom: 2em;
+    }
+    .quarter-top-text-links,
+    .quarter-top-text-rechts {
+      color: @deutsche-flagge-public;
+      height: 190px;
+      padding-right: 20px;
+      ul{
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        li{
+          font-size: 1.3em;
+          list-style: none;
+
+          &:before {
+            content: "›";
+            font-family: "DeutscheFlagge";
+            padding-right: 5px;
+            color: @deutsche-flagge-public;
+            }
+
+        }
+      }
+    }
+    .quarter-top-bild-rechts img {
+      right: 2rem;
+    }
+    img{
+      position: relative;
+      top: 1rem;
+      width: 150px;
+    }
+  }
+  .quarter-bottom{
+    .quarter-bottom-links,
+    .quarter-bottom-rechts {
+      height: 360px;
+    }
+    .quarter-bottom-links{
+      background-color: #445d73;
+    }
+    .quarter-bottom-rechts {
+      background-color: @deutsche-flagge-public;
+    }
+    .quarter-bottom-header {
+      color: #fff;
+      line-height: 1.5;
+      font-size: 2.571rem;
+      font-weight: 300;
+      height: 110px;
+      margin-left: 60px;
+      padding-top: 30px;
+    }
+    .quarter-bottom-text {
+      color: #fff;
+      font-size: 1.3em;
+      font-weight: 300;
+      height: 190px;
+      margin-left: 60px;
+      margin-top: 30px;
+    }
+  }
+}
+
+// ############################ PORTLET AKTUELLES UND NEWSLETTER
+#news-item-section{
+  overflow: hidden;
+  padding: 1.429rem 0 3.214rem;
+  text-align: center;
+  .news-item-block {
+    margin: 0 2rem;
+    a{
+      color: @deutsche-flagge-dark;
+      text-decoration: none;
+      &:focus {
+      }
+      &:hover {
+          color: @deutsche-flagge-black-base;
+          font-weight: 500;
+      }
+    }
+  }
+  hr{ border-color: @deutsche-flagge-dark; }
+  .news-item-header {
+    color: @deutsche-flagge-public;
+    font-weight: 300;
+    margin: 10px 5px 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 1.571rem;
+    &::after {
+      font-family: 'FontAwesome';
+      color: @deutsche-flagge-public;
+      content: "\f105";
+    }
+  }
+
+  .news-item-logo {
+    margin-bottom: 25px;
+  }
+
+  .news-item-date {
+    font-size: 0.8571rem;
+    font-style: italic;
+    margin-top: 5px;
+  }
+
+  .news-item-text {
+    font-size: 1.286rem;
+  }
+  .carousel-control{
+    top: 50%;
+  }
+}
+
+.row.frontcontent{
+  margin-top: 5px;
+}
+
+.shortcuts-navbar{
+  overflow: hidden;
+  background-color: @deutsche-flagge-public;
+  .shortcut-header{
+    padding: 0.62em 0.5em;
+    text-align: center;
+    color: #fff;
+    font-size: 1.286em;
+    font-weight: 300;
+    font-weight:400;
+    border-right: 0.357em solid #fff;
+    width: 25.6%;
+   	span:after {
+      font-family: 'FontAwesome';
+      color: #fff;
+      content: "\f105";
+      vertical-align: middle;
+      position: absolute;
+      display: inline-block;
+      top: 47%;
+      margin-top: -10px;
+      padding-left: 10px;
+    }
+  }
+  .shortcuts-navbar-nav{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 74%;
+    li{
+      text-align: right;
+      padding: 1px;
+      margin: 0 .5rem;
+      margin-top: 2px;
+      a{
+        color: #fff;
+        display: block;
+        text-align: center;
+        &:after {
+          font-family: 'FontAwesome';
+          color: #fff;
+          content: "\f105";
+          vertical-align: middle;
+          position: absolute;
+          display: inline-block;
+          top: 50%;
+          margin-top: -10px;
+          padding-left: 20px;
+          right: -10px;
+        }
+      }
+    }
+  }
+}
+
+#frontpage-portlet-schlagtext{
+  #column-bgv-schlagtext-portlet-1{
+    padding: 0;
+    .portletHeader {
+      display: none;
+    }
+    .portletContent {
+      background-color: #92c4dd;
+      border: none;
+      height: 300px;
+      padding-top: 60px;
+      p {
+        color: #fff;
+        font-style: italic;
+        font-size: 2.571rem;
+        text-align: center;
+        height: 50px;
+      }
+    }
+  }
+}
+#frontpage-teaser-block1 {
+  margin-top: 3.571rem;
+  padding: 0 2rem;
+  a::after {
+    font-family: 'FontAwesome';
+    color: @deutsche-flagge-public;
+    font-size: 15px;
+    padding-left: 4px;
+    content: "\f105";
+  }
+  .teaser-block1-title {
+    font-size: 2rem;
+    margin-bottom: 4.286rem;
+  }
+  .teaser-block1-descr {
+    font-size: 1.3em;
+    margin-bottom: 2.143rem;
+  }
+  .teaser-block1-link {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 2.143rem;
+  }
+  .teaser-block1-image img {
+    margin-bottom: 2.143rem;
+  }
+  .carousel-control{
+    top: 4.2rem;
+  }
+}
+
+#frontpage-teaser-block2 {
+  a::after {
+    font-family: 'FontAwesome';
+    color: @deutsche-flagge-public;
+    font-size: 1.071rem;
+    padding-left: 4px;
+    content: "\f105";
+  }
+  margin-top: 60px;
+  .teaser-block2-title {
+    font-size: 1.571rem;
+    margin-bottom: 30px;
+  }
+  .teaser-block2-descr {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+  .teaser-block2-link {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  .welle{
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .carousel-control{
+    top: 2.2rem;
+  }
+}
+
+#frontpage-teaser-block3{
+  a::after {
+    font-family: 'FontAwesome';
+    color: @deutsche-flagge-public;
+    font-size: 15px;
+    padding-left: 4px;
+    content: "\f105";
+  }
+  .teaser-block3 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    .teaser-block3-image img {
+      width: 100%;
+    }
+    .teaser-block3-title {
+      font-size: 2.571rem;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+    .teaser-block3-descr {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+    }
+    .teaser-block3-link {
+      font-size: 1.3em;
+      font-weight: 600;
+      margin-bottom: 60px;
+    }
+  }
+}
+.wellebox{
+  background: transparent url("img/welle.png") center center;
+  background-repeat: repeat-x;
+  height: 1.429rem;
+}
+.steuerbox{
+  background: transparent url("img/steuer.png") no-repeat center center;
+  height: 4.643rem;
+}
+
+/* cards style */
+.cards-wrapper{
+  .cards{
+
+    padding-bottom : 2.857rem;
+
+    .cards-link{
+      min-height: 3.286rem;
+      .category-link{
+        font-size: 1.500rem;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 1.3em;
+      }
+    }
+    .purecards-img{
+      border-top: 0.357rem solid @deutsche-flagge-public;
+      img{
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+#sidebar {
+  .portletNavigationTree{ padding-bottom: 2em; }
+  .portletExtraNavigation{
+    padding-bottom: 0;
+    .plone-navbar-collapse { padding-left: 0px; padding-right: 0px; }
+    .portletContent > ul > li > a{ border-top: 1px solid white !important; }
+  }
+}
+
+#behtab > div{
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: @plone-screen-sm-min) { 
+  .portletQuarterPortlet{
+    .quarter-top{
+       padding-bottom: 0px; 
+       img{ width: 100%; }
+       .quarter-top-header{ margin-left: 0px; }
+       .quarter-top-text-links ul{ padding: 0; padding-left: 1em; } 
+       .quarter-top-text-rechts ul{ padding: 0; padding-right: 1em; }
+    }
+    .quarter-bottom{
+       .quarter-bottom-header{ margin-left: 0; }
+       .quarter-bottom-text{ margin-left: 0; }
+    }
+  }
+  .shortcuts-navbar{
+    .shortcut-header{ width: 100% !important; border: none; border-bottom: 0.357em solid #fff;}
+    .shortcuts-navbar-nav{
+      width: 100%; text-align: center;
+      li { 
+        width: 100%;
+        a{ padding:.5em 0em; }
+      }
+    }
+  }
+  #frontpage-teaser-block1 .carousel-control{
+     top: 11.2rem;
+  }
+  .carousel-control.left{ margin-left: -15px; }
+  .carousel-control.right{ margin-right: -15px; }
+}
+
+@media screen and (max-width: @plone-screen-md-min){
+  .quarter-top-rechts{
+      background-color: #fff;
+  }
+}
+
