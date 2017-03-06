@@ -59,7 +59,6 @@
         padding-left: 60px;
       }
 
-
       .portletWrapper {
         min-height: 210px;
         padding: 0;
@@ -104,24 +103,26 @@
   }
 }
 
-@media (max-width: @plone-screen-sm-min) {
+@media screen and (max-width: @plone-screen-sm-min) {
   .df-theme-footer {
     margin-bottom: 2em;
   }
   #portal-footer-wrapper {
     .footer-logo {
       width: 50%!important;
+      margin-bottom: 2em;
       img {
         width: 100%;
       }
     }
-    #portal-footer{
+    .footer-container #portal-footer{
       &:before {
         background-size: cover!important;
         top: -59px!important;
       }
-      > .row {
-        padding-left: 0;
+      .row {
+        padding: 0 15px;
+        .col-xs-12{ padding: 0; }
       }
       .footer-newsletter {
         padding: 0!important;
@@ -141,22 +142,13 @@
           transition: opacity 200ms;
           min-height: 34px;
         }
-        input {
-          // display: none;
-          position: absolute;
-          top: 0;
-          z-index: 100;
-        }
-        .emailButton {
-          width: 82%;
-          right: 3px;
-          z-index: 101!important;
-        }
+        .emailInput{ width: 88%; }
       }
     }
     .portletWrapper{
       min-height: auto!important;
       width: 100%;
+      margin-top: 1em;
       header::after{
         content: '';
         display: block;
@@ -170,6 +162,7 @@
         right: 1rem;
         top: 1rem;
       }
+      section .portletContent{ padding: .8em 0; }
       .portletContent{
         display: none;
       }

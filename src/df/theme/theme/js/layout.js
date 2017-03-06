@@ -31,20 +31,20 @@ function deutschflagge_init(){
 
   // Instantiate the Bootstrap carousel
 
-  $('.carousel').each(function(){
-    var data_items = window.matchMedia("(max-width: 770px)").matches ? 1 : $(this).data('items');
+  $('.carousel.slide').each(function(){
+    var data_items = window.matchMedia("(max-width: 990px)").matches ? 1 : $(this).data('items');
     carousel = $(this); 
     if ($('.item', $(this)).length > data_items){
       carousel.carousel({
         interval: false
       });
-      if (! window.matchMedia("(max-width: 770px)").matches){
+      if (! window.matchMedia("(max-width: 990px)").matches){
         $('.item', carousel).each(function(){
           var next = $(this).next();
           if (!next.length) {
             next = $(this).siblings(':first');
           }
-          next.children(':first-child').clone().appendTo($(this));
+          next.children(':first-child').clone().addClass('item-cloned').appendTo($(this));
 
           for (var i=0;i<1;i++) {
             next=next.next();
@@ -52,7 +52,7 @@ function deutschflagge_init(){
               next = $(this).siblings(':first');
             }
 
-            next.children(':first-child').clone().appendTo($(this));
+            next.children(':first-child').clone().addClass('item-cloned').appendTo($(this));
           }
         }); 
       }
@@ -69,6 +69,6 @@ function deutschflagge_init(){
 
 deutschflagge_init();
 
-$(window).resize(function(){ deutschflagge_init(); });
+$(window).resize(function(){ $('.item-cloned').remove(); deutschflagge_init(); });
 
 });

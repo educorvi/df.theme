@@ -98,6 +98,8 @@
 .section-home .df-theme-banner,
 .section-startseite .df-theme-banner {
   height: 380px;
+  margin-left: -8px;
+  width: 102.7%;
 }
 
 /* Top Banner */
@@ -128,13 +130,13 @@
 
     p {
        color: white;
-       font-size: 1rem;
+       font-size: 1.45rem;
     }
   }
 
 }
 
-@media (max-width: @plone-screen-sm-min) {
+@media screen and (max-width: @plone-screen-sm-min) {
   #portal-header{
     padding-right: 0px;
     #portal-logo {
@@ -147,6 +149,7 @@
       margin-top: -35px;
     }
     #portal-searchbox{
+      padding: 20px;
       position: relative;
       width: 100%;
       overflow: hidden;
@@ -174,9 +177,16 @@
   }
   #portal-breadcrumbs,
   #mainnavigation{ display: none; }
+  #main-container > header { padding: 0; }
+
+  .section-home .df-theme-banner, .section-startseite .df-theme-banner,
+  .df-theme-banner {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
-@media (max-width: 766px) {
+@media screen and (max-width: @plone-screen-sm-min) {
 
   #content-header{ position: relative; }
   #portal-header{
@@ -185,19 +195,25 @@
       bottom: -2em;
       float: none;
       z-index: 10;
-      right: 4px;
+      right: 20px;
       clear: both;
       display: block;
       margin: 0;
+    }
+    #portal-logo{
+      width: 48%;
+      text-align: right;
+      padding-right: 0px;
     }
     .mysiteactions{
       float: left;
       display: none;
     }
     .bmviLinkMobile{
-      position: absolute;
-      right: 10px;
       top: 55px;
+      float: right;
+      width: 48%;
+      text-align: left;
     }
     #portal-searchbox{
       margin-top: 85px;
@@ -213,8 +229,8 @@
           }
         }
         .searchGadget_form{
-	  margin: auto 2px;
-	}
+      	  margin: auto 2px;
+      	}
       }
       .search-fields{
         display: inline-block;
@@ -230,6 +246,21 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
       }
+    }
+  }
+  .section-startseite .df-theme-banner,
+  .section-home .df-theme-banner,
+  .df-theme-banner{
+    height: auto;
+    .banner-image{
+       width: 100%;
+    }
+    .banner-text{
+       position: relative;
+       top: 0;
+       left: 0;
+       width: 100%;
+       max-width: 100%;
     }
   }
 }
