@@ -98,6 +98,8 @@
 .section-home .df-theme-banner,
 .section-startseite .df-theme-banner {
   height: 380px;
+  margin-left: -8px;
+  width: 102.7%;
 }
 
 /* Top Banner */
@@ -128,7 +130,7 @@
 
     p {
        color: white;
-       font-size: 1.5rem;
+       font-size: 1.45rem;
     }
   }
 
@@ -147,6 +149,7 @@
       margin-top: -35px;
     }
     #portal-searchbox{
+      padding: 20px;
       position: relative;
       width: 100%;
       overflow: hidden;
@@ -174,6 +177,13 @@
   }
   #portal-breadcrumbs,
   #mainnavigation{ display: none; }
+  #main-container > header { padding: 0; }
+
+  .section-home .df-theme-banner, .section-startseite .df-theme-banner,
+  .df-theme-banner {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: @plone-screen-sm-min) {
@@ -239,6 +249,7 @@
     }
   }
   .section-startseite .df-theme-banner,
+  .section-home .df-theme-banner,
   .df-theme-banner{
     height: auto;
     .banner-image{
