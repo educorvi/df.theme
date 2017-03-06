@@ -1,4 +1,5 @@
-<div class="df-theme-footer row">
+<!-- All in bgv.siteactions -->
+<!-- <div class="df-theme-footer row">
   <div class="footer-logo col-xs-12 col-sm-6 col-lg-4">
     <img tal:attributes="src string:${context/portal_url}/++plone++df.theme/logo-white.png" />
   </div>
@@ -9,4 +10,4 @@
           <input type="submit" name="submit" class="emailButton" />
       </form>
   </div>
-</div>
+</div>-->

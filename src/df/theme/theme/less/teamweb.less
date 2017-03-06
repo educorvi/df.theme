@@ -1,0 +1,115 @@
+// Eigene Less, um Luca nicht zu behindern
+
+// ############################ TABLE
+#parent-fieldname-text table {
+
+  font-weight: 300;
+
+  tbody tr th p, 
+  tbody tr th {
+    background-color: #efefef !important;
+    font-size: 1.143rem;
+    color: @deutsche-flagge-public;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  tbody tr td {
+    color: @deutsche-flagge-public;
+    font-size: 1.143rem;
+
+    li, a {
+      font-size: 1.143rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// ############################ FOOTER
+.footer-actions {
+
+  margin-top: 3px;
+
+}
+
+// ############################ LINKS
+address a[href^="mailto"],
+#content a[href^="mailto"] {
+  background: url("img/symbol_letter.png") no-repeat;
+  background-position: right !important;
+  padding-right: 1.429rem !important;
+}
+
+// ############################ ACCORDION
+#accordion {
+
+  a {
+    color: @deutsche-flagge-public;
+  }
+
+  .panel-title {
+
+    text-indent: -1.25rem;
+    margin-left: 1.25rem;
+    }
+
+  .panel-body {
+
+    padding-left: 1.25rem;
+
+    .documentDescription {
+      font-size: 1.286rem;
+      font-weight: 400;
+      margin-left: 0;
+    }
+
+    li {
+      margin-bottom: 0;
+    }
+
+    h3, p, a {
+      font-size: 1.286rem;
+    }
+  }
+
+}
+
+// ############################ INTERAKTIVE ANWENDUNGEN
+#parent-fieldname-text {
+
+    .field-label {
+      color: @deutsche-flagge-public;
+      font-size: 1.143rem;
+      font-weight: 600;
+    }
+
+    .group legend {
+      color: @deutsche-flagge-public;
+    }
+
+    .required::after {
+      top: 6px;
+    }
+
+
+    [type="submit"] {
+      &:before {
+        content: "›";
+        font-family: "DeutscheFlagge";
+        padding-right: 5px;
+        color: @deutsche-flagge-public;
+        }
+      background-color: @deutsche-flagge-light;
+      color: @deutsche-flagge-public
+    }
+
+    .action-button input {
+      &:before {
+        content: "›";
+        font-family: "DeutscheFlagge";
+        padding-right: 5px;
+        color: @deutsche-flagge-public;
+        }
+    }
+}
