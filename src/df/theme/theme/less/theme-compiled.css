@@ -9997,4 +9997,84 @@ address hr {
   text-align: center;
   font-weight: 500 !important;
 }
+#parent-fieldname-text table {
+  font-weight: 300;
+}
+#parent-fieldname-text table tbody tr th p,
+#parent-fieldname-text table tbody tr th {
+  background-color: #efefef !important;
+  font-size: 1.143rem;
+  color: #15528c;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+}
+#parent-fieldname-text table tbody tr td {
+  color: #15528c;
+  font-size: 1.143rem;
+}
+#parent-fieldname-text table tbody tr td li,
+#parent-fieldname-text table tbody tr td a {
+  font-size: 1.143rem;
+  margin-bottom: 0;
+}
+.footer-actions {
+  margin-top: 3px;
+}
+address a[href^="mailto"],
+#content a[href^="mailto"] {
+  background: url("img/symbol_letter.png") no-repeat;
+  background-position: right !important;
+  padding-right: 1.429rem !important;
+}
+#accordion a {
+  color: #15528c;
+}
+#accordion .panel-title {
+  text-indent: -1.25rem;
+  margin-left: 1.25rem;
+}
+#accordion .panel-body {
+  padding-left: 1.25rem;
+}
+#accordion .panel-body .documentDescription {
+  font-size: 1.286rem;
+  font-weight: 400;
+  margin-left: 0;
+}
+#accordion .panel-body li {
+  margin-bottom: 0;
+}
+#accordion .panel-body h3,
+#accordion .panel-body p,
+#accordion .panel-body a {
+  font-size: 1.286rem;
+}
+#parent-fieldname-text .field-label {
+  color: #15528c;
+  font-size: 1.143rem;
+  font-weight: 600;
+}
+#parent-fieldname-text .group legend {
+  color: #15528c;
+}
+#parent-fieldname-text .required::after {
+  top: 6px;
+}
+#parent-fieldname-text [type="submit"] {
+  background-color: #efefef;
+  color: #15528c;
+}
+#parent-fieldname-text [type="submit"]:before {
+  content: "›";
+  font-family: "DeutscheFlagge";
+  padding-right: 5px;
+  color: #15528c;
+}
+#parent-fieldname-text .action-button input:before {
+  content: "›";
+  font-family: "DeutscheFlagge";
+  padding-right: 5px;
+  color: #15528c;
+}
 /*# sourceMappingURL=++theme++deutsche-flagge-theme/less/theme-compiled.css.map */
