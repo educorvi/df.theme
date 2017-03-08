@@ -10109,8 +10109,27 @@ address hr {
   font-size: 1.143rem;
   margin-bottom: 0;
 }
+.df-theme-banner .banner-text {
+  opacity: 0.8;
+}
 .footer-actions {
   margin-top: 3px;
+}
+.shortcuts-navbar .shortcut-header span::after {
+  margin-top: -11px;
+}
+.portletNavigationTree .portletContent .mobileSiteActions a {
+  background-color: #c7c7c7;
+}
+@media (max-width: 768px) {
+  .shortcuts-navbar {
+    background-color: #efefef;
+  }
+  .shortcuts-navbar .shortcut-header span::after,
+  .shortcuts-navbar .shortcuts-navbar-nav li a,
+  .shortcuts-navbar .shortcut-header {
+    color: #3f3933;
+  }
 }
 address a[href^="mailto"],
 #content a[href^="mailto"] {

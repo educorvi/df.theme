@@ -26,11 +26,40 @@
   }
 }
 
+// ############################ BANNER
+.df-theme-banner .banner-text {
+  opacity: 0.8;
+}
+
 // ############################ FOOTER
 .footer-actions {
 
   margin-top: 3px;
 
+}
+
+.shortcuts-navbar .shortcut-header span::after {
+  margin-top: -11px;
+}
+
+
+// ############################ MOBILE NAVIGATION
+.portletNavigationTree .portletContent .mobileSiteActions a {
+  background-color: #c7c7c7;
+}
+
+@media (max-width: @plone-screen-sm-min) {
+
+  .shortcuts-navbar {
+    background-color: @deutsche-flagge-light;
+
+    .shortcut-header span::after,
+    .shortcuts-navbar-nav li a,
+    .shortcut-header {
+      color: @deutsche-flagge-dark;
+    }
+
+  }
 }
 
 // ############################ LINKS
