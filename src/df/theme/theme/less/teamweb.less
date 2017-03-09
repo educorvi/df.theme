@@ -26,12 +26,40 @@
   }
 }
 
+// ############################ CONTENT
+#main-container #content-core {
+  margin-left: 0;
+}
+
+.panel-body,
+#parent-fieldname-text {
+
+  li, p, a {
+    font-size: 1.286rem;
+  }
+}
+
+// ############################ IMAGE
+.image-inline {
+  height: auto;
+  max-width: 100%;
+}
+
 // ############################ BANNER
 .df-theme-banner .banner-text {
   opacity: 0.8;
 }
 
 // ############################ FOOTER
+.df-theme-footer {
+  margin-top: 2em;
+}
+
+.df-theme-footer .col-xs-12,
+.df-theme-footer .col-sm-12 {
+  margin-bottom: 2em;
+}
+
 .footer-actions {
 
   margin-top: 3px;
@@ -58,8 +86,13 @@
     .shortcut-header {
       color: @deutsche-flagge-dark;
     }
-
   }
+
+  .df-theme-banner {
+    margin-left: 10px;
+    padding-right: 20px;
+  }
+
 }
 
 // ############################ LINKS
@@ -72,6 +105,8 @@ address a[href^="mailto"],
 
 // ############################ ACCORDION
 #accordion {
+
+  margin-left: 15px;
 
   a {
     color: @deutsche-flagge-public;

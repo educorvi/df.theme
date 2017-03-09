@@ -10109,8 +10109,30 @@ address hr {
   font-size: 1.143rem;
   margin-bottom: 0;
 }
+#main-container #content-core {
+  margin-left: 0;
+}
+.panel-body li,
+#parent-fieldname-text li,
+.panel-body p,
+#parent-fieldname-text p,
+.panel-body a,
+#parent-fieldname-text a {
+  font-size: 1.286rem;
+}
+.image-inline {
+  height: auto;
+  max-width: 100%;
+}
 .df-theme-banner .banner-text {
   opacity: 0.8;
+}
+.df-theme-footer {
+  margin-top: 2em;
+}
+.df-theme-footer .col-xs-12,
+.df-theme-footer .col-sm-12 {
+  margin-bottom: 2em;
 }
 .footer-actions {
   margin-top: 3px;
@@ -10130,12 +10152,19 @@ address hr {
   .shortcuts-navbar .shortcut-header {
     color: #3f3933;
   }
+  .df-theme-banner {
+    margin-left: 10px;
+    padding-right: 20px;
+  }
 }
 address a[href^="mailto"],
 #content a[href^="mailto"] {
   background: url("img/symbol_letter.png") no-repeat;
   background-position: right !important;
   padding-right: 1.429rem !important;
+}
+#accordion {
+  margin-left: 15px;
 }
 #accordion a {
   color: #15528c;
