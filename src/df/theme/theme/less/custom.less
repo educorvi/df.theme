@@ -35,14 +35,14 @@ img[src$='welle.svg']{ display: none;}
 #content .external-link {
   background: url("img/symbol_ext.png") no-repeat;
   background-position: right;
-  padding-right: 1.071rem;
+  padding-right: 1.429rem;
 }
 
 #content a[data-linktype="internal"],
 #content a[data-linktype="anchor"] {
   background: url("img/symbol_int.png") no-repeat;
   background-position: right;
-  padding-right: 1.071rem;
+  padding-right: 1.429rem;
 }
 
 #content .mail-link {
@@ -278,3 +278,10 @@ address {
   text-align: center;
   font-weight: @plone-font-weight-semibold !important;
 }
+
+@media screen and (max-width: 767px){
+  #portal-header #portal-searchbox {
+    margin-top: 80px;
+  }
+}
+
