@@ -246,7 +246,7 @@ form, .linkModal {
     height: auto;
 }
 
-#design-credits{ margin-left: 20px; }
+#design-credits{ text-align: right; }
 
 @media screen and (min-width: @plone-screen-sm-min) and (max-width: 1112px){
   .plone-toolbar-left-expanded .container {
@@ -308,8 +308,8 @@ form, .linkModal {
   display: block;
 }
 
-.container {
-    width: 100% !important;
+body .container {
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -329,3 +329,11 @@ form, .linkModal {
   }
 }
 
+@media screen and (max-width: @plone-screen-xs-min){
+  .image-inline{ width: 100% }
+}
+
+@media screen and (max-width: 361px){
+  #portal-header #portal-searchbox .row a.btn{ width: 48% }
+  #portal-header #portal-searchbox .row a.btn:last-child{ width: 100%; display: block; }
+}
