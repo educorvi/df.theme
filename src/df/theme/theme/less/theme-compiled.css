@@ -9162,18 +9162,29 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   .portletNavigationTree {
     display: none;
   }
+  #sidebar .portletNavigationTree {
+    padding-bottom: 0 !important;
+  }
   .portlet.mobileNavigationPortlet {
+    background-color: #f3f3f3;
     display: block;
+    border-radius: 0;
   }
   .portlet.mobileNavigationPortlet .portletHeader {
-    padding-left: 20px;
+    border-radius: 0;
+    padding-left: 0px;
     padding-right: 0;
+    background-color: transparent;
   }
   .portlet.mobileNavigationPortlet .plone-navbar-collapse.plone-collapse {
+    padding: 0;
     display: none !important;
   }
   .portlet.mobileNavigationPortlet .plone-navbar-collapse.plone-collapse.in {
     display: block !important;
+  }
+  #mainnavigation {
+    display: none;
   }
   #mainnavigation .plone-navbar-header {
     display: none;
@@ -9610,6 +9621,9 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 #sidebar .portletExtraNavigation .portletContent > ul > li > a {
   border-top: 1px solid white !important;
 }
+.portaltype-frontpage #sidebar .portletKontaktPortlet {
+  display: none;
+}
 #behtab > div {
   margin-bottom: 1em;
 }
@@ -9665,6 +9679,33 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 @media screen and (max-width: 992px) {
   .quarter-top-rechts {
     background-color: #fff;
+  }
+  .portlet.portletKontaktPortlet {
+    border-top: none;
+    background-color: #e6e6e6;
+    display: block;
+    border-radius: 0;
+  }
+  .portlet.portletKontaktPortlet h5 {
+    padding: 7px 0px;
+    margin: 0;
+  }
+  .portlet.portletKontaktPortlet .plone-toggle {
+    margin: 0;
+    border-radius: 0;
+  }
+  .portlet.portletKontaktPortlet .plone-toggle::before {
+    font-family: 'FontAwesome';
+    color: #15528c;
+    content: "\f105";
+    font-weight: bold;
+    padding-right: 9px;
+  }
+  .portlet.portletKontaktPortlet .plone-collapse {
+    display: none !important;
+  }
+  .portlet.portletKontaktPortlet .plone-collapse.in {
+    display: block !important;
   }
 }
 /* Footer */
@@ -9798,11 +9839,15 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
     width: 88%;
   }
   #portal-footer-wrapper .portletWrapper {
-    min-height: auto!important;
+    min-height: 0px !important;
     width: 100%;
     margin-top: 1em;
   }
-  #portal-footer-wrapper .portletWrapper header::after {
+  #portal-footer-wrapper .portletWrapper header a {
+    display: inline-block;
+    width: 100%;
+  }
+  #portal-footer-wrapper .portletWrapper header a::after {
     content: '';
     display: block;
     width: 0;
@@ -10104,6 +10149,27 @@ address hr {
 @media screen and (max-width: 767px) {
   #portal-header #portal-searchbox {
     margin-top: 80px;
+  }
+}
+.plone-visible {
+  display: none;
+}
+.deutscheflagge-toggle {
+  width: 100%;
+  text-align: left;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+@media (min-width: 992px) {
+  .plone-visible {
+    display: inline-block;
+  }
+  .plone-toggle {
+    display: none;
   }
 }
 #accordion {

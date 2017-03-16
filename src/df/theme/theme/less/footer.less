@@ -146,21 +146,25 @@
       }
     }
     .portletWrapper{
-      min-height: auto!important;
+      min-height: 0px !important;
       width: 100%;
       margin-top: 1em;
-      header::after{
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        border: 6px inset;
-        border-color: #fff transparent transparent;
-        border-top-style: solid;
-        border-bottom-width: 0;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
+      header a{
+        display: inline-block;
+        width: 100%;
+        &::after{
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          border: 6px inset;
+          border-color: #fff transparent transparent;
+          border-top-style: solid;
+          border-bottom-width: 0;
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+        }
       }
       section .portletContent{ padding: .8em 0; }
       .portletContent{

@@ -23,7 +23,7 @@ function deutschflagge_init(){
 
   if (window.matchMedia("(max-width: 770px)").matches) {
 
-      $('#portal-footer header').on('click', function(event){
+      $('#portal-footer header a').on('click', function(event){
         event.preventDefault();
         $(this).closest('section').find('.portletContent').toggle()
       });
