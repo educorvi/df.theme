@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+var toogle_footer = function(event){
+   event.preventDefault();
+   $(this).closest('section').find('.portletContent').toggle()
+}
+
 function deutschflagge_init(){
    
   if (window.matchMedia("(max-width: 480px)").matches) {
@@ -20,13 +25,10 @@ function deutschflagge_init(){
       });
 
   }
-
+ 
   if (window.matchMedia("(max-width: 770px)").matches) {
-
-      $('#portal-footer header a').on('click', function(event){
-        event.preventDefault();
-        $(this).closest('section').find('.portletContent').toggle()
-      });
+      $('#portal-footer header').off('click', toogle_footer);
+      $('#portal-footer header').on('click', toogle_footer);
   }
 
   // Instantiate the Bootstrap carousel
