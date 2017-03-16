@@ -453,6 +453,10 @@
   }
 }
 
+.portaltype-frontpage #sidebar .portletKontaktPortlet{
+  display: none;
+}
+
 #behtab > div{
   margin-bottom: 1em;
 }
@@ -492,5 +496,26 @@
   .quarter-top-rechts{
       background-color: #fff;
   }
+  .portlet.portletKontaktPortlet{
+    border-top: none;
+    background-color: #e6e6e6;
+    display: block;
+    border-radius: 0;
+    h5{ padding: 7px 0px; margin: 0; }
+    .plone-toggle{
+      margin: 0;
+      border-radius: 0;
+      &::before {
+    	font-family: 'FontAwesome';
+    	color: #15528c;
+    	content: "\f105";
+        font-weight: bold;
+        padding-right: 9px;
+      }
+    }
+    .plone-collapse{
+        display: none !important;
+        &.in{ display: block !important; }
+    }
+  }
 }
-

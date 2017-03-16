@@ -193,17 +193,24 @@ ul.mega-dropdown-menu-lv2 > li > a:hover::before, ul.mega-dropdown-menu-lv1 > li
 
 @media screen and (max-width: @plone-screen-md-min) {
   .portletNavigationTree{ display:none; }
+  #sidebar .portletNavigationTree{ padding-bottom: 0 !important; }
   .portlet.mobileNavigationPortlet{ 
+    background-color: #f3f3f3;
     display: block; 
+    border-radius: 0;
     .portletHeader{
-      padding-left: 20px; padding-right: 0;
+      border-radius: 0;
+      padding-left: 0px; padding-right: 0;
+      background-color: transparent;
     }
     .plone-navbar-collapse.plone-collapse{
+        padding: 0;
         display: none !important;
         &.in{ display: block !important; }
     }
   }
   #mainnavigation{
+    display: none;
     .plone-navbar-header{
       display: none;
     }
