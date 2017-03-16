@@ -1,108 +1,5 @@
 // Eigene Less, um Luca nicht zu behindern
 
-// ############################ TABLE
-#parent-fieldname-text table {
-
-  font-weight: 300;
-
-  tbody tr th p, 
-  tbody tr th {
-    background-color: #efefef !important;
-    font-size: 1.143rem;
-    color: @deutsche-flagge-public;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-  }
-
-  tbody tr td {
-    color: @deutsche-flagge-public;
-    font-size: 1.143rem;
-
-    li, a {
-      font-size: 1.143rem;
-      margin-bottom: 0;
-    }
-  }
-}
-
-// ############################ CONTENT
-#main-container #content-core {
-  margin-left: 0;
-}
-
-.panel-body,
-#parent-fieldname-text {
-
-  li, p, a {
-    font-size: 1.286rem;
-  }
-}
-
-// ############################ IMAGE
-.image-inline {
-  height: auto;
-  max-width: 100%;
-}
-
-// ############################ BANNER
-.df-theme-banner .banner-text {
-  opacity: 0.8;
-}
-
-// ############################ FOOTER
-.df-theme-footer {
-  margin-top: 2em;
-}
-
-.df-theme-footer .col-xs-12,
-.df-theme-footer .col-sm-12 {
-  margin-bottom: 2em;
-}
-
-.footer-actions {
-
-  margin-top: 3px;
-
-}
-
-.shortcuts-navbar .shortcut-header span::after {
-  margin-top: -11px;
-}
-
-
-// ############################ MOBILE NAVIGATION
-.portletNavigationTree .portletContent .mobileSiteActions a {
-  background-color: #c7c7c7;
-}
-
-@media (max-width: @plone-screen-sm-min) {
-
-  .shortcuts-navbar {
-    background-color: @deutsche-flagge-light;
-
-    .shortcut-header span::after,
-    .shortcuts-navbar-nav li a,
-    .shortcut-header {
-      color: @deutsche-flagge-dark;
-    }
-  }
-
-  .df-theme-banner {
-    margin-left: 10px;
-    padding-right: 20px;
-  }
-
-}
-
-// ############################ LINKS
-address a[href^="mailto"],
-#content a[href^="mailto"] {
-  background: url("img/symbol_letter.png") no-repeat;
-  background-position: right !important;
-  padding-right: 1.429rem !important;
-}
-
 // ############################ ACCORDION
 #accordion {
 
@@ -137,6 +34,59 @@ address a[href^="mailto"],
     }
   }
 
+}
+
+// ############################ ANSPRECHPARTNER
+#behheader {
+  font-weight: 700;
+}
+
+#behtext {
+  font-size: 0.8571rem;
+}
+
+// ############################ BANNER
+.df-theme-banner .banner-text {
+  opacity: 0.8;
+}
+
+// ############################ CONTENT
+.panel-body,
+#parent-fieldname-text {
+
+  li, p, a {
+    font-size: 1.286rem;
+  }
+}
+
+#main-container .documentDescription {
+  margin-bottom: 2.3rem;
+}
+
+// ############################ FOOTER
+.df-theme-footer {
+  margin-top: 2em;
+}
+
+.df-theme-footer .col-xs-12,
+.df-theme-footer .col-sm-12 {
+  margin-bottom: 2em;
+}
+
+.footer-actions {
+
+  margin-top: 3px;
+
+}
+
+.shortcuts-navbar .shortcut-header span::after {
+  margin-top: -11px;
+}
+
+// ############################ IMAGE
+.image-inline {
+  height: auto;
+  max-width: 100%;
 }
 
 // ############################ INTERAKTIVE ANWENDUNGEN
@@ -176,4 +126,96 @@ address a[href^="mailto"],
         color: @deutsche-flagge-public;
         }
     }
+}
+
+// ############################ LINKS
+address a[href^="mailto"],
+#content a[href^="mailto"] {
+  background: url("img/symbol_letter.png") no-repeat;
+  background-position: right !important;
+  padding-right: 1.429rem !important;
+}
+
+// ############################ MOBILE NAVIGATION
+.portletNavigationTree .portletContent .mobileSiteActions a {
+  background-color: #c7c7c7;
+}
+
+@media (min-width: @plone-screen-md-min) {
+  
+  .navbar-mobil {
+    display:none;
+  }
+} 
+
+@media (max-width: @plone-screen-md-min) {
+
+  .navbar-desktop {
+     display:none;
+  } 
+
+  .shortcuts-navbar {
+    background-color: @deutsche-flagge-light;
+
+    .shortcut-header{ width: 100% !important; border: none; border-bottom: 0.357em solid #fff;}
+
+    .shortcuts-navbar-nav{
+      width: 100%; text-align: center;
+      li {
+        width: 100%;
+        a{ padding:.5em 0em; }
+      }
+    }
+
+    .shortcut-header span::after,
+    .shortcuts-navbar-nav li a,
+    .shortcut-header {
+      color: @deutsche-flagge-dark;
+    }
+  }
+}
+
+@media (max-width: @plone-screen-sm-min) {
+
+  .df-theme-banner {
+    margin-left: 10px !important;
+    padding-right: 20px;
+  }
+}
+
+// ############################ QUARTER BOX
+.quarter-top-schlagzeile { 
+  text-indent: -15px;
+}
+
+// ############################ TABLE
+#parent-fieldname-text table {
+
+  font-weight: 300;
+  
+  thead tr th p,
+  thead tr th,
+  tbody tr th p, 
+  tbody tr th {
+    background-color: #efefef !important;
+    font-size: 1.143rem;
+    color: @deutsche-flagge-public;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  tbody tr td {
+    color: @deutsche-flagge-public;
+    font-size: 1.143rem;
+
+    b, strong {
+      font-weight: 600;
+    }
+
+    li, a, p {
+      font-size: 1.143rem;
+      margin-bottom: 0;
+    }
+  }
 }
