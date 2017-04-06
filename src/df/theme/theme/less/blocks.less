@@ -56,7 +56,6 @@
         }
         &:hover {
           background: @deutsche-flagge-public;
-	        border-top:1px solid white;
           color: white;
           text-decoration: none;
         }
@@ -502,17 +501,31 @@
     display: block;
     border-radius: 0;
     h5{ padding: 7px 0px; margin: 0; }
+
+    .plone-toggle.collapsed{
+      margin: 0;
+      border-radius: 0;
+      &::before {
+        font-family: 'FontAwesome';
+        color: #15528c;
+        content: "\f107";
+        font-weight: bold;
+        padding-right: 9px;
+      }
+    }
+
     .plone-toggle{
       margin: 0;
       border-radius: 0;
       &::before {
     	font-family: 'FontAwesome';
     	color: #15528c;
-    	content: "\f105";
+    	content: "\f106";
         font-weight: bold;
         padding-right: 9px;
       }
     }
+
     .plone-collapse{
         display: none !important;
         &.in{ display: block !important; }

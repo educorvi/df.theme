@@ -39,7 +39,7 @@ h2 {
   color: @deutsche-flagge-public;
   font-size: 1.429rem;
   font-weight: 600;
-  margin-bottom: 2.3rem;
+  margin-bottom: 45px;
 }
 
 h3 {
@@ -47,14 +47,14 @@ h3 {
   font-style: italic;
   font-weight: 300;
   line-height: 1.5;
-  margin-bottom: 2.3rem;
+  margin-bottom: 45px;
 }
 
 p {
   font-size: 1.286rem;
   font-weight: 300;
   color: @deutsche-flagge-public;
-  margin-bottom: 2.3rem;
+  margin-bottom: 45px;
 }
 
 table {
@@ -203,8 +203,8 @@ table {
     text-decoration: underline;
   }
 
-  ul {
-    margin-bottom: 2.3em;
+  ul, ol {
+    margin-bottom: 45px;
     text-indent: -1.143rem;
     margin-left: 1.143rem;
   }
@@ -217,7 +217,7 @@ table {
   li::before {
     font-family: 'FontAwesome';
     color:@deutsche-flagge-public;
-    font-size:@plone-font-size-large;
+    font-size:1.286rem;
     padding-right:10px;
     content: "\f105";
   }
@@ -246,7 +246,7 @@ form, .linkModal {
     height: auto;
 }
 
-#design-credits{ text-align: right; }
+#design-credits{ text-align: left; margin-left: 5px; margin-top: 5px;}
 
 @media screen and (min-width: @plone-screen-sm-min) and (max-width: 1112px){
   .plone-toolbar-left-expanded .container {
@@ -331,9 +331,4 @@ body .container {
 
 @media screen and (max-width: @plone-screen-xs-min){
   .image-inline{ width: 100% }
-}
-
-@media screen and (max-width: 361px){
-  #portal-header #portal-searchbox .row a.btn{ width: 48% }
-  #portal-header #portal-searchbox .row a.btn:last-child{ width: 100%; display: block; }
 }

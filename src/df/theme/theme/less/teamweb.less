@@ -48,9 +48,20 @@
 // ############################ BANNER
 .df-theme-banner .banner-text {
   opacity: 0.8;
+
+  h1 em {
+    font-family: 'Roboto';
+    font-size: 3.5rem;
+  }
+
 }
 
 // ############################ CONTENT
+
+b, strong {
+      font-weight: 600;
+}
+
 .panel-body,
 #parent-fieldname-text {
 
@@ -133,7 +144,6 @@ address a[href^="mailto"],
 #content a[href^="mailto"] {
   background: url("img/symbol_letter.png") no-repeat;
   background-position: right !important;
-  padding-right: 1.429rem !important;
 }
 
 // ############################ MOBILE NAVIGATION
@@ -141,18 +151,87 @@ address a[href^="mailto"],
   background-color: #c7c7c7;
 }
 
+@media (min-width: @plone-screen-lg-min) {
+
+  .plone-nav {
+    padding-left: 50px;
+  }
+
+}
+
 @media (min-width: @plone-screen-md-min) {
-  
-  .navbar-mobil {
+
+  .plone-navbar-nav {
+    margin-left: auto;
+  }
+
+  .viewletBacklinkViewlet,
+  .navbar-mobil,
+  .kontakt-mobil,
+  .table-mobil {
     display:none;
   }
+
 } 
 
 @media (max-width: @plone-screen-md-min) {
 
-  .navbar-desktop {
+    #design-credits {
+      margin-left: 10px;
+    }
+
+    .portletNavigationTree .portletContent {
+
+      .section-aktuelles a,
+      .section-aktuelles ul a,
+      .section-ansprechpartner a,
+      .section-ansprechpartner ul a,
+      .section-antraege-und-dokumente a,
+      .section-antraege-und-dokumente ul a,
+      .section-zeugnisse-verifikation a,
+      .section-zeugnisse-verifikation ul a,
+      .section-aus-und-fortbildung a,
+      .section-aus-und-fortbildung ul a,
+      .section-news a,
+      .section-news ul a,
+      .section-contact-details a,
+      .section-contact-details ul a,
+      .section-applications-and-documents a,
+      .section-applications-and-documents ul a,
+      .section-certificates-verification a,
+      .section-certificates-verification ul a,
+      .section-training a ,
+      .section-training ul a {
+        background-color: #bcd4e0;
+      }
+    }
+
+    .portletNavigationTree .portletHeader .tile {
+      font-weight: bold;
+    }
+
+  #sidebar .portletNavigationTree .portletHeader {
+    padding-left: 20px;
+  }
+
+  #sidebar .portletNavigationTree {
+    margin-left: 5px;
+  }
+
+  .notfall-li {
+      padding-left: -30px
+  }
+
+  .navbar-desktop,
+  .kopfzeiletable,
+  #notfall-zwischenzeile,
+  .table-desktop {
      display:none;
-  } 
+  }
+
+  .portlet.portletKontaktPortlet.kontakt-desktop {
+    display:none;
+  }
 
   .shortcuts-navbar {
     background-color: @deutsche-flagge-light;
@@ -175,11 +254,65 @@ address a[href^="mailto"],
   }
 }
 
+@media (min-width: @plone-screen-sm-min) {
+
+  address a[href^="mailto"],
+  #content a[href^="mailto"] {
+    padding-right: 1.429rem !important;
+  }
+
+}
+
 @media (max-width: @plone-screen-sm-min) {
+
+  h2, h3, ul, ol, p {
+    margin-bottom: 2.3rem;
+  }
+
+  #content-core #parent-fieldname-text ul {
+    margin-left: -2rem;
+    text-indent: -1.5rem;
+  }
+
+  .pdf-link a,
+  .word-link a,
+  .excel-link a,
+  address a[href^="mailto"] {
+    padding-right: 2rem !important;
+  }
+
+  .banner-text {
+    display:none;
+  } 
+
+  #sidebar .portletNavigationTree .portletHeader {
+    padding-left: 20px;
+  }
+
+  #design-credits {
+    margin-left: 15px;
+  }
+
+  #sidebar .portletNavigationTree,
+  .portletKontaktPortlet {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
   .df-theme-banner {
     margin-left: 10px !important;
     padding-right: 20px;
+
+    .banner-text h1 {
+      font-size: 1.857rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1032px) {
+
+  .plone-navbar li a {
+    font-size: 13px;
   }
 }
 
@@ -209,8 +342,8 @@ address a[href^="mailto"],
     color: @deutsche-flagge-public;
     font-size: 1.143rem;
 
-    b, strong {
-      font-weight: 600;
+    li {
+      list-style: none;
     }
 
     li, a, p {

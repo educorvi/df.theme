@@ -48,6 +48,13 @@ $(document).ready(function(event) {
         $(this).attr("href",link);
     });
 
+    var seite = String(window.location).search(/SearchableText/);
+
+    if (seite != -1)
+
+    { 
+        $('header .documentFirstHeading').hide();
+    }
 
 
 });
