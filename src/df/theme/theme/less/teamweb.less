@@ -58,6 +58,10 @@
 
 // ############################ CONTENT
 
+#portal-sitemap .navTreeLevel3 {
+    display:none;
+}
+
 b, strong {
       font-weight: 600;
 }
@@ -65,7 +69,7 @@ b, strong {
 .panel-body,
 #parent-fieldname-text {
 
-  li, p, a {
+  li, p, a, span {
     font-size: 1.286rem;
   }
 }
@@ -146,6 +150,24 @@ address a[href^="mailto"],
   background-position: right !important;
 }
 
+
+// ############################ MOBILE VIDEOS
+@media (max-width: 360px) {
+    video {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 720px) {
+    video {
+        width: 360px;
+        height: 180px;
+    }
+} 
+
+
 // ############################ MOBILE NAVIGATION
 .portletNavigationTree .portletContent .mobileSiteActions a {
   background-color: #c7c7c7;
@@ -172,7 +194,8 @@ address a[href^="mailto"],
     display:none;
   }
 
-} 
+}
+
 
 @media (max-width: @plone-screen-md-min) {
 
@@ -184,24 +207,34 @@ address a[href^="mailto"],
 
       .section-aktuelles a,
       .section-aktuelles ul a,
+      .section-aktuelles .navTreeLevel2 a,
       .section-ansprechpartner a,
       .section-ansprechpartner ul a,
+      .section-ansprechpartner .navTreeLevel2 a,
       .section-antraege-und-dokumente a,
       .section-antraege-und-dokumente ul a,
+      .section-antraege-und-dokumente .navTreeLevel2 a,
       .section-zeugnisse-verifikation a,
       .section-zeugnisse-verifikation ul a,
+      .section-zeugnisse-verifikation .navTreeLevel2 a,
       .section-aus-und-fortbildung a,
       .section-aus-und-fortbildung ul a,
+      .section-aus-und-fortbildung .navTreeLevel2 a,
       .section-news a,
       .section-news ul a,
+      .section-news .navTreeLevel2 a,
       .section-contact-details a,
       .section-contact-details ul a,
+      .section-contact-details .navTreeLevel2 a,
       .section-applications-and-documents a,
       .section-applications-and-documents ul a,
+      .section-applications-and-documents .navTreeLevel2 a,
       .section-certificates-verification a,
       .section-certificates-verification ul a,
+      .section-certificates-verification .navTreeLevel2 a,
       .section-training a ,
-      .section-training ul a {
+      .section-training ul a,
+      .section-training .navTreeLevel2 a {
         background-color: #bcd4e0;
       }
     }

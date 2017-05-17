@@ -4,7 +4,7 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
       metal:use-macro="context/main_template/macros/master"
-      i18n:domain="plone">
+      i18n:domain="df.theme">
 
 <body>
 
@@ -36,19 +36,17 @@
                     Irgendetwas ist schief gelaufen
                 </h1>
 
-                <div id="content-core">
-                    <p i18n:translate="description_site_error" class="description">
+                <div class="col-md-12">
+                <div id="parent-fieldname-text">
+                    <h3 i18n:translate="description_site_error">
  	                    We apologize for the inconvenience, but the page you were trying to access is not at this address.
                         You can use the links below to help you find what you are looking for.
-                     </p>
+                     </h3>
 
-                    <p i18n:translate="description_site_error_mail_site_admin" class="discreet">
+                    <p>
+                    <span i18n:translate="description_site_error_mail_site_admin" class="discreet">
                         If you are certain you have the correct web address but are encountering an error, please
-                        contact the <span i18n:name="site_admin">
-                        <a href="#"
-                           i18n:translate="label_site_admin"
-                           tal:attributes="href string:${context/portal_url}/contact-info">Site Administration</a></span>.
-                    </p>
+                        contact the</span> <a href="mailto:feedback@deutsche-flagge.de">feedback@deutsche-flagge.de</a>.</p>
 
                     <p i18n:translate="description_site_error_thank_you">
                     Thank you.
@@ -96,6 +94,7 @@
 
                     </tal:suggestions>
                 </div>
+                </div>
             </tal:redirect>
 
         </metal:notfound>
@@ -109,7 +108,8 @@
                 We&#8217;re sorry, but there seems to be an error&hellip;
             </h1>
 
-            <div id="content-core">
+            <div class="col-md-12">
+            <div id="parent-fieldname-text">
                 <tal:hasentry condition="err_log_id">
                     <p tal:condition="not: isManager"
                        i18n:translate="description_error_has_been_logged">
@@ -150,6 +150,7 @@
                        tal:attributes="href string:${context/portal_url}/contact-info">Site Administration</a></span>.
                     </p>
                 </tal:noentry>
+            </div>
             </div>
 
         </metal:othererror>
