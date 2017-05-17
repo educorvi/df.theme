@@ -1,4 +1,17 @@
 /* Global Navbar */
+.viewletBacklinkViewlet {
+	padding:10px 15px;
+	a.mobileBack {
+    		font-weight: bold;
+
+    	&:before {
+    	font-family: 'FontAwesome';
+    	color: #15528c;
+    	content: "\f104";
+   	 margin-right:5px;
+    	}
+	}
+}
 #mainnavigation-wrapper{
   background-color: @deutsche-flagge-public;
 }
@@ -161,6 +174,37 @@ ul.mega-dropdown-menu-lv2 > li > a:hover::before, ul.mega-dropdown-menu-lv1 > li
       display: inline-block;
       font-size: 15px;
     }
+  }
+  .portletContent > ul > li > a:hover,
+  .portletContent .navTreeItem a:hover { 
+	color:#333 !important;
+	background:transparent !important;
+   }
+  .portletContent ul li {
+	 a.contenttype-folder{ 
+	 &:before {content:none !important;}
+	}
+	ul a {padding-left:15px;}
+  }
+  .portletContent ul li.has_children > a{
+    display: table-cell;
+    width: 100%;
+    border-right: 2px solid white;
+    &.collapse-toggle {
+       &:after {
+         content: "\f078";
+         position: absolute;
+         right: 10px;
+        font-size:inherit; 
+	color: #777777;
+       }
+    }
+    &.collapse-toggle[aria-expanded="true"] {
+        &:after {
+         content: "\f077"
+        }
+    }
+    &:before{ display: none !important; }
   }
 }
 
