@@ -8527,7 +8527,9 @@ table th {
 .panel-body p,
 #parent-fieldname-text p,
 .panel-body a,
-#parent-fieldname-text a {
+#parent-fieldname-text a,
+.panel-body span,
+#parent-fieldname-text span {
   color: #15528c;
   font-weight: 300;
   font-size: 18px;
@@ -9287,9 +9289,15 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 #column-bgv-startquarter-portlet-1 {
   padding: 0;
 }
+.portletQuarterPortlet a {
+  text-decoration: underline;
+}
 .portletQuarterPortlet .quarter-top {
   padding-bottom: 2em;
   background-color: #82b1cd;
+}
+.portletQuarterPortlet .quarter-top a {
+  color: #15528c;
 }
 .portletQuarterPortlet .quarter-top .quarter-top-header {
   color: #15528c;
@@ -9366,6 +9374,9 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   height: 190px;
   margin-left: 60px;
   margin-top: 30px;
+}
+.portletQuarterPortlet .quarter-bottom .quarter-bottom-text a {
+  color: #fff;
 }
 #news-item-section {
   overflow: hidden;
@@ -10216,6 +10227,9 @@ address hr {
   font-family: 'Roboto';
   font-size: 3.5rem;
 }
+#portal-sitemap .navTreeLevel3 {
+  display: none;
+}
 b,
 strong {
   font-weight: 600;
@@ -10225,7 +10239,9 @@ strong {
 .panel-body p,
 #parent-fieldname-text p,
 .panel-body a,
-#parent-fieldname-text a {
+#parent-fieldname-text a,
+.panel-body span,
+#parent-fieldname-text span {
   font-size: 1.286rem;
 }
 #main-container .documentDescription {
@@ -10280,6 +10296,18 @@ address a[href^="mailto"],
   background: url("img/symbol_letter.png") no-repeat;
   background-position: right !important;
 }
+@media (max-width: 360px) {
+  video {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media (max-width: 720px) {
+  video {
+    width: 360px;
+    height: 180px;
+  }
+}
 .portletNavigationTree .portletContent .mobileSiteActions a {
   background-color: #c7c7c7;
 }
@@ -10305,24 +10333,34 @@ address a[href^="mailto"],
   }
   .portletNavigationTree .portletContent .section-aktuelles a,
   .portletNavigationTree .portletContent .section-aktuelles ul a,
+  .portletNavigationTree .portletContent .section-aktuelles .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-ansprechpartner a,
   .portletNavigationTree .portletContent .section-ansprechpartner ul a,
+  .portletNavigationTree .portletContent .section-ansprechpartner .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-antraege-und-dokumente a,
   .portletNavigationTree .portletContent .section-antraege-und-dokumente ul a,
+  .portletNavigationTree .portletContent .section-antraege-und-dokumente .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-zeugnisse-verifikation a,
   .portletNavigationTree .portletContent .section-zeugnisse-verifikation ul a,
+  .portletNavigationTree .portletContent .section-zeugnisse-verifikation .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-aus-und-fortbildung a,
   .portletNavigationTree .portletContent .section-aus-und-fortbildung ul a,
+  .portletNavigationTree .portletContent .section-aus-und-fortbildung .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-news a,
   .portletNavigationTree .portletContent .section-news ul a,
+  .portletNavigationTree .portletContent .section-news .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-contact-details a,
   .portletNavigationTree .portletContent .section-contact-details ul a,
+  .portletNavigationTree .portletContent .section-contact-details .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-applications-and-documents a,
   .portletNavigationTree .portletContent .section-applications-and-documents ul a,
+  .portletNavigationTree .portletContent .section-applications-and-documents .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-certificates-verification a,
   .portletNavigationTree .portletContent .section-certificates-verification ul a,
+  .portletNavigationTree .portletContent .section-certificates-verification .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-training a,
-  .portletNavigationTree .portletContent .section-training ul a {
+  .portletNavigationTree .portletContent .section-training ul a,
+  .portletNavigationTree .portletContent .section-training .navTreeLevel2 a {
     background-color: #bcd4e0;
   }
   .portletNavigationTree .portletHeader .tile {
