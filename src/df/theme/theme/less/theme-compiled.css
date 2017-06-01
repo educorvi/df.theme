@@ -10396,9 +10396,9 @@ address a[href^="mailto"],
   .portletNavigationTree .portletContent .section-certificates-verification a,
   .portletNavigationTree .portletContent .section-certificates-verification ul a,
   .portletNavigationTree .portletContent .section-certificates-verification .navTreeLevel2 a,
-  .portletNavigationTree .portletContent .section-training a,
-  .portletNavigationTree .portletContent .section-training ul a,
-  .portletNavigationTree .portletContent .section-training .navTreeLevel2 a {
+  .portletNavigationTree .portletContent .section-trainings a,
+  .portletNavigationTree .portletContent .section-trainings ul a,
+  .portletNavigationTree .portletContent .section-trainings .navTreeLevel2 a {
     background-color: #bcd4e0;
   }
   .portletNavigationTree .portletHeader .tile {
