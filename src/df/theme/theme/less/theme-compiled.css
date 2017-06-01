@@ -8652,11 +8652,9 @@ body .container {
     width: 80%;
   }
 }
-@media screen and (max-width: 480px) {
-  .image-inline {
-    width: 100%;
-  }
-}
+/* @media screen and (max-width: @plone-screen-xs-min){ */
+/*   .image-inline{ width: 100% } */
+/* } */
 /* Header */
 #portal-header {
   padding-top: 10px;
