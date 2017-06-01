@@ -8391,6 +8391,9 @@ h3 {
   line-height: 1.5;
   margin-bottom: 45px;
 }
+h4 {
+  font-size: 1.429rem;
+}
 p {
   font-size: 1.286rem;
   font-weight: 300;
@@ -10453,6 +10456,7 @@ address a[href^="mailto"],
 @media (max-width: 768px) {
   h2,
   h3,
+  h4,
   ul,
   ol,
   p {
