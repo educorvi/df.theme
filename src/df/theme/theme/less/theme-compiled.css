@@ -9400,6 +9400,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-rechts {
   background-color: #15528c;
+  background: url("img/bluebox.jpg") no-repeat;
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-header {
   color: #fff;
