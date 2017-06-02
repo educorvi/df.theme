@@ -10032,6 +10032,7 @@ img[src$='welle.svg'] {
   background-position: right;
   padding-right: 1.429rem;
 }
+#content .email-link,
 #content .mail-link {
   background: url("img/symbol_letter.png") no-repeat;
   background-position: right !important;
@@ -10337,6 +10338,7 @@ address a[href^="mailto"],
 #content a[href^="mailto"] {
   background: url("img/symbol_letter.png") no-repeat;
   background-position: right !important;
+  padding-right: 20px;
 }
 @media (max-width: 360px) {
   video {
