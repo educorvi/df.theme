@@ -9160,6 +9160,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   border-right: 2px solid white;
 }
 .mobileNavigationPortlet .portletContent ul li.has_children > a.collapse-toggle:after {
+  font-family: 'FontAwesome';
   content: "\f078";
   position: absolute;
   right: 10px;
@@ -9167,6 +9168,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   color: #777777;
 }
 .mobileNavigationPortlet .portletContent ul li.has_children > a.collapse-toggle[aria-expanded="true"]:after {
+  font-family: 'FontAwesome';
   content: "\f077";
 }
 .mobileNavigationPortlet .portletContent ul li.has_children > a:before {
