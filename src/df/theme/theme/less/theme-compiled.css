@@ -9263,6 +9263,9 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   padding-right: 5px;
   color: #15528c;
 }
+.portletNavigationTree .portletContent .navTreeLevel1 .navTreeItem a {
+  padding-left: 40px;
+}
 .portletNavigationTree .portletContent .navTreeLevel2 .navTreeItem a {
   padding-left: 80px;
   background: #ffffff;
@@ -10032,7 +10035,7 @@ img[src$='welle.svg'] {
 #content .mail-link {
   background: url("img/symbol_letter.png") no-repeat;
   background-position: right !important;
-  padding-right: 1.429rem !important;
+  padding-right: 20px !important;
 }
 .pdf-link a {
   background: url("img/symbol_pdf.png") no-repeat !important;
