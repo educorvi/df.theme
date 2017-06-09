@@ -10517,8 +10517,8 @@ address a[href^="mailto"],
 #parent-fieldname-text table thead tr th,
 #parent-fieldname-text table tbody tr th p,
 #parent-fieldname-text table tbody tr th {
-  background-color: #efefef !important;
-  font-size: 1.143rem;
+  background-color: #dbdbdb !important;
+  font-size: 1.286rem;
   color: #15528c;
   font-weight: 600;
   text-align: center;
