@@ -18,6 +18,31 @@ $(document).ready(function(event) {
 =======
 >>>>>>> 52f3da66a0caa9647f3cf405e73e1f8c280d885b
 
+    // Der Inhalt der Piraterie-Warnhinweise soll in die ISPS-Warnhinweise geladen werden
+    var seite = String(window.location).search(/sicherheit\/isps\/warnhinweise/);
+
+    if (seite != -1)
+
+        {
+        $('#parent-fieldname-text').after('<div id="ajaxcontent">Content-Core</div>');
+        var url = 'http://www-prod.deutsche-flagge.de/de/sicherheit/piraterie/warnhinweise/warnhinweise/CookedBody'
+        //var url = 'http://www.deutsche-flagge.de/optiflag/de/sicherheit/piraterie/warnhinweise/warnhinweise/CookedBody'
+        $('#ajaxcontent').load(url);
+
+        $.ajaxSetup({cache: false});
+        $.ajax({
+           type: "GET",
+           url:url,
+           async:false,
+           success: function(html) {
+               $('#ajaxcontent').html(html);
+               $('#ajaxcontent').css('color','red');
+               }
+           });
+
+
+        };
+
     // Anpassungen der Sucheinstellungen
     $('#search-filter-toggle').hide();
     $('cite').hide();
