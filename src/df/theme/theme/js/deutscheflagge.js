@@ -1,43 +1,19 @@
 $(document).ready(function(event) {
 
-
-    // Bildwechsel beim Mapping - deutsch
-    var seite = String(window.location).search(/organigramme/);
-
-    if (seite != -1)
-
-    {
-
-        $('#content-core area').mouseenter(function() {
-            var bildsrc = $(this).attr('id') + '_ds.jpg';
-            $("#content-core img").attr("src", bildsrc);
-        });
-        $('#content-core area').mouseleave(function() {
-            $("#content-core img").attr("src","organigramm_ds.jpg");
-        });
-
-
-    };
-
-
-    // Bildwechsel beim Mapping - englisch
-    var seite = String(window.location).search(/organigrams/);
+    // Der Inhalt der Piraterie-Warnhinweise soll in die ISPS-Warnhinweise geladen werden
+    var seite = String(window.location).search(/sicherheit\/isps\/warnhinweise/);
 
     if (seite != -1)
 
-    {
-
-        $('#content-core area').mouseenter(function() {
-            var bildsrc = $(this).attr('id') + '_ds.jpg';
-            $("#content-core img").attr("src", bildsrc);
-        });
-        $('#content-core area').mouseleave(function() {
-            $("#content-core img").attr("src","organigram_ds.jpg");
-        });
-
-
-    };
-
+        {
+        $('#parent-fieldname-text').after('<div id="ajaxcontent"></div>');
+        //var url = 'http://www.deutsche-flagge.de/de/sicherheit/piraterie/warnhinweise/warnhinweise/CookedBody'
+        //var url = 'http://www.deutsche-flagge.de/optiflag/de/sicherheit/piraterie/warnhinweise/warnhinweise/CookedBody'
+        var url = '<b>Na SOWAS</b>'
+        $('#ajaxcontent').load('na sowas', function() {
+        //    alert(url);
+            });
+        };
 
     // Anpassungen der Sucheinstellungen
     $('#search-filter-toggle').hide();
