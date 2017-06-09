@@ -10533,7 +10533,8 @@ address a[href^="mailto"],
 }
 #parent-fieldname-text table tbody tr td li,
 #parent-fieldname-text table tbody tr td a,
-#parent-fieldname-text table tbody tr td p {
+#parent-fieldname-text table tbody tr td p,
+#parent-fieldname-text table tbody tr td span {
   font-size: 1.143rem;
   margin-bottom: 0;
 }
