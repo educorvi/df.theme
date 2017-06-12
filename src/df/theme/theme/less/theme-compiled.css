@@ -9147,6 +9147,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   color: #333 !important;
   background: transparent !important;
 }
+.mobileNavigationPortlet .portletContent ul li a.contenttype-link:before,
 .mobileNavigationPortlet .portletContent ul li a.contenttype-folder:before,
 .mobileNavigationPortlet .portletContent ul li a.contenttype-ansprechpartner:before {
   content: none !important;
