@@ -10261,6 +10261,20 @@ address hr {
 #accordion .panel-body a {
   font-size: 1.286rem;
 }
+.aspli li {
+  list-style: none;
+  margin-left: -25px;
+}
+.aspli li::before {
+  font-family: 'FontAwesome';
+  color: #15528c;
+  font-size: 1.286rem;
+  padding-right: 10px;
+  content: "\f105";
+}
+.aspshow {
+  padding-left: 15px;
+}
 #alphabet {
   font-size: 1.286rem;
   padding-left: 1rem;
@@ -10280,6 +10294,11 @@ address hr {
 .myparent {
   display: flex;
 }
+#personeninput,
+#schlagwortinput {
+  width: 80%;
+}
+#personensubmit,
 #schlagwortsubmit {
   padding-left: 10px;
   padding-bottom: 10px;

@@ -37,6 +37,27 @@
 }
 
 // ############################ ANSPRECHPARTNER
+.aspli {
+
+  li {
+    list-style: none;
+    margin-left: -25px;
+  }
+
+  li::before {
+    font-family: 'FontAwesome';
+    color:@deutsche-flagge-public;
+    font-size:1.286rem;
+    padding-right:10px;
+    content: "\f105";
+   }
+
+}
+
+.aspshow {
+  padding-left: 15px;
+}
+
 #alphabet {
   font-size: 1.286rem;
   padding-left: 1rem;
@@ -60,6 +81,12 @@
   display: flex;
 }
 
+#personeninput,
+#schlagwortinput {
+  width: 80%;
+}
+
+#personensubmit,
 #schlagwortsubmit {
   padding-left: 10px;
   padding-bottom: 10px;
