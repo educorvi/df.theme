@@ -209,16 +209,23 @@ table {
 
   ul, ol {
     margin-bottom: 45px;
-    text-indent: -1.143rem;
     margin-left: 1.143rem;
   }
 
-  li {
+  ul {
+    text-indent: -1.143rem;
+  }
+
+  ol li {
+    margin-bottom: 1.1rem;
+  }
+
+  ul li {
     margin-bottom: 1.1em;
     list-style: none;
   }
 
-  li::before {
+  ul li::before {
     font-family: 'FontAwesome';
     color:@deutsche-flagge-public;
     font-size:1.286rem;

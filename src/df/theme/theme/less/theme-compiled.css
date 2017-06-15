@@ -8543,16 +8543,23 @@ table th {
 .panel-body ol,
 #parent-fieldname-text ol {
   margin-bottom: 45px;
-  text-indent: -1.143rem;
   margin-left: 1.143rem;
 }
-.panel-body li,
-#parent-fieldname-text li {
+.panel-body ul,
+#parent-fieldname-text ul {
+  text-indent: -1.143rem;
+}
+.panel-body ol li,
+#parent-fieldname-text ol li {
+  margin-bottom: 1.1rem;
+}
+.panel-body ul li,
+#parent-fieldname-text ul li {
   margin-bottom: 1.1em;
   list-style: none;
 }
-.panel-body li::before,
-#parent-fieldname-text li::before {
+.panel-body ul li::before,
+#parent-fieldname-text ul li::before {
   font-family: 'FontAwesome';
   color: #15528c;
   font-size: 1.286rem;
@@ -10263,7 +10270,8 @@ address hr {
 }
 .aspli li {
   list-style: none;
-  margin-left: -25px;
+  margin-left: -10px;
+  text-indent: -15px;
 }
 .aspli li::before {
   font-family: 'FontAwesome';
@@ -10279,6 +10287,9 @@ address hr {
   font-size: 1.286rem;
   padding-left: 1rem;
   text-decoration: unterline;
+}
+#zwebene {
+  margin-left: 15px;
 }
 #behheadrot,
 #behheadblau,
