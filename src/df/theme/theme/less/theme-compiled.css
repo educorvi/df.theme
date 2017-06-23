@@ -8542,16 +8542,12 @@ table th {
 #parent-fieldname-text ul,
 .panel-body ol,
 #parent-fieldname-text ol {
-  margin-bottom: 45px;
+  margin-bottom: 3.214rem;
   margin-left: 1.143rem;
 }
 .panel-body ul,
 #parent-fieldname-text ul {
   text-indent: -1.143rem;
-}
-.panel-body ol li,
-#parent-fieldname-text ol li {
-  margin-bottom: 1.1rem;
 }
 .panel-body ul li,
 #parent-fieldname-text ul li {
@@ -8565,6 +8561,15 @@ table th {
   font-size: 1.286rem;
   padding-right: 10px;
   content: "\f105";
+}
+.panel-body ol li,
+#parent-fieldname-text ol li {
+  margin-bottom: 1.1em;
+}
+.panel-body ol li ul,
+#parent-fieldname-text ol li ul {
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
 }
 /* Edit */
 .template-topbar-manage-portlets #main-container #content {
@@ -8857,7 +8862,7 @@ body .container {
   }
   #portal-header #portal-languageselector {
     position: absolute;
-    bottom: -4.9em;
+    bottom: -6.7em;
     float: none;
     z-index: 10;
     right: 20px;
@@ -10242,6 +10247,9 @@ address hr {
     display: none;
   }
 }
+.userrole-anonymous .section-redaktion {
+  display: none;
+}
 #accordion {
   margin-left: 15px;
 }
@@ -10516,10 +10524,13 @@ address a[href^="mailto"],
   ul,
   ol,
   p {
-    margin-bottom: 2.3rem;
+    margin-bottom: 2.3rem !important;
   }
+  #content-core #parent-fieldname-text ol,
   #content-core #parent-fieldname-text ul {
     margin-left: -2rem;
+  }
+  #content-core #parent-fieldname-text ul {
     text-indent: -1.5rem;
   }
   .pdf-link a,
