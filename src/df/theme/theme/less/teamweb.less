@@ -1,5 +1,11 @@
 // Eigene Less, um Luca nicht zu behindern
 
+
+// ############################ PRIVATE ORDNER VERSTECKEN
+.userrole-anonymous .section-redaktion {
+  display: none;
+}
+
 // ############################ ACCORDION
 #accordion {
 
@@ -352,11 +358,15 @@ address a[href^="mailto"],
 @media (max-width: @plone-screen-sm-min) {
 
   h2, h3, h4, ul, ol, p {
-    margin-bottom: 2.3rem;
+    margin-bottom: 2.3rem !important;
+  }
+
+  #content-core #parent-fieldname-text ol,
+  #content-core #parent-fieldname-text ul {
+    margin-left: -2rem;
   }
 
   #content-core #parent-fieldname-text ul {
-    margin-left: -2rem;
     text-indent: -1.5rem;
   }
 
