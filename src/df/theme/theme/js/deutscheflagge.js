@@ -45,6 +45,11 @@ $(document).ready(function(event) {
 
 
     // Anpassungen bei einer Fehlerseite
+    $('.template-default_error_message.site-optiflag #design-credits').before('<div class="df-theme-banner"><img class="banner-image"><div class="banner-text"></div></div>');
+    $('.template-default_error_message.site-optiflag .banner-text').html('<h1>Mayday <em>+</em></h1>');
+    $('.template-default_error_message.site-optiflag .banner-image').attr('src','http://www.deutsche-flagge.de/en/redaktion-englisch/pictures/titelbilder/fehlermeldung-havariekommando.jpg/@@images/image');
+    $('.template-default_error_message.site-optiflag .banner-image').attr('title','© Havariekommando www.havariekommando.de');
+
     $('.template-default_error_message.site-en .banner-text').html('<h1>Mayday <em>+</em></h1>');
     $('.template-default_error_message.site-en .banner-image').attr('src','http://www.deutsche-flagge.de/en/redaktion-englisch/pictures/titelbilder/fehlermeldung-havariekommando.jpg/@@images/image');
     $('.template-default_error_message.site-en .banner-image').attr('title','© Havariekommando www.havariekommando.de');

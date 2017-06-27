@@ -10250,6 +10250,9 @@ address hr {
 .userrole-anonymous .section-redaktion {
   display: none;
 }
+span.field-error {
+  color: red !important;
+}
 #accordion {
   margin-left: 15px;
 }
