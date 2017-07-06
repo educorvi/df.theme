@@ -26,7 +26,6 @@ $(document).ready(function(event) {
 
         };
 
-
     // Abstand der Hafenstaatkontrolle
     $("li.section-psc").before('<li class="navTreeItem visualNoMarker navTreeFolderish section-none"></li>');
     $("li.section-pscen").before('<li class="navTreeItem visualNoMarker navTreeFolderish section-none"></li>');
