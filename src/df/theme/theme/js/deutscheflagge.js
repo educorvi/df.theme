@@ -1,5 +1,40 @@
 $(document).ready(function(event) {
 
+<<<<<<< HEAD
+=======
+
+    // Der Inhalt der Piraterie-Warnhinweise soll in die ISPS-Warnhinweise geladen werden
+    var seite = String(window.location).search(/sicherheit\/isps\/warnhinweise/);
+
+    if (seite != -1)
+
+        {
+        $('#parent-fieldname-text').after('<div id="ajaxcontent">Content-Core</div>');
+        var url = 'http://www-prod.deutsche-flagge.de/de/sicherheit/piraterie/warnhinweise/warnhinweise/CookedBody'
+        //var url = 'http://www.deutsche-flagge.de/optiflag/de/sicherheit/piraterie/warnhinweise/warnhinweise/CookedBody'
+        $('#ajaxcontent').load(url);
+
+        $.ajaxSetup({cache: false});
+        $.ajax({
+           type: "GET",
+           url:url,
+           async:false,
+           success: function(html) {
+               $('#ajaxcontent').html(html);
+               $('#ajaxcontent').css('color','red');
+               }
+           });
+
+
+        };
+
+
+    // Abstand der Hafenstaatkontrolle
+    $("li.section-psc").before('<li class="navTreeItem visualNoMarker navTreeFolderish section-none"></li>');
+    $("li.section-pscen").before('<li class="navTreeItem visualNoMarker navTreeFolderish section-none"></li>');
+
+
+>>>>>>> 1e5f17976a81cb4e90a73179744e5556934adf8d
     // Anpassungen der Sucheinstellungen
     $('#search-filter-toggle').hide();
     $('cite').hide();

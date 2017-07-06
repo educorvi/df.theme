@@ -9264,6 +9264,14 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   margin-bottom: 0;
 }
 /* Navigation portlet */
+.section-none {
+  background-color: #efefef;
+  border-top: 1px solid #ffffff;
+  padding-top: 30px;
+}
+.section-none:hover {
+  background-color: #efefef !important;
+}
 .portletNavigationTree .portletHeader {
   padding: 7px 15px;
 }
@@ -9278,12 +9286,20 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   padding-right: 5px;
   color: #15528c;
 }
-.portletNavigationTree .portletContent .navTreeLevel1 .navTreeItem a {
+.portletNavigationTree .portletContent .navTreeLevel1 .navTreeItem .contenttype-link,
+.portletNavigationTree .portletContent .navTreeLevel1 .navTreeItem .contenttype-folder {
   padding-left: 40px;
 }
 .portletNavigationTree .portletContent .navTreeLevel2 .navTreeItem a {
   padding-left: 80px;
   background: #ffffff;
+}
+.portletNavigationTree .portletContent .navTreeItem ul {
+  margin-bottom: 0 !important;
+  margin-right: 2px;
+}
+.portletNavigationTree .portletContent .navTreeItem ul .has_children {
+  margin-right: -2px;
 }
 .portletNavigationTree .portletContent .navTreeItem a {
   font-size: 12px;
@@ -10440,6 +10456,9 @@ address a[href^="mailto"],
   .portletNavigationTree .portletContent .section-aktuelles a,
   .portletNavigationTree .portletContent .section-aktuelles ul a,
   .portletNavigationTree .portletContent .section-aktuelles .navTreeLevel2 a,
+  .portletNavigationTree .portletContent .section-asp a,
+  .portletNavigationTree .portletContent .section-asp ul a,
+  .portletNavigationTree .portletContent .section-asp .navTreeLevel2 a,
   .portletNavigationTree .portletContent .section-ansprechpartner a,
   .portletNavigationTree .portletContent .section-ansprechpartner ul a,
   .portletNavigationTree .portletContent .section-ansprechpartner .navTreeLevel2 a,
