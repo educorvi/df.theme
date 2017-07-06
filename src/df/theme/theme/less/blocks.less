@@ -6,6 +6,15 @@
 }
 
 /* Navigation portlet */
+.section-none {
+    background-color: @deutsche-flagge-light;
+    border-top: 1px solid @deutsche-flagge-white-base;
+    padding-top: 30px;
+
+    &:hover {
+      background-color: @deutsche-flagge-light !important;
+    }
+}
 
 .portletNavigationTree {
   .portletHeader {
@@ -25,7 +34,8 @@
 
   .portletContent {
 
-    .navTreeLevel1 .navTreeItem a {
+    .navTreeLevel1 .navTreeItem .contenttype-link,
+    .navTreeLevel1 .navTreeItem .contenttype-folder {
         padding-left: 40px;
     }
 
@@ -35,6 +45,16 @@
     }
 
     .navTreeItem {
+      ul {
+        margin-bottom: 0 !important;
+        margin-right: 2px;
+
+        .has_children {
+            margin-right: -2px;
+        }
+
+      }
+
       a {
         font-size: 12px;
         font-weight: 400;
