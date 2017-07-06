@@ -1,7 +1,5 @@
 $(document).ready(function(event) {
 
-<<<<<<< HEAD
-=======
 
     // Der Inhalt der Piraterie-Warnhinweise soll in die ISPS-Warnhinweise geladen werden
     var seite = String(window.location).search(/sicherheit\/isps\/warnhinweise/);
@@ -33,7 +31,6 @@ $(document).ready(function(event) {
     $("li.section-pscen").before('<li class="navTreeItem visualNoMarker navTreeFolderish section-none"></li>');
 
 
->>>>>>> 1e5f17976a81cb4e90a73179744e5556934adf8d
     // Anpassungen der Sucheinstellungen
     $('#search-filter-toggle').hide();
     $('cite').hide();
