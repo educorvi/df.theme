@@ -9589,7 +9589,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 #frontpage-teaser-block1 .teaser-block1-title {
   font-size: 2rem;
-  margin-bottom: 4.286rem;
+  margin-bottom: 2.143rem;
 }
 #frontpage-teaser-block1 .teaser-block1-descr {
   font-size: 1.3em;
@@ -9618,16 +9618,16 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 #frontpage-teaser-block2 .teaser-block2-title {
   font-size: 1.571rem;
-  margin-bottom: 30px;
+  margin-bottom: 2.143rem;
 }
 #frontpage-teaser-block2 .teaser-block2-descr {
   font-size: 1.3em;
-  margin-bottom: 30px;
+  margin-bottom: 2.143rem;
 }
 #frontpage-teaser-block2 .teaser-block2-link {
   font-size: 1.3em;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 2.143rem;
 }
 #frontpage-teaser-block2 .welle {
   margin-bottom: 2rem;
@@ -9645,7 +9645,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 #frontpage-teaser-block3 .teaser-block3 {
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 2.143rem;
 }
 #frontpage-teaser-block3 .teaser-block3 .teaser-block3-image img {
   width: 100%;
@@ -9653,16 +9653,16 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 #frontpage-teaser-block3 .teaser-block3 .teaser-block3-title {
   font-size: 2.571rem;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 2.143rem;
 }
 #frontpage-teaser-block3 .teaser-block3 .teaser-block3-descr {
   font-size: 1.3em;
-  margin-bottom: 30px;
+  margin-bottom: 2.143rem;
 }
 #frontpage-teaser-block3 .teaser-block3 .teaser-block3-link {
   font-size: 1.3em;
   font-weight: 600;
-  margin-bottom: 60px;
+  margin-bottom: 2.143rem;
 }
 .wellebox {
   background: transparent url("img/welle.png") center center;
