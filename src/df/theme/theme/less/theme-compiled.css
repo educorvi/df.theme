@@ -9380,7 +9380,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   font-style: italic;
   font-weight: 300;
   height: 110px;
-  margin-left: 60px;
+  margin-left: 30px;
   margin-top: 30px;
 }
 .portletQuarterPortlet .quarter-top .quarter-top-links,
@@ -9418,7 +9418,6 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   right: 2rem;
 }
 .portletQuarterPortlet .quarter-top img {
-  position: relative;
   top: 1rem;
   width: 150px;
 }
@@ -9428,10 +9427,26 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-links {
   background-color: #445d73;
+  background: url("img/bluebox.jpg") no-repeat;
+}
+.portletQuarterPortlet .quarter-bottom .quarter-bottom-links .quarter-bottom-header {
+  margin-left: 30px;
+}
+.portletQuarterPortlet .quarter-bottom .quarter-bottom-links .quarter-bottom-text {
+  margin-top: 45px;
+  margin-left: 30px;
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-rechts {
-  background-color: #15528c;
-  background: url("img/bluebox.jpg") no-repeat;
+  background: #15528b url("img/quarterman.png") no-repeat right;
+}
+.portletQuarterPortlet .quarter-bottom .quarter-bottom-rechts .quarter-bottom-header {
+  margin-left: 30px;
+  width: 75%;
+}
+.portletQuarterPortlet .quarter-bottom .quarter-bottom-rechts .quarter-bottom-text {
+  margin-top: 45px;
+  margin-left: 30px;
+  width: 65%;
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-header {
   color: #fff;
@@ -9439,7 +9454,6 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   font-size: 2.571rem;
   font-weight: 300;
   height: 110px;
-  margin-left: 60px;
   padding-top: 30px;
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-text {
@@ -9447,8 +9461,6 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   font-size: 1.3em;
   font-weight: 300;
   height: 190px;
-  margin-left: 60px;
-  margin-top: 30px;
 }
 .portletQuarterPortlet .quarter-bottom .quarter-bottom-text a {
   color: #fff;
@@ -10396,10 +10408,12 @@ strong {
 #parent-fieldname-text .required::after {
   top: 6px;
 }
+#parent-fieldname-text [type="button"],
 #parent-fieldname-text [type="submit"] {
   background-color: #efefef;
   color: #15528c;
 }
+#parent-fieldname-text [type="button"]:before,
 #parent-fieldname-text [type="submit"]:before {
   content: "›";
   font-family: "DeutscheFlagge";
