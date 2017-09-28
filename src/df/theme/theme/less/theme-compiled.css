@@ -9134,6 +9134,37 @@ ul.mega-dropdown-menu-lv2 > li > a:hover::before,
 ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   color: #d40f14;
 }
+.portletNavigationTree .portletContent > ul > li > ul a {
+  padding-left: 15px;
+}
+.ownNavigationPortlet .portletContent ul li.has_children > a {
+  display: table-cell;
+  width: 100%;
+}
+.ownNavigationPortlet .portletContent ul li.has_children > a:first-child {
+  border-right: 2px solid white;
+}
+.ownNavigationPortlet .portletContent ul li.has_children > a.collapse-toggle:after {
+  font-family: 'FontAwesome';
+  content: "\f078";
+  position: absolute;
+  right: 10px;
+  margin-top: 0;
+  font-size: inherit;
+  color: #777777;
+}
+.ownNavigationPortlet .portletContent ul li.has_children > a.collapse-toggle:before {
+  display: none !important;
+}
+.ownNavigationPortlet .portletContent ul li.has_children > a.collapse-toggle[aria-expanded="true"]:after {
+  font-family: 'FontAwesome';
+  content: "\f077";
+}
+.ownNavigationPortlet .portletContent ul li.has_children .collapse-toggle:hover:after,
+.ownNavigationPortlet .portletContent ul li.has_children .navTreeItemInPath.collapse-toggle:after,
+.ownNavigationPortlet .portletContent ul li.has_children.navTreeCurrentNode .collapse-toggle:after {
+  color: #efefef;
+}
 .mobileNavigationPortlet {
   display: none;
 }
@@ -9170,6 +9201,8 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 .mobileNavigationPortlet .portletContent ul li.has_children > a {
   display: table-cell;
   width: 100%;
+}
+.mobileNavigationPortlet .portletContent ul li.has_children > a:first-child {
   border-right: 2px solid white;
 }
 .mobileNavigationPortlet .portletContent ul li.has_children > a.collapse-toggle:after {
@@ -9177,6 +9210,7 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   content: "\f078";
   position: absolute;
   right: 10px;
+  margin-top: 0;
   font-size: inherit;
   color: #777777;
 }
@@ -9296,10 +9330,6 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 .portletNavigationTree .portletContent .navTreeItem ul {
   margin-bottom: 0 !important;
-  margin-right: 2px;
-}
-.portletNavigationTree .portletContent .navTreeItem ul .has_children {
-  margin-right: -2px;
 }
 .portletNavigationTree .portletContent .navTreeItem a {
   font-size: 12px;
@@ -9310,19 +9340,18 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 .portletNavigationTree .portletContent .navTreeItem a:before {
   font-size: 12px !important;
-  width: inherit !important;
   content: "›" !important;
   display: block;
   float: left;
   font-family: "Fontello";
-  padding: 0;
+  padding-top: 1px !important;
   margin: 0;
   position: relative;
   left: inherit;
   display: inline-block;
   color: #000;
-  width: 20px;
-  height: 20px;
+  height: 17px !important;
+  width: 5px !important;
   text-align: center;
   margin-right: 6px;
 }

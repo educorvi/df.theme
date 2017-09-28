@@ -156,6 +156,52 @@ ul.mega-dropdown-menu-lv2 > li > a:hover::before, ul.mega-dropdown-menu-lv1 > li
   color:#d40f14;
 }
 
+.portletNavigationTree .portletContent > ul > li > ul a{
+    padding-left: 15px;
+}
+
+.ownNavigationPortlet {
+
+    .portletContent ul li.has_children > a{
+        display: table-cell;
+        width: 100%;
+        &:first-child {
+            border-right: 2px solid white;
+        }
+        &.collapse-toggle {
+            &:after {
+              font-family: 'FontAwesome';
+              content: "\f078";
+              position: absolute;
+              right: 10px;
+              margin-top: 0;
+              font-size: inherit;
+              color: #777777;
+            }
+            &:before { 
+              display: none !important;
+            }
+        }
+        &.collapse-toggle[aria-expanded="true"] {
+            &:after {
+              font-family: 'FontAwesome';
+              content: "\f077";
+            }
+        }
+
+    }
+
+    .portletContent ul li.has_children .collapse-toggle:hover,
+    .portletContent ul li.has_children .navTreeItemInPath.collapse-toggle,
+    .portletContent ul li.has_children.navTreeCurrentNode .collapse-toggle {
+        &:after {
+          color: #efefef;
+        }
+    }
+
+
+}
+
 .mobileNavigationPortlet{ 
   display: none; 
   .portletContent > ul > li.mobileBack a{
@@ -191,13 +237,16 @@ ul.mega-dropdown-menu-lv2 > li > a:hover::before, ul.mega-dropdown-menu-lv1 > li
   .portletContent ul li.has_children > a{
     display: table-cell;
     width: 100%;
-    border-right: 2px solid white;
+    &:first-child {
+        border-right: 2px solid white;
+    }
     &.collapse-toggle {
        &:after {
          font-family: 'FontAwesome';
          content: "\f078";
          position: absolute;
          right: 10px;
+         margin-top: 0;
         font-size:inherit; 
 	color: #777777;
        }
