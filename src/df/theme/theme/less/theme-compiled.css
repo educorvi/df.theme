@@ -10665,6 +10665,47 @@ address a[href^="mailto"],
   font-size: 1.143rem;
   margin-bottom: 0;
 }
+.tstoerer {
+  background-color: #eaeaea;
+  height: 60px;
+  color: #bd0044 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 10px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tstoerer::before {
+  content: url("img/kreuz.png");
+  padding-right: 10px;
+  padding-top: 8px;
+  vertical-align: middle;
+}
+.tstoerer a {
+  color: #bd0044 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.tstoerer a[data-linktype="internal"] {
+  background: None !important;
+}
+.astoerer {
+  background: #eaeaea url("img/stoerer.png") no-repeat 10px 10px;
+  padding: 80px 0 20px 10px;
+}
+.astoerer a {
+  font-weight: 600 !important;
+}
+.astoerer a::before {
+  content: url("img/kreuz.png");
+  vertical-align: middle;
+  padding-top: 6px;
+  padding-right: 15px;
+}
+.astoerer a[data-linktype="internal"] {
+  background: None !important;
+}
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
