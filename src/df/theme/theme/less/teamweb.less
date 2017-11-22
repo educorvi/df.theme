@@ -463,14 +463,14 @@ address a[href^="mailto"],
 .tstoerer {
 
     background-color: #eaeaea;
-    height: 60px;
     color: #bd0044 !important;
-    font-size: 14px !important;
     font-weight: 500 !important;
-    padding: 10px;
-    width: 40%;
+    padding: 10px 10px 10px 45px;
+    min-height: 60px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
+    text-indent: -35px;
     
 
     &::before{
@@ -482,10 +482,10 @@ address a[href^="mailto"],
 
     a {
       color: #bd0044 !important;
-      font-size: 14px !important;
       font-weight: 500 !important;
     }
 
+    a[data-linktype="external"],
     a[data-linktype="internal"] {
         background:None !important;
     }
@@ -514,4 +514,16 @@ address a[href^="mailto"],
     }
 
 
+}
+
+@media (max-width: 500px) {
+  .tstoerer {
+    width: 60%
+  }
+}
+
+@media (max-width: 360px) {
+  .tstoerer {
+    width: 80%
+  }
 }
