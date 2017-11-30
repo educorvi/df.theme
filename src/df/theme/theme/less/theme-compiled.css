@@ -9249,6 +9249,9 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   }
 }
 @media screen and (max-width: 992px) {
+  .einflaggungslotse {
+    margin-left: 0px !important;
+  }
   .portletNavigationTree {
     display: none;
   }
@@ -10690,8 +10693,13 @@ address a[href^="mailto"],
 .tstoerer a[data-linktype="internal"] {
   background: None !important;
 }
-.astoerer {
+.site-en .astoerer {
+  background: #eaeaea url("img/stoereren.png") no-repeat 10px 10px;
+}
+.site-de .astoerer {
   background: #eaeaea url("img/stoerer.png") no-repeat 10px 10px;
+}
+.astoerer {
   padding: 80px 0 20px 10px;
 }
 .astoerer a {
@@ -10715,6 +10723,26 @@ address a[href^="mailto"],
   .tstoerer {
     width: 80%;
   }
+}
+.einflaggungslotse {
+  margin-left: -325px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1.429rem 0 3.214rem;
+}
+.einflaggungslotse img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+}
+.einflaggungslotse .einflaggung-logo img {
+  opacity: 0.4;
+  width: 60%;
+  margin-bottom: 30px;
+}
+.einflaggungslotse .einflaggung-title {
+  color: #5e5e5e;
+  font-weight: 600px;
 }
 .list-group {
   margin-bottom: 20px;
