@@ -1,5 +1,8 @@
 // Eigene Less, um Luca nicht zu behindern
 
+#portal-header #portal-searchbox [type="text"] {
+  border-color: @deutsche-flagge-dark;
+}
 
 // ############################ PRIVATE ORDNER VERSTECKEN
 .userrole-anonymous .section-redaktion {
@@ -535,17 +538,99 @@ address a[href^="mailto"],
 }
 
 // ############################ EINFLAGGUNGSLOTSE
+.subsection-einflaggungslotse #sidebar {
+  background-color: #ffff;
+}
+
 .einflaggungslotse {
 
   margin-left: -325px;
   background-color: #ffffff;
-  text-align: center;
-  padding: 1.429rem 0 3.214rem;
+  padding: 1.429rem 0 0;
 
   img {
     width: 100%;
     height: auto;
-    margin-bottom: 60px;
+  }
+
+  .einflaggung-strahl{
+    list-style: none;
+    font-style: italic;
+    text-align: center;
+    overflow: hidden;
+
+    div {
+      display: inline-block;
+      position: relative;
+
+      &::before,
+      &::after{
+        content: "";
+        position: absolute;
+        border-top: 1px solid @deutsche-flagge-grey-flag;
+        top: 50%;
+        width: 300px;
+      }
+
+      &::before{
+        margin-right: 15px;
+        right: 100%;
+      }
+
+      &::after{
+        margin-left: 15px;
+        left: 100%;
+      }
+    }
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  .einflaggung-hr-top {
+    width : 80%;
+  }
+
+  .einflaggung-dotted {
+    border-top: 2px dotted;
+  }
+
+  .einflaggung-block{
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 120px;
+    text-align: center;
+
+    a {
+      border:none !important;
+    }
+
+    a:focus{
+      outline:none;
+    }
+
+    a:hover{
+      background-color: #ffffff;
+
+      img {
+        opacity :1;
+      }
+    }
+
+  }
+
+  .einflaggung-haken img{
+    float: right;
+    margin-right: 20px;
+    margin-top: -5px;
+    width: 30%;
+  }
+
+  .einflaggung-dokumente img{
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 8%;
   }
 
   .einflaggung-logo img{
@@ -554,9 +639,66 @@ address a[href^="mailto"],
     margin-bottom: 30px;
   }
 
-  .einflaggung-title {
-    color: #5e5e5e;
+  .einflaggung-short { 
+
+    padding-right: 0;
+    padding-left: 0;
+
+    a {
+      border: none !important;
+    }
+
+    a:focus{
+      outline:none;
+    }
+
+    a:hover{
+      background-color: #ffffff;
+
+      img {
+        opacity :1;
+      }
+    }
+
+    img{
+      opacity: 0.4;
+      width: 40%;
+    }
+
+  }
+
+  .einflaggung-block.active .einflaggung-logo img{
+    opacity: 1;
+  }
+
+  .einflaggung-short.active img{
+    opacity: 1;
+  }
+
+  .einflaggung-title{
+    color: @deutsche-flagge-grey-mid;
     font-weight: 600px;
   }
 
+  .einflaggung-content-schritt{
+    color: @deutsche-flagge-grey-flag;
+    font-size: 2.143rem;
+    font-weight: 600;
+  }
+
+  .einflaggung-content-header{
+    color: @deutsche-flagge-blue-flag;
+    font-size: 2.143rem;
+    font-weight: 600;
+  }
+
+  .einflaggung-subtitle {
+    color: @deutsche-flagge-blue-flag;
+    font-size: 2.143rem;
+  }
+
+  .einflaggung-text p{
+    font-size: 1rem !important;
+  }
+  
 }

@@ -10310,6 +10310,9 @@ address hr {
     display: none;
   }
 }
+#portal-header #portal-searchbox [type="text"] {
+  border-color: #3f3933;
+}
 .userrole-anonymous .section-redaktion {
   display: none;
 }
@@ -10724,25 +10727,133 @@ address a[href^="mailto"],
     width: 80%;
   }
 }
+.subsection-einflaggungslotse #sidebar {
+  background-color: #ffff;
+}
 .einflaggungslotse {
   margin-left: -325px;
   background-color: #ffffff;
-  text-align: center;
-  padding: 1.429rem 0 3.214rem;
+  padding: 1.429rem 0 0;
 }
 .einflaggungslotse img {
   width: 100%;
   height: auto;
-  margin-bottom: 60px;
+}
+.einflaggungslotse .einflaggung-strahl {
+  list-style: none;
+  font-style: italic;
+  text-align: center;
+  overflow: hidden;
+}
+.einflaggungslotse .einflaggung-strahl div {
+  display: inline-block;
+  position: relative;
+}
+.einflaggungslotse .einflaggung-strahl div::before,
+.einflaggungslotse .einflaggung-strahl div::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #a8a8a8;
+  top: 50%;
+  width: 300px;
+}
+.einflaggungslotse .einflaggung-strahl div::before {
+  margin-right: 15px;
+  right: 100%;
+}
+.einflaggungslotse .einflaggung-strahl div::after {
+  margin-left: 15px;
+  left: 100%;
+}
+.einflaggungslotse .nav-tabs {
+  border-bottom: none;
+}
+.einflaggungslotse .einflaggung-hr-top {
+  width: 80%;
+}
+.einflaggungslotse .einflaggung-dotted {
+  border-top: 2px dotted;
+}
+.einflaggungslotse .einflaggung-block {
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 120px;
+  text-align: center;
+}
+.einflaggungslotse .einflaggung-block a {
+  border: none !important;
+}
+.einflaggungslotse .einflaggung-block a:focus {
+  outline: none;
+}
+.einflaggungslotse .einflaggung-block a:hover {
+  background-color: #ffffff;
+}
+.einflaggungslotse .einflaggung-block a:hover img {
+  opacity: 1;
+}
+.einflaggungslotse .einflaggung-haken img {
+  float: right;
+  margin-right: 20px;
+  margin-top: -5px;
+  width: 30%;
+}
+.einflaggungslotse .einflaggung-dokumente img {
+  margin-left: 10px;
+  margin-right: 15px;
+  width: 8%;
 }
 .einflaggungslotse .einflaggung-logo img {
   opacity: 0.4;
   width: 60%;
   margin-bottom: 30px;
 }
+.einflaggungslotse .einflaggung-short {
+  padding-right: 0;
+  padding-left: 0;
+}
+.einflaggungslotse .einflaggung-short a {
+  border: none !important;
+}
+.einflaggungslotse .einflaggung-short a:focus {
+  outline: none;
+}
+.einflaggungslotse .einflaggung-short a:hover {
+  background-color: #ffffff;
+}
+.einflaggungslotse .einflaggung-short a:hover img {
+  opacity: 1;
+}
+.einflaggungslotse .einflaggung-short img {
+  opacity: 0.4;
+  width: 40%;
+}
+.einflaggungslotse .einflaggung-block.active .einflaggung-logo img {
+  opacity: 1;
+}
+.einflaggungslotse .einflaggung-short.active img {
+  opacity: 1;
+}
 .einflaggungslotse .einflaggung-title {
-  color: #5e5e5e;
+  color: #717171;
   font-weight: 600px;
+}
+.einflaggungslotse .einflaggung-content-schritt {
+  color: #a8a8a8;
+  font-size: 2.143rem;
+  font-weight: 600;
+}
+.einflaggungslotse .einflaggung-content-header {
+  color: #1a5072;
+  font-size: 2.143rem;
+  font-weight: 600;
+}
+.einflaggungslotse .einflaggung-subtitle {
+  color: #1a5072;
+  font-size: 2.143rem;
+}
+.einflaggungslotse .einflaggung-text p {
+  font-size: 1rem !important;
 }
 .list-group {
   margin-bottom: 20px;
