@@ -682,23 +682,83 @@ address a[href^="mailto"],
 
   .einflaggung-content-schritt{
     color: @deutsche-flagge-grey-flag;
-    font-size: 2.143rem;
+    font-size: 1.857rem;
     font-weight: 600;
   }
 
   .einflaggung-content-header{
     color: @deutsche-flagge-blue-flag;
-    font-size: 2.143rem;
+    font-size: 1.857rem;
     font-weight: 600;
   }
 
   .einflaggung-subtitle {
     color: @deutsche-flagge-blue-flag;
-    font-size: 2.143rem;
+    font-size: 1.857rem;
   }
 
-  .einflaggung-text p{
-    font-size: 1rem !important;
+  .einflaggung-text{
+
+    p, ul{
+      font-size: 1.143rem !important;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      list-style: none;
+      color:@deutsche-flagge-public;
+    }
+
+    ul li::before {
+      font-family: 'FontAwesome';
+      color:@deutsche-flagge-public;
+      padding-right:10px;
+      content: "\f105";
+    }
+
   }
   
+}
+
+// ############################ Einflaggung mobil
+@media (max-width: 1024px) {
+
+  .einflaggungslotse {
+    margin-left: -270px;
+  }
+
+}
+
+// ############################ Mitarbeiterfotos
+.aspmitarbeiterimg {
+    width: 150px;
+    float: left;
+    margin-bottom: 15px;
+    margin-right:10px;
+
+    img {
+      width: 100%;
+    }
+}
+
+.konmitarbeiterimg {
+    margin-bottom: -15px;
+    width: 150px;
+
+    img {
+      width: 100%;
+    }
+}
+
+.mitarbeiterimg {
+    width: 150px;
+
+    img {
+      width: 100%;
+    }
+}
+
+.imageText {
+    margin-top: 30px;
 }

@@ -10840,20 +10840,63 @@ address a[href^="mailto"],
 }
 .einflaggungslotse .einflaggung-content-schritt {
   color: #a8a8a8;
-  font-size: 2.143rem;
+  font-size: 1.857rem;
   font-weight: 600;
 }
 .einflaggungslotse .einflaggung-content-header {
   color: #1a5072;
-  font-size: 2.143rem;
+  font-size: 1.857rem;
   font-weight: 600;
 }
 .einflaggungslotse .einflaggung-subtitle {
   color: #1a5072;
-  font-size: 2.143rem;
+  font-size: 1.857rem;
 }
-.einflaggungslotse .einflaggung-text p {
-  font-size: 1rem !important;
+.einflaggungslotse .einflaggung-text p,
+.einflaggungslotse .einflaggung-text ul {
+  font-size: 1.143rem !important;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.einflaggungslotse .einflaggung-text ul li {
+  list-style: none;
+  color: #15528c;
+}
+.einflaggungslotse .einflaggung-text ul li::before {
+  font-family: 'FontAwesome';
+  color: #15528c;
+  padding-right: 10px;
+  content: "\f105";
+}
+@media (max-width: 1024px) {
+  .einflaggungslotse {
+    margin-left: -270px;
+  }
+}
+.aspmitarbeiterimg {
+  width: 150px;
+  float: left;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.aspmitarbeiterimg img {
+  width: 100%;
+}
+.konmitarbeiterimg {
+  margin-bottom: -15px;
+  width: 150px;
+}
+.konmitarbeiterimg img {
+  width: 100%;
+}
+.mitarbeiterimg {
+  width: 150px;
+}
+.mitarbeiterimg img {
+  width: 100%;
+}
+.imageText {
+  margin-top: 30px;
 }
 .list-group {
   margin-bottom: 20px;
