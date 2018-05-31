@@ -489,7 +489,8 @@ address a[href^="mailto"],
     }
 
     a[data-linktype="external"],
-    a[data-linktype="internal"] {
+    a[data-linktype="internal"],
+    .internal-link {
         background:None !important;
     }
 
@@ -518,7 +519,8 @@ address a[href^="mailto"],
       padding-right: 15px;
     }
 
-    a[data-linktype="internal"] {
+    a[data-linktype="internal"],
+    .internal-link {
         background:None !important;
     }
 
@@ -639,10 +641,15 @@ address a[href^="mailto"],
     margin-bottom: 30px;
   }
 
+  .einflaggung-subcontent-title {
+    margin-bottom: 15px;
+  }
+
   .einflaggung-short { 
 
     padding-right: 0;
     padding-left: 0;
+    margin-bottom: 45px;
 
     a {
       border: none !important;
@@ -730,6 +737,53 @@ address a[href^="mailto"],
 
 }
 
+@media (max-width: 993px) {
+
+  .einflaggungslotse {
+
+    .einflaggung-block {
+      width: 20%;
+      margin-bottom: 45px;
+    }
+
+  }
+
+}
+
+@media (max-width: 935px) {
+
+  .einflaggungslotse {
+
+    font-sizes: 3px;
+
+  }
+
+}
+
+@media (max-width: 818px) {
+
+  .einflaggungslotse {
+
+    .einflaggung-block {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .einflaggung-content-schritt,
+    .einflaggung-content-header,
+    .einflaggung-subtitle {
+      font-size: 18px;
+    }
+
+    .einflaggung-content-content p,
+    .einflaggung-subdesc {
+      font-size: 12px;
+    }
+
+  }
+
+}
+
 // ############################ Mitarbeiterfotos
 .aspmitarbeiterimg {
     width: 150px;
@@ -761,4 +815,24 @@ address a[href^="mailto"],
 
 .imageText {
     margin-top: 30px;
+}
+
+// ############################ Cookie Consent
+.cc_banner .cc_message {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px !important;
+}
+
+// ############################ Log-in
+.userrole-authenticated {
+
+    td, th {
+        font-family: 'Open Sans', sans-serif !important;
+    }
+}
+
+// ############################ Abgelegt unter raus
+.documentByLine {
+    display: none;
 }

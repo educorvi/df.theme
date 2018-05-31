@@ -1,5 +1,8 @@
 $(document).ready(function(event) {
 
+    // IFRAME Border müssen weg
+    $('iframe').css('border','None');
+
 
     // Der Inhalt der Piraterie-Warnhinweise soll in die ISPS-Warnhinweise geladen werden
     var seite = String(window.location).search(/sicherheit\/isps\/warnhinweise/);

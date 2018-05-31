@@ -9067,6 +9067,7 @@ body .container {
   color: #000000;
   padding: 5px;
   line-height: inherit;
+  white-space: normal;
 }
 .top-mega-menu .carousel-control {
   width: 30px;
@@ -10106,7 +10107,8 @@ img[src$='welle.svg'] {
   padding-right: 1.429rem;
 }
 #content a[data-linktype="internal"],
-#content a[data-linktype="anchor"] {
+#content a[data-linktype="anchor"],
+#content .internal-link {
   background: url("img/symbol_int.png") no-repeat;
   background-position: right;
   padding-right: 1.429rem;
@@ -10693,7 +10695,8 @@ address a[href^="mailto"],
   font-weight: 500 !important;
 }
 .tstoerer a[data-linktype="external"],
-.tstoerer a[data-linktype="internal"] {
+.tstoerer a[data-linktype="internal"],
+.tstoerer .internal-link {
   background: None !important;
 }
 .site-en .astoerer {
@@ -10714,7 +10717,8 @@ address a[href^="mailto"],
   padding-top: 6px;
   padding-right: 15px;
 }
-.astoerer a[data-linktype="internal"] {
+.astoerer a[data-linktype="internal"],
+.astoerer .internal-link {
   background: None !important;
 }
 @media (max-width: 500px) {
@@ -10808,9 +10812,13 @@ address a[href^="mailto"],
   width: 60%;
   margin-bottom: 30px;
 }
+.einflaggungslotse .einflaggung-subcontent-title {
+  margin-bottom: 15px;
+}
 .einflaggungslotse .einflaggung-short {
   padding-right: 0;
   padding-left: 0;
+  margin-bottom: 45px;
 }
 .einflaggungslotse .einflaggung-short a {
   border: none !important;
@@ -10873,6 +10881,32 @@ address a[href^="mailto"],
     margin-left: -270px;
   }
 }
+@media (max-width: 993px) {
+  .einflaggungslotse .einflaggung-block {
+    width: 20%;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 935px) {
+  .einflaggungslotse {
+    font-sizes: 3px;
+  }
+}
+@media (max-width: 818px) {
+  .einflaggungslotse .einflaggung-block {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .einflaggungslotse .einflaggung-content-schritt,
+  .einflaggungslotse .einflaggung-content-header,
+  .einflaggungslotse .einflaggung-subtitle {
+    font-size: 18px;
+  }
+  .einflaggungslotse .einflaggung-content-content p,
+  .einflaggungslotse .einflaggung-subdesc {
+    font-size: 12px;
+  }
+}
 .aspmitarbeiterimg {
   width: 150px;
   float: left;
@@ -10897,6 +10931,18 @@ address a[href^="mailto"],
 }
 .imageText {
   margin-top: 30px;
+}
+.cc_banner .cc_message {
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  font-size: 14px !important;
+}
+.userrole-authenticated td,
+.userrole-authenticated th {
+  font-family: 'Open Sans', sans-serif !important;
+}
+.documentByLine {
+  display: none;
 }
 .list-group {
   margin-bottom: 20px;
