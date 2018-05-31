@@ -16,15 +16,15 @@
     <link rel="home" title="Home" i18n:attributes="title" tal:attributes="href view/navroot_url" />
 
   </metal:block>
-<!--
-  <metal:block fill-slot="top_slot"
+
+<!--   <metal:block fill-slot="top_slot"
                tal:define="disable_column_one python:request.set('disable_plone.leftcolumn',1);
-                           disable_column_two python:request.set('disable_plone.rightcolumn',1);" />-->
+                           disable_column_two python:request.set('disable_plone.rightcolumn',1);" /> -->
 </head>
 
 <body>
 
- <metal:content-core fill-slot="content-core">
+  <div id="content-core" metal:fill-slot="main">
 
     <form name="searchform"
           id="searchform"
@@ -37,7 +37,6 @@
                       DateTime python:modules['DateTime'].DateTime;
                       navigation_root_url view/navroot_url;">
 
-        <input type="hidden" name="advanced_search" value="False" />
         <input type="hidden" name="sort_on" value="" />
         <input type="hidden" name="sort_order" value="" />
 
@@ -86,20 +85,15 @@
                              i18n:translate="label_toggle">Select All/None</label>
                     </div>
                     <div class="search-type-options">
-                      <tal:div tal:define="typeLists python:context.createMultiColumnList(types_list, numCols=2, sort_on='self');"
-                               tal:repeat="sublist typeLists">
-                        <tal:items repeat="type sublist">
-                          <div>
-                            <input type="checkbox" name="portal_type:list" value="#" class="noborder" checked="checked"
-                                   tal:attributes="value type;
-                                                   id string:portal_type_${repeat/sublist/number}_${repeat/type/number};
-                                                   checked python:((type in request.get('portal_type', [])) or first_call) and 'checked' or ''"/>
-                              <label for="" i18n:translate=""
-                                     tal:attributes="for string:portal_type_${repeat/sublist/number}_${repeat/type/number}"
-                                     tal:content="python: portal_types.getTypeInfo(type).Title()" />
-                          </div>
-                        </tal:items>
-                      </tal:div>
+                      <div tal:repeat="type types_list">
+                        <input type="checkbox" name="portal_type:list" value="#" class="noborder" checked="checked"
+                               tal:attributes="value type;
+                                               id string:portal_type_${repeat/type/number};
+                                               checked python:((type in request.get('portal_type', [])) or first_call) and 'checked' or ''"/>
+                          <label for="" i18n:translate=""
+                                 tal:attributes="for string:portal_type_${repeat/type/number}"
+                                 tal:content="python: portal_types.getTypeInfo(type).Title()" />
+                      </div>
                     </div>
                   </div>
                 </fieldset>
@@ -164,10 +158,9 @@
             </h1>
 
             <p id="rss-subscription" i18n:domain="plone"
-               tal:define="syndication context/@@tools/syndication|nothing"
-               tal:condition="syndication/isSiteSyndicationAllowed|nothing">
+               tal:condition="context/@@syndication-util/search_rss_enabled">
                <img src="" alt="RSS"
-                    tal:attributes="src string:${portal_url}/rss.gif"/>
+                    tal:attributes="src string:${portal_url}/rss.png"/>
                 <a href=""
                    class="link-feed"
                    tal:define="here_url context/@@plone_context_state/object_url"
@@ -212,7 +205,8 @@
                       </span>
                     </nav>
                     <div id="search-results"
-                         tal:define="navigation_root_url context/@@plone_portal_state/navigation_root_url;">
+                         tal:define="navigation_root_url context/@@plone_portal_state/navigation_root_url;"
+                         tal:attributes="data-default-sort request/sort_on">
 
                       <metal:noresults tal:condition="not: batch">
                         <p i18n:domain="plone"><strong i18n:translate="description_no_results_found">No results were found.</strong></p>
@@ -223,14 +217,15 @@
                                                  toLocalizedTime nocall: context/@@plone/toLocalizedTime;
                                                  use_view_action python:context.portal_registry.get('plone.types_use_view_action_in_listings', []);
                                                  allowAnonymousViewAbout python:context.portal_registry['plone.allow_anon_views_about'];
-                                                 show_about python:not isAnon or allowAnonymousViewAbout;">
+                                                 show_about python:not isAnon or allowAnonymousViewAbout;
+                                                 image_scale portal/@@image_scale">
                         <ol class="searchResults">
                           <tal:results repeat="item batch">
                             <li tal:define="hasIcon item/getIcon">
                               <span class="result-title">
-                                <img class="image-icon"
+                                <img class="thumb-icon"
                                      tal:condition="hasIcon"
-                                     tal:attributes="src string:${item/getURL}/@@images/image/icon;">
+                                     tal:replace="structure python: image_scale.tag(item, 'image', scale='icon', css_class='thumb-icon')">
                                 <a href="#"
                                    tal:define="item_url item/getURL;
                                                item_type item/PortalType"
@@ -331,7 +326,7 @@
 
     <script type="text/javascript" src="${context/portal_url}/++resource++search.js">
     </script>
-  </metal:content-core>
+  </div>
 
 </body>
 </html>
