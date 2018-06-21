@@ -32,10 +32,10 @@
 
   Carousel.VERSION  = '3.3.7'
 
-  Carousel.TRANSITION_DURATION = 600
+  Carousel.TRANSITION_DURATION = 2000
 
   Carousel.DEFAULTS = {
-    interval: 5000,
+    interval: 7000,
     pause: 'hover',
     wrap: true,
     keyboard: true
@@ -235,3 +235,4 @@
   })
 
 }(jQuery);
+

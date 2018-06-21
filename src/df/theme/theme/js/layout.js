@@ -33,7 +33,7 @@ function deutschflagge_init(){
 
   // Instantiate the Bootstrap carousel
 
-  $('.carousel.slide').each(function(){
+  $('.carousel.slide.noslide').each(function(){
     var data_items = window.matchMedia("(max-width: 990px)").matches ? 1 : $(this).data('items');
     carousel = $(this); 
     if ($('.item', $(this)).length > data_items){

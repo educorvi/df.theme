@@ -8785,6 +8785,7 @@ body .container {
 }
 .df-theme-banner .banner-image {
   float: right;
+  max-width: 115% !important;
 }
 .df-theme-banner .banner-text {
   position: absolute;
@@ -10058,6 +10059,28 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
   .carousel .carousel-control .carousel-control .icon-next {
     margin-right: -22px;
   }
+}
+.carousel-fade {
+  opacity: 1;
+}
+.carousel-fade .item {
+  transition: opacity ease-out 2s;
+  left: 0;
+  opacity: 0;
+  /* hide all slides */
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+.carousel-fade .item:first-child {
+  top: auto;
+  opacity: 1;
+  /* show first slide */
+  position: relative;
+}
+.carousel-fade .item.active {
+  opacity: 1;
 }
 /* our custom styles */
 .image-grid-2x2 {
