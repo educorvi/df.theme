@@ -9331,7 +9331,12 @@ ul.mega-dropdown-menu-lv1 > li > a:hover::after {
 }
 .portletNavigationTree .portletContent .navTreeLevel1 .navTreeItem .contenttype-link,
 .portletNavigationTree .portletContent .navTreeLevel1 .navTreeItem .contenttype-folder {
-  padding-left: 40px;
+  padding-left: 46px;
+  text-indent: -22px;
+}
+.portletNavigationTree .portletContent .navTreeLevel1 .navTreeItem .contenttype-link:before,
+.portletNavigationTree .portletContent .navTreeLevel1 .navTreeItem .contenttype-folder:before {
+  margin-right: 16px !important;
 }
 .portletNavigationTree .portletContent .navTreeLevel2 .navTreeItem a {
   padding-left: 80px !important;
