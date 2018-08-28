@@ -8511,7 +8511,7 @@ table th {
   margin-left: 20px;
 }
 #main-container .documentFirstHeading {
-  margin: 25px 0 45px 20px;
+  margin: 25px 0 75px 20px;
   padding-bottom: 30px;
   text-transform: uppercase;
   background: transparent url("img/welle.png") repeat-x bottom;
@@ -8548,6 +8548,13 @@ table th {
 #parent-fieldname-text ol {
   margin-bottom: 3.214rem;
   margin-left: 1.143rem;
+  margin-top: -2.143rem;
+}
+.panel-body table ul,
+#parent-fieldname-text table ul,
+.panel-body table ol,
+#parent-fieldname-text table ol {
+  margin-top: 0;
 }
 .panel-body ul,
 #parent-fieldname-text ul {
