@@ -242,6 +242,17 @@ address a[href^="mailto"],
   background-color: #c7c7c7;
 }
 
+@media (max-width: 720px) {
+  .portletContent {
+
+    .navTreeLevel1 .navTreeItem .contenttype-link,
+    .navTreeLevel1 .navTreeItem .contenttype-folder {
+        padding-left: 24px !important;
+        text-indent:  0px !important;
+    }
+  }
+}
+
 @media (min-width: @plone-screen-lg-min) {
 
   .plone-nav {
@@ -374,12 +385,12 @@ address a[href^="mailto"],
     margin-bottom: 2.3rem !important;
   }
 
-  #content-core #parent-fieldname-text ol,
-  #content-core #parent-fieldname-text ul {
+  #parent-fieldname-text ol,
+  #parent-fieldname-text ul {
     margin-left: -2rem;
   }
 
-  #content-core #parent-fieldname-text ul {
+  #parent-fieldname-text ul {
     text-indent: -1.5rem;
   }
 
