@@ -159,7 +159,7 @@
       padding-right: 20px;
       ul{
         position: relative;
-        top: 50%;
+        top: 40%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -513,6 +513,22 @@
 
 #behtab > div{
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: @plone-screen-xs-min) {
+  .portletQuarterPortlet{
+    .quarter-top {
+      .quarter-top-text-links ul li,
+      .quarter-top-text-rechts ul li{
+        font-size:1.0em;
+      }
+    }
+    .quarter-bottom{
+      .quarter-bottom-text {
+        font-size:1.0em;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: @plone-screen-sm-min) { 
