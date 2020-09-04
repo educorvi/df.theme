@@ -81,7 +81,7 @@
       a {
         color: #717171;
       }
-      #trenner {
+      .trenner {
         padding-left: 10px;
       }
     }
@@ -95,15 +95,26 @@
   }
 }
 
-.section-home .df-theme-banner,
-.section-startseite .df-theme-banner {
-  height: 380px;
-  margin-left: -8px;
-  width: 102.7%;
+.section-home,
+.section-startseite {
 
-  .banner-text .bildtitel {
-    font-size: 2.571rem;
-    font-weight: 300;
+  .plone-breadcrumb {
+    display: none;
+  }
+
+  .df-theme-banner {
+    height: 380px;
+    margin-left: -8px;
+    width: 102.7%;
+
+    .banner-text .bildtitel {
+      font-size: 2.571rem;
+      font-weight: 300;
+    }
+
+    .banner-text p {
+      margin-bottom: 45px;
+    }
   }
 }
 
@@ -198,7 +209,7 @@
   #portal-header{
     #portal-languageselector{
       position: absolute;
-      bottom: -6.7em;
+      bottom: -5em;
       float: none;
       z-index: 10;
       right: 20px;

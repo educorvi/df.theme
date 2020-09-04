@@ -26,33 +26,49 @@ span.field-error {
 
   .panel-title {
 
+    font-size: 1.143rem;
     text-indent: -1.25rem;
     margin-left: 1.25rem;
+
+    a {
+      font-weight: normal;
+      text-decoration: none;
+      }
     }
 
   .panel-body {
 
     padding-left: 1.25rem;
+    color: @deutsche-flagge-public;
 
     .documentDescription {
       font-size: 1.286rem;
       font-weight: 400;
       margin-bottom: 10px;
-      margin-left: 0;
+    }
+
+    h2 {
+      margin-top: 2.857rem;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      margin-top: 1.286rem;
+      margin-bottom: 1rem;
     }
 
     li {
-      margin-bottom: 0;
-    }
-
-    p {
-      margin-bottom: 10px;
+      line-height: 1.42857143;
+      /* line-height: 2; */
     }
 
     ul, ol {
       margin-bottom: 10px;
       margin-left: -25px;
-      margin-top: 0;
+    }
+
+    ul {
+      text-indent: -1.34rem;
     }
 
     ol li {
@@ -62,6 +78,7 @@ span.field-error {
     h3, p, a {
       font-size: 1.286rem;
     }
+
   }
 
 }
@@ -100,15 +117,15 @@ span.field-error {
   margin-left: 15px;
 }
 
-#behheadrot,
-#behheadblau,
-#behheader {
+.behheadrot,
+.behheadblau,
+.behheader {
   font-weight: 700;
 }
 
-#behtxrot,
-#behtxblau,
-#behtext {
+.behtxrot,
+.behtxblau,
+.behtext {
   font-size: 0.8571rem;
   font-weight: 400;
 }
@@ -162,7 +179,7 @@ b, strong {
 }
 
 #main-container .documentDescription {
-  margin-bottom: 2.3rem;
+  /* margin-bottom: 2.3rem; */
 }
 
 // ############################ FOOTER
@@ -315,6 +332,12 @@ address a[href^="mailto"],
     display:none;
   }
 
+  .quarter-mobil {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+
   .quarter-mobil img {
     max-width:25%;
     margin-top:10px;
@@ -437,7 +460,7 @@ address a[href^="mailto"],
 @media (max-width: @plone-screen-sm-min) {
 
   h2, h3, h4, ul, ol, p {
-    margin-bottom: 2.3rem !important;
+    /* margin-bottom: 2.3rem !important; */
   }
 
   #parent-fieldname-text ol,
@@ -447,6 +470,15 @@ address a[href^="mailto"],
 
   #parent-fieldname-text ul {
     text-indent: -1.5rem;
+  }
+
+  #parent-fieldname-text table {
+
+    tbody tr td p,
+    tbody tr th p {
+      margin-bottom: 0.7rem !important;
+      margin-top: 0.7rem !important;
+    }
   }
 
   .pdf-link a,
@@ -524,9 +556,22 @@ address a[href^="mailto"],
 
     li, a, p, span {
       font-size: 1.143rem;
-      margin-bottom: 0;
+      /* margin-bottom: 0; */
+    }
+
+  }
+
+  tbody tr td,
+  tbody tr th {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    p {
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
     }
   }
+
 }
 
 // ############################ STOERER

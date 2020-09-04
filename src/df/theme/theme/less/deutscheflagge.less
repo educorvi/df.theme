@@ -39,7 +39,12 @@ h2 {
   color: @deutsche-flagge-public;
   font-size: 1.429rem;
   font-weight: 600;
-  margin-bottom: 45px;
+  margin-bottom: 1rem;
+  margin-top: 3.5rem;
+}
+
+.upperdir h2 {
+  margin-top: 0;
 }
 
 h3 {
@@ -47,13 +52,17 @@ h3 {
   font-style: italic;
   font-weight: 300;
   line-height: 1.5;
-  margin-bottom: 45px;
+  margin-top: 3rem;
 }
 
 h4 {
   font-size: 1.429rem;
-  margin-bottom: 2.857rem;
+  margin-top: 2.5rem;
 }
+
+h5 {
+  line-height: 1.42857143;
+  }
 
 span.font-red a,
 span.font-red {
@@ -64,7 +73,7 @@ p {
   font-size: 1.286rem;
   font-weight: 300;
   color: @deutsche-flagge-public;
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
 }
 
 table {
@@ -73,6 +82,7 @@ table {
     background-color: @deutsche-flagge-public;
     color: @deutsche-flagge-white-base;
   }
+
 }
 
 /* Page */
@@ -179,7 +189,7 @@ table {
   }
   /* Title */
   .documentFirstHeading {
-    margin: 25px 0 75px 20px;
+    margin: 25px 0 50px 20px;
     padding-bottom: 30px;
     text-transform: uppercase;
     background: transparent url("img/welle.png") repeat-x bottom;
@@ -187,11 +197,42 @@ table {
   }
   /* Description */
   .documentDescription {
-    font-size: 20px;
+    font-size: 1.42857143rem;
     font-weight: 300;
     font-style: italic;
     margin-left: 20px;
   }
+
+  /* Inhaltsverzeichnis */
+  .ivz {
+    margin-left: 0px;
+    background-color: #fafafa;
+
+    a[data-linktype="anchor"],
+    a[data-linktype="external"],
+    a[data-linktype="internal"],
+    .external-link,
+    .internal-link {
+      background: none;
+    }
+
+    li {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 2;
+      }
+
+  }
+
+  .nachoben {
+
+    margin-top: 1rem;
+
+    a {
+      font-size: 1rem;
+      }
+  }
+
 }
 
 .portaltype-frontpage{
@@ -209,19 +250,21 @@ table {
     font-size: @plone-font-size-large;
   }
 
+  p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   a {
     text-decoration: underline;
   }
 
   ul, ol {
-    margin-bottom: 3.214rem;
     margin-left: 1.143rem;
-    margin-top: -2.143rem;
   }
 
-  table ul,
-  table ol {
-    margin-top: 0;
+  li {
+    line-height: 1.42857143;
   }
 
   ul {
@@ -229,7 +272,8 @@ table {
   }
 
   ul li {
-    margin-bottom: 1.1em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     list-style: none;
   }
 
@@ -243,12 +287,8 @@ table {
   }
 
   ol li {
-    margin-bottom: 1.1em;
-  }
-
-  ol li ul {
-    margin-top: 1.1em;
-    margin-bottom: 1.1em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
 }

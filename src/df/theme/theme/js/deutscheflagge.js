@@ -3,6 +3,9 @@ $(document).ready(function(event) {
     // IFRAME Border müssen weg
     $('iframe').css('border','None');
 
+    // der Seitentitel erhält noch eine ID als Sprungmarke
+    $('.documentFirstHeading').attr('id','documentFirstHeading');
+
 
     // Der Inhalt der Piraterie-Warnhinweise soll in die ISPS-Warnhinweise geladen werden
     var seite = String(window.location).search(/sicherheit\/isps\/warnhinweise/);
