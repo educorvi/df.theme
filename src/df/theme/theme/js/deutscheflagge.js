@@ -6,32 +6,6 @@ $(document).ready(function(event) {
     // der Seitentitel erhält noch eine ID als Sprungmarke
     $('.documentFirstHeading').attr('id','documentFirstHeading');
 
-
-    // Der Inhalt der Piraterie-Warnhinweise soll in die ISPS-Warnhinweise geladen werden
-    var seite = String(window.location).search(/sicherheit\/isps\/warnhinweise/);
-
-    if (seite != -1)
-
-        {
-        $('#parent-fieldname-text').after('<div id="ajaxcontent">Content-Core</div>');
-        var url = 'https://www-prod.deutsche-flagge.de/de/sicherheit/piraterie/warnhinweise/warnhinweise/CookedBody'
-        //var url = 'https://www.deutsche-flagge.de/optiflag/de/sicherheit/piraterie/warnhinweise/warnhinweise/CookedBody'
-        $('#ajaxcontent').load(url);
-
-        $.ajaxSetup({cache: false});
-        $.ajax({
-           type: "GET",
-           url:url,
-           async:false,
-           success: function(html) {
-               $('#ajaxcontent').html(html);
-               $('#ajaxcontent').css('color','red');
-               }
-           });
-
-
-        };
-
     // Abstand der Hafenstaatkontrolle
     $("li.section-psc").before('<li class="navTreeItem visualNoMarker navTreeFolderish section-none"></li>');
     $("li.section-pscen").before('<li class="navTreeItem visualNoMarker navTreeFolderish section-none"></li>');
