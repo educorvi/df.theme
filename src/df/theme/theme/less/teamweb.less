@@ -2,6 +2,7 @@
 
 #portal-header #portal-searchbox [type="text"] {
   border-color: @deutsche-flagge-dark;
+  width: 295px;
 }
 
 // ############################ PRIVATE ORDNER VERSTECKEN
@@ -594,6 +595,22 @@ address a[href^="mailto"],
 
 }
 
+#kontakttable,
+#kontakttable td {
+  border: none;
+
+  #kontakttitle {
+    margin-top: 10px;
+    font-size: 1.429rem;
+    font-weight: 600;
+  }
+
+  #kontaktsubtitle {
+    font-size: 1.429rem;
+  }
+
+}
+
 // ############################ STOERER
 .tstoerer {
 
@@ -970,8 +987,18 @@ address a[href^="mailto"],
     display: none;
 }
 
-// ############################ überflüssige Inhalte bei den Suchergebnissen raus
+// ############################ Anpassungen Suchergebnissen
 .template-search .input-group,
 #rss-subscription {
     display: none;
+}
+
+#sorting-options a {
+    color: #15528c;
+    background-color: #ffffff;
+}
+
+#sorting-options a.active {
+    color: #ffffff;
+    background-color: #15528c;
 }
