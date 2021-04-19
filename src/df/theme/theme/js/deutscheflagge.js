@@ -20,13 +20,22 @@ $(document).ready(function(event) {
         $(this).attr("href",link);
     });
 
+    // Beim Gefahrenabwehrplan sollen geschützte Leerzeichen rein
+    var seite = String(window.location).search(/gefahrenabwehrplan/);
+
+    if (seite != -1)
+    {
+        $('#documentFirstHeading').html("Gefahrenabwehrplan (International&nbsp;·&nbsp;National)")
+    };
+
+    // Überschrift auf der Suchseite ausblenden
     var seite = String(window.location).search(/SearchableText/);
 
     if (seite != -1)
 
     { 
         $('header .documentFirstHeading').hide();
-    }
+    };
 
 
     // Anpassungen bei einer Fehlerseite
